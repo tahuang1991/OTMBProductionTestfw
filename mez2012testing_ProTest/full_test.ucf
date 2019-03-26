@@ -1,0 +1,176 @@
+NET "led_hi[10]" LOC = N24;
+NET "led_hi[11]" LOC = N23;
+NET "led_hi[12]" LOC = F23;
+NET "led_hi[13]" LOC = F24;
+NET "led_hi[14]" LOC = L24;
+NET "led_hi[15]" LOC = M23;
+NET "led_hi[8]" LOC = G23;
+NET "led_hi[9]" LOC = H23;
+NET "led_low[0]" LOC = AF24;
+NET "led_low[1]" LOC = AF25;
+NET "led_low[2]" LOC = W24;
+NET "led_low[3]" LOC = V24;
+NET "led_low[4]" LOC = H24;
+NET "led_low[5]" LOC = H25;
+NET "led_low[6]" LOC = P24;
+NET "led_low[7]" LOC = R24;
+NET "pb" LOC = V29;
+NET "pb" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "sw[7]" LOC = U25;
+NET "sw[8]" LOC = U26;
+NET "test_led[1]" LOC = T29;
+NET "test_led[2]" LOC = R31;
+NET "test_led[3]" LOC = T26;
+NET "test_led[4]" LOC = R29;
+NET "test_led[5]" LOC = R27;
+NET "test_led[6]" LOC = T30;
+NET "test_led[7]" LOC = U28;
+NET "test_led[8]" LOC = T28;
+NET "test_led[9]" LOC = T25;
+NET "test_led[10]" LOC = U27;
+# should try LV_DCI standard sometime...
+
+NET "ck125n" LOC = H9 | IOSTANDARD = "LVDS_25";
+NET "ck125p" LOC = J9 | IOSTANDARD = "LVDS_25";
+NET "ck125" TNM_NET = "clock125";
+TIMESPEC "TS_clock125" = PERIOD "clock125" 8 ns HIGH 50%;
+#NET "ck125p" period=8ns high 50%;
+
+NET "ck_gben" LOC = P5 | IOSTANDARD = "LVDS_25";
+NET "ck_gbep" LOC = P6 | IOSTANDARD = "LVDS_25";
+NET "ckgbe" TNM_NET = "clock_gbe";
+TIMESPEC "TS_clock_gbe" = PERIOD "clock_gbe" 8 ns HIGH 50%;
+#NET "ck_gbep" period=8ns high 50%;
+
+# initial testing for gbe_gtx
+NET "gbe_txn" LOC = A4 | IOSTANDARD = "LVDS_25";
+NET "gbe_txp" LOC = A3 | IOSTANDARD = "LVDS_25";
+NET "gbe_rxn" LOC = B6 | IOSTANDARD = "LVDS_25";
+NET "gbe_rxp" LOC = B5 | IOSTANDARD = "LVDS_25";
+
+# 3.3V initial testing inputs
+NET "alct_rx7" LOC = D24;   # io333
+NET "alct_rx8" LOC = E24;   # io332
+NET "alct_rx9" LOC = E22;   # io331
+NET "alct_rx10" LOC = E23;  # io330
+NET "alct_rx11" LOC = C23;  # io329
+NET "alct_rx13" LOC = C22;  # io327
+NET "alct_rx19" LOC = H22;  # io321
+NET "alct_rx23" LOC = G22;  # io317
+
+NET "prom_d3" LOC = D15;    # io279
+NET "prom_d7" LOC = D17;    # io275
+
+NET "jtag_fpga3" LOC = K16; # io263
+
+NET "sda0" LOC = K21;       # io302
+NET "tmb_sn" LOC = F20;     # io274
+NET "~t_crit" LOC = M16;    # io267
+
+#BANK 12
+NET "~ccb_rx11" LOC = AD25; # io
+NET "~ccb_rx12" LOC = AD26; # io
+NET "~ccb_rx10" LOC = AE27; # io
+NET "~ccb_rx5" LOC = AD27; # io
+NET "~ccb_rx48" LOC = AH33; # io
+NET "~ccb_rx50" LOC = AH32; # io
+NET "io_19" LOC = AE28; #~ccb_tx17
+NET "io_2" LOC = AE29; #~ccb_tx0
+NET "~ccb_rx45" LOC = AJ34; # io
+NET "~ccb_rx44" LOC = AH34; # io
+NET "io_18" LOC = AF28; # ~ccb_tx16
+NET "io_6" LOC = AF29; # ~ccb_tx4
+NET "~ccb_rx26" LOC = AL34; # io
+NET "~ccb_rx21" LOC = AK34; # io
+NET "~ccb_rx29" LOC = AH29; # io
+NET "~ccb_rx19" LOC = AH30; # io
+NET "~ccb_rx32" LOC = AN33; # io
+NET "~ccb_rx31" LOC = AN34; # io
+NET "~ccb_rx3" LOC = AG27; # io
+NET "~ccb_rx0" LOC = AG28; # io
+NET "io_10" LOC = AF30; # ~ccb_tx8
+NET "io_7" LOC = AG30; # ~ccb_tx5
+NET "~ccb_rx9" LOC = AF26; # io
+NET "~ccb_rx13" LOC = AE26; # io
+NET "~ccb_rx28" LOC = AJ29; # io
+NET "~ccb_rx27" LOC = AJ30; # io
+NET "~ccb_rx20" LOC = AK33; # io
+NET "~ccb_rx25" LOC = AK32; # io
+NET "~ccb_rx23" LOC = AK31; # io
+NET "~ccb_rx17" LOC = AK31; # io
+NET "~ccb_rx30" LOC = AM33; # io
+NET "~ccb_rx22" LOC = AL33; # io
+NET "~ccb_rx2" LOC = AN32; # io
+NET "~ccb_rx1" LOC = AM32; # io
+NET "~ccb_rx6" LOC = AP32; # io
+NET "~ccb_rx33" LOC = AP33; # io
+NET "~ccb_rx24" LOC = AL30; # io
+NET "~ccb_rx7" LOC = AM31; # io
+
+#BANK 13
+NET "io_465" LOC = AA34; # dmb_tx24
+NET "io_455" LOC = AA33; # dmb_tx25
+NET "~ccb_rx40 " LOC = AA30; # io
+NET "~ccb_rx46" LOC = AA31; # io
+NET "io_468" LOC = AD34; # dmb_tx12
+NET "io_459" LOC = AC34; # dmb_tx21
+NET "io_496" LOC = AB30; # ~ccb_tx21
+NET "io_493" LOC = AB31; # ~ccb_tx18
+NET "io_464" LOC = AC33; # dmb_tx16
+NET "io_460" LOC = AB33; # dmb_tx20
+NET "io_4" LOC = AE31; # ~ccb_tx2
+NET "io_500" LOC = AD31; # ~ccb_tx25
+NET "~ccb_rx49" LOC = AA25; # io
+NET "~ccb_rx42" LOC = Y26; # io
+NET "~ccb_rx36" LOC = AA28; # io
+NET "~ccb_rx38" LOC = AA29; # io
+NET "io_467" LOC = AE34; # dmb_tx13
+NET "io_476" LOC = AF34; # dmb_tx4
+NET "io_499" LOC = AD30; # ~ccb_tx24
+NET "io_12" LOC = AC30; # ~ccb_tx10
+NET "io_472" LOC = AE33; # dmb_tx8
+NET "io_475" LOC = AF33; # dmb_tx5
+NET "io_14" LOC = AD29; # ~ccb_tx12
+NET "io_11" LOC = AC29; # ~ccb_tx9
+NET "~ccb_rx18" LOC = AB28; # io
+NET "io_15" LOC = AC27; # ~ccb_tx13
+NET "io_512" LOC = AG33; # dmb_tx3
+NET "~ccb_rx39" LOC = AG32; # io
+NET "~ccb_rx34" LOC = AA26; # io
+NET "io_494" LOC = AB26; # ~ccb_tx19
+NET "~ccb_rx43" LOC = AG31; # io
+NET "io_3" LOC = AF31; # ~ccb_tx1
+NET "io_495" LOC = AB25; # ~ccb_tx20
+NET "~ccb_rx4" LOC = AC25; # io
+
+#BANK 14
+NET "io_426" LOC = R33; # dmb_tx48
+NET "io_429" LOC = R34; # dmb_tx45
+NET "io_437" LOC = T31; # dmb_tx43
+NET "io_430" LOC = T33; # dmb_tx44
+NET "dmb_rx3" LOC = T34; # io
+NET "dmb_rx0" LOC = U33; # io
+NET "dmb_rx2" LOC = U32; # io
+NET "dmb_rx5" LOC = U31; # io
+NET "gp_io5" LOC = V30; # TP_INIT
+NET "gp_io6" LOC = W30; # TP_WR
+NET "dmb_rx4" LOC = V34; # io
+NET "io_448" LOC = W34; # dmb_tx32
+NET "rpc_dsn" LOC = V28; # io
+NET "T12_Sclk" LOC = V27; # io
+NET "vrn_14" LOC = V32; # io
+NET "vrp_14" LOC = V33; # io
+NET "io_451" LOC = Y32; # dmb_tx29
+NET "io_513" LOC = Y31; # dmb_tx2
+NET "io_452" LOC = Y33; # dmb_tx28
+NET "io_447" LOC = Y34; # dmb_tx33
+NET "gp_io7" LOC = W29; # TP_CS
+NET "~ccb_rx41" LOC = Y29; # io
+NET "dmb_rx1" LOC = W31; # io
+NET "io_441" LOC = W32; # dmb_tx39
+NET "~ccb_rx47" LOC = Y28; # io
+NET "~ccb_rx37" LOC = Y27; # io
+NET "io_403" LOC = W25; # mez_done
+NET "gclk_2s" LOC = V25; # vstat1
+NET "F_Sclk" LOC = W27; # io
+NET "R12_Sclk" LOC = W26; # io

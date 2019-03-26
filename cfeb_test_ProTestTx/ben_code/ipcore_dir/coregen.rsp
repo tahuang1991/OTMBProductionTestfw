@@ -1,0 +1,2 @@
+SETPROJECT "C:/xilinx_proj/cfeb_test/ben_code/ipcore_dir/coregen.cgp"
+LAUNCHXCO "C:/xilinx_proj/cfeb_test/ben_code/ipcore_dir/cmp_rec_mmcm.xco"

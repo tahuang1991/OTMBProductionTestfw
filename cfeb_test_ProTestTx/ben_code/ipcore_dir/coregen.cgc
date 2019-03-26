@@ -1,0 +1,1569 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:design xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xilinx="http://www.xilinx.com" >
+   <spirit:vendor>xilinx.com</spirit:vendor>
+   <spirit:library>project</spirit:library>
+   <spirit:name>coregen</spirit:name>
+   <spirit:version>1.0</spirit:version>
+   <spirit:componentInstances>
+      <spirit:componentInstance>
+         <spirit:instanceName>CMP_RX_BUF_BYPASS</spirit:instanceName>
+         <spirit:displayName></spirit:displayName>
+         <spirit:description></spirit:description>
+         <spirit:componentRef spirit:vendor="xilinx.com" spirit:library="ip" spirit:name="v6_gtxwizard" spirit:version="1.8" />
+         <spirit:configurableElementValues>
+            <spirit:configurableElementValue spirit:referenceId="parameter_dec_valid_comma_only">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_plllkdet">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_chan_bond_keep_align">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cb_seq_2_4_mask">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cc_seq_1_1_disp">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_plus_comma">0101111100</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_rxbuffer">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mcomma_detect">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_rxbyterealign">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_com_burst_val">15</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_preemphasis_level">Use_TXPREEMPHASIS_Port</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rxusrclk_source">RXRECCLK</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cc_seq_1_2_disp">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clk_cor_repeat_wait">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_rxrundisp">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cc_seq_1_1_k">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y10">REFCLK0_Q2</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y11">REFCLK0_Q2</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y12">REFCLK0_Q3</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y13">REFCLK0_Q3</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_txinhibit">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_rxrecclk">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y14">REFCLK0_Q3</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y15">REFCLK0_Q3</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_txpolarity">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y20">REFCLK0_Q5</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cb_seq_1_1_mask">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y21">REFCLK0_Q5</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y16">REFCLK0_Q4</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y17">REFCLK0_Q4</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_resistor_cal_circuit">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y22">REFCLK0_Q5</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_idle_hi_cnt">1000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y23">REFCLK0_Q5</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y18">REFCLK0_Q4</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cc_seq_1_3_disp">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y24">REFCLK0_Q6</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y19">REFCLK0_Q4</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y25">REFCLK0_Q6</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y30">REFCLK0_Q7</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y26">REFCLK0_Q6</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y31">REFCLK0_Q7</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y27">REFCLK0_Q6</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_prbs_detector">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y32">REFCLK0_Q8</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y28">REFCLK0_Q7</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y33">REFCLK0_Q8</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y29">REFCLK0_Q7</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y34">REFCLK0_Q8</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y35">REFCLK0_Q8</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_divider">/1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_txusrclk_source">TXOUTCLK</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cb_seq_1_2_mask">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_rxbyteisaligned">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cc_seq_1_4_disp">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cc_seq_1_2_k">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y0">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y1">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_sata_burst_val">4</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_rxlossofsync">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y2">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y3">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y4">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_tdcc_cfg">11</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y5">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y6">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cb_seq_1_3_mask">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y7">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_trans_time_rate">FF</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y8">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y9">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_txoutclk_source">AUTO</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clk_cor_precedence">CC</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_trans_time_non_p2">25</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_decode_seq_match">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_idle_assert_delay">100</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_datapath_width">20</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_refclk_ac_coupling_x0_y10">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_refclk_ac_coupling_x0_y11">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_refclk_ac_coupling_x0_y12">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_refclk_ac_coupling_x0_y13">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_refclk_ac_coupling_x0_y14">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_no_rx">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cc_keep_one_idle">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_refclk_ac_coupling_x0_y20">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_refclk_ac_coupling_x0_y15">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_refclk_ac_coupling_x0_y21">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_refclk_ac_coupling_x0_y16">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cb_seq_1_4_mask">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_refclk_ac_coupling_x0_y22">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_refclk_ac_coupling_x0_y17">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_refclk_ac_coupling_x0_y23">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_refclk_ac_coupling_x0_y18">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_refclk_ac_coupling_x0_y19">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cc_seq_1_3_k">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_second_order_cdr_loop">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_no_tx">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_enmcommaalign">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_oob_clk_divider">0000000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cc_seq_2_1_mask">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_two_cb_sequences">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_comwakedet">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_reference_clock">156.25</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cb_seq_2_1_k">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_fifo_upper_bounds">16</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rxrundisp_indicates_cc">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cc_seq_1_4_k">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cc_seq_2_2_mask">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rxlossofsyncport">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_line_rate">3.125</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_postemphasis_level">Use_TXPOSTEMPHASIS_Port</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_bytes_to_reduce_error">8</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_wideband_highpass_mix">111</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_txprbsforceerr">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cc_seq_2_3_mask">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cb_seq_2_2_k">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_highpass_pole_location">Use_RXEQPOLE_Port</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_rxpolarity">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_rx_eq">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_dfe_mode">Fixed_tap_mode</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_rxchariscomma">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cc_seq_2_4_mask">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_divider">/1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_rxvalid">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_txpllrefclk">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_trans_time_to_p2">100</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_en_realign_reset_buf">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_txchardispval">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cb_seq_2_3_k">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_idle_deassert_delay">010</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_txbufstatus">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_rxcdrreset">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_rx_oob">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cc_seq_1_1_mask">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_txrundisp">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_comsasdet">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cc_seq_1_2_mask">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_termination_ovrd">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_sas_max_comsas">52</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_slide_mode">OFF</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cb_seq_2_4_k">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_comma_double">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_txcomsas">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_dec_pcomma_detect">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_show_realign_comma">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_errors_to_lose_sync">128</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_en_idle_hold_cdr">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cb_sequence_length">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cc_seq_1_3_mask">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_termination_ctrl">00000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_trans_time_from_p2">60</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_fifo_lower_bounds">14</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_rxpllrefclk">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_rxoversampleerr">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_sas_min_comsas">40</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cc_seq_1_4_mask">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_en_idle_reset_fr">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_ppm_offset">0_(Synchronous)</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_rxbufstatus">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_en_idle_hold_dfe">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_enpcommaalign">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cb_sequence_2_max_skew">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_minus_comma">1010000011</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_sync_app">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_txenprbstst">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_termination_imp">50</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rxrecclk_source">AUTO</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_rx_oversampling">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_comma_preset">K28.5</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cb_seq_2_1_disp">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_txcomwake">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_comma_detect">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_drp">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_protocol_file">Start_from_scratch</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_loopback">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_column">Left</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cb_seq_2_2_disp">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_termination_voltage">MGTAVTT</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_en_idle_reset_ph">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_fifo_addr_mode">FULL</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_max_cb_level">7</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_tx_oversampling">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_txrx_invert">00011</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_pcomma_detect">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_refclk_ac_coupling_x0_y0">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_refclk_ac_coupling_x0_y1">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cb_seq_2_3_disp">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_refclk_ac_coupling_x0_y2">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_refclk_ac_coupling_x0_y3">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_refclk_ac_coupling_x0_y4">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_refclk_ac_coupling_x0_y5">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_refclk_ac_coupling_x0_y6">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cb_seq_1_1_k">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cb_sequence_1_max_skew">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_refclk_ac_coupling_x0_y7">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_refclk_ac_coupling_x0_y8">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_refclk_ac_coupling_x0_y9">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_rxreset">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_decoding">8B/10B</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_chan_bond_seq_2_cfg">00000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cb_seq_2_4_disp">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_plllkdeten">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_txpowerdown">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_two_cc_sequences">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_external_txusrclk">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_comma_mask">0001111111</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cc_seq_2_1_k">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_datapath_width">20</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_advanced_clocking">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cc_sequence_length">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cb_seq_1_2_k">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_txbuffer">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_comfinish">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_pllpowerdown">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cb_seq_1_1_disp">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_rxcharisk">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cb_seq_1_1">00000000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_rxprbserr_loopback">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y0">REFCLK1_Q0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cc_seq_2_2_k">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cb_seq_1_2">00000000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y1">REFCLK1_Q0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cb_seq_1_3">00000000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y2">REFCLK1_Q0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cb_seq_1_4">00000000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y3">REFCLK1_Q0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y4">REFCLK1_Q1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y5">REFCLK1_Q1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cb_seq_1_2_disp">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y10">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y6">REFCLK1_Q1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y7">REFCLK1_Q1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y11">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y8">REFCLK1_Q2</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y12">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y9">REFCLK1_Q2</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y13">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cb_seq_1_3_k">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y14">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y15">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y20">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y16">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y21">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y17">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_rxcommadet">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y22">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y10">REFCLK1_Q2</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y23">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y18">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y11">REFCLK1_Q1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y24">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y19">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_cb">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_en_rate_reset_buf">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y12">REFCLK1_Q3</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y30">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y25">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_cc">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_en_mode_reset_buf">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y13">REFCLK1_Q3</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y31">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y26">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y14">REFCLK1_Q3</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y32">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y27">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y15">REFCLK1_Q3</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y33">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y28">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y20">REFCLK1_Q5</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cb_seq_1_3_disp">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y16">REFCLK1_Q4</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y34">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y29">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y21">REFCLK1_Q5</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_pci_express_mode">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_rxpowerdown">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y35">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y17">REFCLK1_Q4</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y22">REFCLK1_Q5</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y18">REFCLK1_Q4</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y23">REFCLK1_Q5</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y19">REFCLK1_Q4</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_rxstatus">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y0">REFCLK0_Q0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y24">REFCLK1_Q6</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y25">REFCLK1_Q6</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y1">REFCLK0_Q0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y30">REFCLK1_Q7</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cc_seq_2_3_k">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y2">REFCLK0_Q0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y26">REFCLK1_Q6</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y31">REFCLK1_Q7</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cb_seq_2_1">00000000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y27">REFCLK1_Q6</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y3">REFCLK0_Q0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y32">REFCLK1_Q8</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_pll_sata">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cb_seq_2_2">00000000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y33">REFCLK1_Q8</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_rxslide">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y4">REFCLK0_Q1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y28">REFCLK1_Q7</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cb_seq_2_3">00000000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y34">REFCLK1_Q8</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_turbo_mode">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y5">REFCLK0_Q1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y29">REFCLK1_Q7</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cb_seq_2_4">00000000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y35">REFCLK1_Q8</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y6">REFCLK0_Q1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y7">REFCLK0_Q1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y8">REFCLK0_Q2</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_txoutclk">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cb_seq_1_4_disp">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y9">REFCLK0_Q2</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_comma_alignment">Even_Byte_Boundaries</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cb_seq_1_4_k">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_rxrate">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_reference_clock">160.00</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_dec_mcomma_detect">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_driver_swing">Use_TXDIFFCTRL_Port</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_phystatus">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cc_seq_2_1_disp">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_idle_lo_cnt">0000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_en_idle_reset_buf">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_disable_ac_coupling">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cc_seq_2_4_k">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_oob_threshold">011</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_txchardispmode">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cc_seq_2_2_disp">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_txrate">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_txbypass8b10b">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_txcominit">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cc_seq_1_1">00000000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cc_seq_1_2">00000000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_txkerr">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_drive_mode">DIRECT</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cc_seq_1_3">00000000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cb_seq_2_1_mask">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cc_seq_1_4">00000000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_enable_dfe">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_line_rate">3.2</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cdr_ph_adj_time">10100</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cc_seq_2_3_disp">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_cominitdet">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_txdetectrx">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cb_seq_2_2_mask">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cc_seq_2_4_disp">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_refclkpowerdown">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_txpll_sata">00</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cc_seq_2_1">00000000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_txreset">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cc_seq_2_2">00000000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cc_seq_2_3">00000000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_sata_idle_val">4</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_encoding">8B/10B</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_rxbufreset">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cb_seq_2_3_mask">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cc_seq_2_4">00000000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_external_rxusrclk">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_txelecidle">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_en_rate_reset_buf">true</spirit:configurableElementValue>
+         </spirit:configurableElementValues>
+         <spirit:vendorExtensions>
+            <xilinx:instanceProperties xmlns:xilinx="http://www.xilinx.com">
+             <xilinx:projectOptions>
+               <xilinx:projectName>coregen</xilinx:projectName>
+               <xilinx:outputDirectory>./</xilinx:outputDirectory>
+               <xilinx:workingDirectory>./tmp/</xilinx:workingDirectory>
+               <xilinx:subWorkingDirectory>./tmp/_cg</xilinx:subWorkingDirectory>
+             </xilinx:projectOptions>
+             <xilinx:part>
+               <xilinx:device>xc6vlx195t</xilinx:device>
+               <xilinx:deviceFamily>virtex6</xilinx:deviceFamily>
+               <xilinx:package>ff1156</xilinx:package>
+               <xilinx:speedGrade>-1</xilinx:speedGrade>
+             </xilinx:part>
+             <xilinx:flowOptions>
+               <xilinx:busFormat>BusFormatAngleBracketNotRipped</xilinx:busFormat>
+               <xilinx:designEntry>Verilog</xilinx:designEntry>
+               <xilinx:asySymbol>true</xilinx:asySymbol>
+               <xilinx:flowVendor>Foundation_ISE</xilinx:flowVendor>
+               <xilinx:addPads>false</xilinx:addPads>
+               <xilinx:removeRPMs>false</xilinx:removeRPMs>
+               <xilinx:createNDF>false</xilinx:createNDF>
+               <xilinx:implementationFileType>Ngc</xilinx:implementationFileType>
+               <xilinx:formalVerification>false</xilinx:formalVerification>
+             </xilinx:flowOptions>
+             <xilinx:simulationOptions>
+               <xilinx:simulationModel>Behavioral</xilinx:simulationModel>
+               <xilinx:simulationLanguage>VHDL_and_Verilog</xilinx:simulationLanguage>
+               <xilinx:foundationSym>false</xilinx:foundationSym>
+             </xilinx:simulationOptions>
+           </xilinx:instanceProperties>
+         </spirit:vendorExtensions>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+         <spirit:instanceName>TRG_TX_BUF_BYPASS</spirit:instanceName>
+         <spirit:displayName></spirit:displayName>
+         <spirit:description></spirit:description>
+         <spirit:componentRef spirit:vendor="xilinx.com" spirit:library="ip" spirit:name="v6_gtxwizard" spirit:version="1.8" />
+         <spirit:configurableElementValues>
+            <spirit:configurableElementValue spirit:referenceId="parameter_dec_valid_comma_only">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_plllkdet">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_chan_bond_keep_align">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cb_seq_2_4_mask">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cc_seq_1_1_disp">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_plus_comma">0101111100</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_rxbuffer">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mcomma_detect">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_rxbyterealign">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_com_burst_val">15</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_preemphasis_level">0000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rxusrclk_source">TXOUTCLK</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cc_seq_1_2_disp">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clk_cor_repeat_wait">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_rxrundisp">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cc_seq_1_1_k">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y10">REFCLK0_Q2</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y11">REFCLK0_Q2</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y12">REFCLK0_Q3</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y13">REFCLK0_Q3</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_txinhibit">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_rxrecclk">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y14">REFCLK0_Q3</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y15">REFCLK0_Q3</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_txpolarity">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y20">REFCLK0_Q5</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cb_seq_1_1_mask">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y21">REFCLK0_Q5</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y16">REFCLK0_Q4</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y17">REFCLK0_Q4</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_resistor_cal_circuit">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y22">REFCLK0_Q5</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_idle_hi_cnt">1000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y23">REFCLK0_Q5</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y18">REFCLK0_Q4</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cc_seq_1_3_disp">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y24">REFCLK0_Q6</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y19">REFCLK0_Q4</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y25">REFCLK0_Q6</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y30">REFCLK0_Q7</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y26">REFCLK0_Q6</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y31">REFCLK0_Q7</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y27">REFCLK0_Q6</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_prbs_detector">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y32">REFCLK0_Q8</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y28">REFCLK0_Q7</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y33">REFCLK0_Q8</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y29">REFCLK0_Q7</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y34">REFCLK0_Q8</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y35">REFCLK0_Q8</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_divider">/1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_txusrclk_source">TXOUTCLK</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cb_seq_1_2_mask">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_rxbyteisaligned">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cc_seq_1_4_disp">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cc_seq_1_2_k">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y0">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y1">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_sata_burst_val">4</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_rxlossofsync">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y2">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y3">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y4">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_tdcc_cfg">11</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y5">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y6">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cb_seq_1_3_mask">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y7">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_trans_time_rate">FF</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y8">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y9">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_txoutclk_source">AUTO</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clk_cor_precedence">CC</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_trans_time_non_p2">25</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_decode_seq_match">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_idle_assert_delay">100</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_datapath_width">40</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_refclk_ac_coupling_x0_y10">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_refclk_ac_coupling_x0_y11">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_refclk_ac_coupling_x0_y12">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_refclk_ac_coupling_x0_y13">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_refclk_ac_coupling_x0_y14">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_no_rx">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cc_keep_one_idle">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_refclk_ac_coupling_x0_y20">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_refclk_ac_coupling_x0_y15">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_refclk_ac_coupling_x0_y21">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_refclk_ac_coupling_x0_y16">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cb_seq_1_4_mask">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_refclk_ac_coupling_x0_y22">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_refclk_ac_coupling_x0_y17">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_refclk_ac_coupling_x0_y23">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_refclk_ac_coupling_x0_y18">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_refclk_ac_coupling_x0_y19">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cc_seq_1_3_k">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_second_order_cdr_loop">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_no_tx">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_enmcommaalign">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_oob_clk_divider">0000000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cc_seq_2_1_mask">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_two_cb_sequences">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_comwakedet">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_reference_clock">160.00</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cb_seq_2_1_k">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_fifo_upper_bounds">16</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rxrundisp_indicates_cc">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cc_seq_1_4_k">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cc_seq_2_2_mask">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rxlossofsyncport">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_line_rate">3.2</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_postemphasis_level">10000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_bytes_to_reduce_error">8</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_wideband_highpass_mix">Use_RXEQMIX_Port</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_txprbsforceerr">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cc_seq_2_3_mask">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cb_seq_2_2_k">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_highpass_pole_location">Use_RXEQPOLE_Port</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_rxpolarity">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_rx_eq">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_dfe_mode">Fixed_tap_mode</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_rxchariscomma">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cc_seq_2_4_mask">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_divider">/1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_rxvalid">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_txpllrefclk">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_trans_time_to_p2">100</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_en_realign_reset_buf">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_txchardispval">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cb_seq_2_3_k">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_idle_deassert_delay">010</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_txbufstatus">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_rxcdrreset">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_rx_oob">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cc_seq_1_1_mask">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_txrundisp">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_comsasdet">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cc_seq_1_2_mask">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_termination_ovrd">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_sas_max_comsas">52</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_slide_mode">OFF</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cb_seq_2_4_k">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_comma_double">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_txcomsas">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_dec_pcomma_detect">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_show_realign_comma">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_errors_to_lose_sync">128</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_en_idle_hold_cdr">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cb_sequence_length">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cc_seq_1_3_mask">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_termination_ctrl">00000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_trans_time_from_p2">60</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_fifo_lower_bounds">14</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_rxpllrefclk">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_rxoversampleerr">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_sas_min_comsas">40</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cc_seq_1_4_mask">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_en_idle_reset_fr">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_ppm_offset">0_(Synchronous)</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_rxbufstatus">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_en_idle_hold_dfe">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_enpcommaalign">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cb_sequence_2_max_skew">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_minus_comma">1010000011</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_sync_app">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_txenprbstst">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_termination_imp">50</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rxrecclk_source">AUTO</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_rx_oversampling">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_comma_preset">K28.5</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cb_seq_2_1_disp">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_txcomwake">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_comma_detect">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_drp">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_protocol_file">Start_from_scratch</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_loopback">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_column">Left</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cb_seq_2_2_disp">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_termination_voltage">MGTAVTT</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_en_idle_reset_ph">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_fifo_addr_mode">FULL</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_max_cb_level">7</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_tx_oversampling">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_txrx_invert">00011</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_pcomma_detect">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_refclk_ac_coupling_x0_y0">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_refclk_ac_coupling_x0_y1">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cb_seq_2_3_disp">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_refclk_ac_coupling_x0_y2">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_refclk_ac_coupling_x0_y3">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_refclk_ac_coupling_x0_y4">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_refclk_ac_coupling_x0_y5">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_refclk_ac_coupling_x0_y6">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cb_seq_1_1_k">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cb_sequence_1_max_skew">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_refclk_ac_coupling_x0_y7">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_refclk_ac_coupling_x0_y8">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_refclk_ac_coupling_x0_y9">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_rxreset">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_decoding">8B/10B</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_chan_bond_seq_2_cfg">00000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cb_seq_2_4_disp">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_plllkdeten">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_txpowerdown">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_two_cc_sequences">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_external_txusrclk">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_comma_mask">1111111111</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cc_seq_2_1_k">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_datapath_width">20</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_advanced_clocking">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cc_sequence_length">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cb_seq_1_2_k">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_txbuffer">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_comfinish">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_pllpowerdown">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cb_seq_1_1_disp">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_rxcharisk">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cb_seq_1_1">00000000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_rxprbserr_loopback">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y0">REFCLK1_Q0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cc_seq_2_2_k">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cb_seq_1_2">00000000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y1">REFCLK1_Q0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cb_seq_1_3">00000000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y2">REFCLK1_Q0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cb_seq_1_4">00000000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y3">REFCLK1_Q0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y4">REFCLK1_Q1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y5">REFCLK1_Q1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cb_seq_1_2_disp">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y10">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y6">REFCLK1_Q1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y7">REFCLK1_Q1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y11">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y8">REFCLK1_Q2</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y12">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y9">REFCLK1_Q2</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y13">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cb_seq_1_3_k">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y14">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y15">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y20">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y16">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y21">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y17">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_rxcommadet">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y22">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y10">REFCLK1_Q2</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y23">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y18">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y11">REFCLK1_Q2</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y24">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y19">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_cb">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_en_rate_reset_buf">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y12">REFCLK1_Q3</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y30">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y25">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_cc">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_en_mode_reset_buf">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y13">REFCLK1_Q3</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y31">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y26">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y14">REFCLK1_Q3</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y32">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y27">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y15">REFCLK1_Q3</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y33">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y28">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y20">------</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cb_seq_1_3_disp">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y16">REFCLK1_Q4</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y34">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y29">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y21">------</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_pci_express_mode">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_rxpowerdown">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_gtx_x0_y35">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y17">REFCLK1_Q4</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y22">------</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y18">REFCLK1_Q4</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y23">------</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y19">REFCLK1_Q4</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_rxstatus">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y0">REFCLK0_Q0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y24">------</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y25">------</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y1">REFCLK0_Q0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y30">------</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cc_seq_2_3_k">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y2">REFCLK1_Q1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y26">------</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y31">------</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cb_seq_2_1">00000000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y27">------</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y3">REFCLK0_Q0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y32">------</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_pll_sata">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cb_seq_2_2">00000000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y33">------</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_rxslide">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y4">REFCLK0_Q1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y28">------</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cb_seq_2_3">00000000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y34">------</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_turbo_mode">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y5">REFCLK0_Q1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y29">------</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cb_seq_2_4">00000000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_refclk_x0_y35">------</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y6">REFCLK0_Q1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y7">REFCLK0_Q1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y8">REFCLK0_Q2</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_txoutclk">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cb_seq_1_4_disp">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_refclk_x0_y9">REFCLK0_Q2</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_comma_alignment">Any_Byte_Boundary</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cb_seq_1_4_k">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_rxrate">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_reference_clock">156.25</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_dec_mcomma_detect">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_driver_swing">0111</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_phystatus">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cc_seq_2_1_disp">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_idle_lo_cnt">0000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_en_idle_reset_buf">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_disable_ac_coupling">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cc_seq_2_4_k">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_oob_threshold">011</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_txchardispmode">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cc_seq_2_2_disp">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_txrate">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_txbypass8b10b">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_txcominit">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cc_seq_1_1">00000000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cc_seq_1_2">00000000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_txkerr">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_tx_drive_mode">DIRECT</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cc_seq_1_3">00000000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cb_seq_2_1_mask">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cc_seq_1_4">00000000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_enable_dfe">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_line_rate">3.125</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cdr_ph_adj_time">10100</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cc_seq_2_3_disp">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_cominitdet">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_txdetectrx">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cb_seq_2_2_mask">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cc_seq_2_4_disp">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_refclkpowerdown">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_txpll_sata">00</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cc_seq_2_1">00000000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_txreset">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cc_seq_2_2">00000000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cc_seq_2_3">00000000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_sata_idle_val">4</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_encoding">8B/10B</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_rxbufreset">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cb_seq_2_3_mask">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_cc_seq_2_4">00000000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_external_rxusrclk">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_port_txelecidle">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_rx_en_rate_reset_buf">true</spirit:configurableElementValue>
+         </spirit:configurableElementValues>
+         <spirit:vendorExtensions>
+            <xilinx:instanceProperties xmlns:xilinx="http://www.xilinx.com">
+             <xilinx:projectOptions>
+               <xilinx:projectName>coregen</xilinx:projectName>
+               <xilinx:outputDirectory>./</xilinx:outputDirectory>
+               <xilinx:workingDirectory>./tmp/</xilinx:workingDirectory>
+               <xilinx:subWorkingDirectory>./tmp/_cg</xilinx:subWorkingDirectory>
+             </xilinx:projectOptions>
+             <xilinx:part>
+               <xilinx:device>xc6vlx195t</xilinx:device>
+               <xilinx:deviceFamily>virtex6</xilinx:deviceFamily>
+               <xilinx:package>ff1156</xilinx:package>
+               <xilinx:speedGrade>-1</xilinx:speedGrade>
+             </xilinx:part>
+             <xilinx:flowOptions>
+               <xilinx:busFormat>BusFormatAngleBracketNotRipped</xilinx:busFormat>
+               <xilinx:designEntry>Verilog</xilinx:designEntry>
+               <xilinx:asySymbol>true</xilinx:asySymbol>
+               <xilinx:flowVendor>Foundation_ISE</xilinx:flowVendor>
+               <xilinx:addPads>false</xilinx:addPads>
+               <xilinx:removeRPMs>false</xilinx:removeRPMs>
+               <xilinx:createNDF>false</xilinx:createNDF>
+               <xilinx:implementationFileType>Ngc</xilinx:implementationFileType>
+               <xilinx:formalVerification>false</xilinx:formalVerification>
+             </xilinx:flowOptions>
+             <xilinx:simulationOptions>
+               <xilinx:simulationModel>Behavioral</xilinx:simulationModel>
+               <xilinx:simulationLanguage>VHDL_and_Verilog</xilinx:simulationLanguage>
+               <xilinx:foundationSym>false</xilinx:foundationSym>
+             </xilinx:simulationOptions>
+           </xilinx:instanceProperties>
+         </spirit:vendorExtensions>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+         <spirit:instanceName>cmp_rec_mmcm</spirit:instanceName>
+         <spirit:displayName></spirit:displayName>
+         <spirit:description></spirit:description>
+         <spirit:componentRef spirit:vendor="xilinx.com" spirit:library="ip" spirit:name="clk_wiz" spirit:version="1.8" />
+         <spirit:configurableElementValues>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkout5_requested_out_freq">100.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkout1_requested_duty_cycle">50.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_locked">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_clkin2_period">10.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clk_out1_use_fine_ps_gui">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_pll_clkout1_phase">0.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_clkout0_duty_cycle">0.500</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_clkout6_divide">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_pll_ref_jitter">0.010</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clk_out5_use_fine_ps_gui">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_pll_clkout5_divide">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_pll_clkin_period">10.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkout1_requested_out_freq">160.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkout1_requested_phase">0.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_clkout1_divide">12</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_min_o_jitter">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_pll_clkout0_phase">0.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_clkout4_use_fine_ps">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_clkout1_use_fine_ps">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkout5_requested_phase">0.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_pll_clkout0_divide">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_ref_jitter1">0.010</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_ref_jitter2">0.010</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_relative_inclk">REL_PRIMARY</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_dcm_clk_out4_port">CLK0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_clock_hold">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_secondary_source">Single_ended_clock_capable_pin</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkout3_drives">BUFG</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_feedback_source">FDBK_AUTO</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_pll_bandwidth">OPTIMIZED</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkout4_used">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_dcm_clkdv_divide">2.0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_dcm_clkgen_clkfxdv_divide">2</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_override_dcm">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_power_down">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkout4_requested_duty_cycle">50.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_dcm_clkgen_notes">None</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_in_jitter_units">Units_UI</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_clkin1_period">6.250</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_clkout5_divide">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_clkout4_cascade">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_pll_clkout4_divide">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_jitter_sel">No_Jitter</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_pll_clkfbout_mult">4</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkout4_requested_out_freq">100.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_in_freq_units">Units_MHz</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_dcm_clkgen_clkfx_multiply">4</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clk_out2_use_fine_ps_gui">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkout7_drives">BUFG</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_divclk_divide">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_dcm_deskew_adjust">SYSTEM_SYNCHRONOUS</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_dcm_clk_out5_port">CLK0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clk_out6_use_fine_ps_gui">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_compensation">ZHOLD</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_pll_clkout5_duty_cycle">0.500</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_secondary_in_freq">100.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkout2_requested_phase">0.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkout2_drives">BUFG</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkout6_requested_phase">0.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_dyn_phase_shift">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_clkout5_duty_cycle">0.500</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkin1_jitter_ps">62.5</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkout5_used">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_pll_clkout3_duty_cycle">0.500</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkout7_requested_duty_cycle">50.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_override_mmcm">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_clkout5_use_fine_ps">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_clkout2_use_fine_ps">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkout2_requested_duty_cycle">50.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_dcm_clkgen_clk_out1_port">CLKFX</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_clkout3_duty_cycle">0.500</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_pll_clkout1_duty_cycle">0.500</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_dcm_clk_feedback">1X</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_clkout4_divide">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_pll_divclk_divide">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkin2_jitter_ps">100.0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_pll_clkout3_divide">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkout7_requested_out_freq">100.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_spread_spectrum">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_dcm_phase_shift">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_dcm_clk_out6_port">CLK0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_clkout1_duty_cycle">0.500</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkout6_drives">BUFG</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_num_out_clks">3</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_platform">nt64</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_dcm_clk_out1_port">CLK0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clk_out3_use_fine_ps_gui">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkout3_requested_out_freq">40.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkout1_drives">BUFG</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clk_out7_use_fine_ps_gui">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkout6_used">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkout3_requested_phase">0.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_prim_source">No_buffer</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_prim_in_jitter">0.010</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_secondary_in_jitter">0.010</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_clkfbout_mult_f">6.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkout7_requested_phase">0.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_prim_in_freq">160.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkout5_requested_duty_cycle">50.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkin1_ui_jitter">0.010</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_clk_valid">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_dcm_clkgen_clk_out2_port">CLKFX</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_freq_synth">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_pll_notes">None</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_freeze">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_reset">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_clkout3_divide">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_clkout6_phase">0.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_startup_wait">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_inclk_stopped">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_pll_clkout2_divide">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_dcm_clkgen_clkfx_divide">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_dcm_clkgen_clkin_period">10.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkin2_ui_jitter">0.010</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_pll_clkfbout_phase">0.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_jitter_options">UI</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_dcm_clkfx_divide">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_dcm_clkin_period">10.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_clkout5_phase">0.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkout5_drives">BUFG</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_inclk_switchover">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_dcm_clk_out2_port">CLK0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_clkout6_use_fine_ps">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_clkout3_use_fine_ps">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkout6_requested_out_freq">100.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_clkout4_phase">0.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_clkout0_use_fine_ps">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkout7_used">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_max_i_jitter">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_min_power">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_clkout3_phase">0.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clk_out4_use_fine_ps_gui">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_summary_strings">empty</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_dcm_clkfx_multiply">4</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkout2_used">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_bandwidth">OPTIMIZED</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkout2_requested_out_freq">80.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkout3_requested_duty_cycle">50.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_notes">None</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_dcm_clkgen_clk_out3_port">CLKFX</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_pll_clk_feedback">CLKFBOUT</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkout4_requested_phase">0.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_phase_alignment">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_clkout6_duty_cycle">0.500</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_clkout2_phase">0.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_dcm_clkgen_spread_spectrum">NONE</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_pll_clkout4_duty_cycle">0.500</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkfb_in_signaling">SINGLE</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_dcm_clkgen_clkfx_md_max">0.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_dcm_clkin_divide_by_2">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_clkout0_divide_f">6.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_clkout2_divide">24</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_pll_clkout5_phase">0.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_clkout1_phase">0.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_pll_clkout1_divide">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_clkfbout_phase">0.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_clkout4_duty_cycle">0.500</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_dcm_notes">None</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_pll_clkout2_duty_cycle">0.500</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_pll_clkout4_phase">0.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_dcm_clk_out3_port">CLK0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_clkout0_phase">0.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_clkfbout_use_fine_ps">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkout4_drives">BUFG</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_status">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_dcm_clkout_phase_shift">NONE</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_dcm_clkgen_startup_wait">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_dyn_reconfig">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_dcm_startup_wait">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_pll_compensation">SYSTEM_SYNCHRONOUS</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_override_dcm_clkgen">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_pll_clkout3_phase">0.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_primtype_sel">MMCM_ADV</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_clkout2_duty_cycle">0.500</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_calc_done">DONE</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_pll_clkout0_duty_cycle">0.500</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clock_mgr_type">MANUAL</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_override_pll">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkout3_used">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkout6_requested_duty_cycle">50.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_pll_clkout2_phase">0.000</spirit:configurableElementValue>
+         </spirit:configurableElementValues>
+         <spirit:vendorExtensions>
+            <xilinx:instanceProperties>
+             <xilinx:projectOptions>
+               <xilinx:projectName>coregen</xilinx:projectName>
+               <xilinx:outputDirectory>./</xilinx:outputDirectory>
+               <xilinx:workingDirectory>./tmp/</xilinx:workingDirectory>
+               <xilinx:subWorkingDirectory>./tmp/_cg</xilinx:subWorkingDirectory>
+             </xilinx:projectOptions>
+             <xilinx:part>
+               <xilinx:device>xc6vlx195t</xilinx:device>
+               <xilinx:deviceFamily>virtex6</xilinx:deviceFamily>
+               <xilinx:package>ff1156</xilinx:package>
+               <xilinx:speedGrade>-1</xilinx:speedGrade>
+             </xilinx:part>
+             <xilinx:flowOptions>
+               <xilinx:busFormat>BusFormatAngleBracketNotRipped</xilinx:busFormat>
+               <xilinx:designEntry>Verilog</xilinx:designEntry>
+               <xilinx:asySymbol>true</xilinx:asySymbol>
+               <xilinx:flowVendor>Foundation_ISE</xilinx:flowVendor>
+               <xilinx:addPads>false</xilinx:addPads>
+               <xilinx:removeRPMs>false</xilinx:removeRPMs>
+               <xilinx:createNDF>false</xilinx:createNDF>
+               <xilinx:implementationFileType>Ngc</xilinx:implementationFileType>
+               <xilinx:formalVerification>false</xilinx:formalVerification>
+             </xilinx:flowOptions>
+             <xilinx:simulationOptions>
+               <xilinx:simulationModel>Behavioral</xilinx:simulationModel>
+               <xilinx:simulationLanguage>VHDL_and_Verilog</xilinx:simulationLanguage>
+               <xilinx:foundationSym>false</xilinx:foundationSym>
+             </xilinx:simulationOptions>
+           </xilinx:instanceProperties>
+            <xilinx:generationHistory>
+               <xilinx:fileSet>
+                  <xilinx:name>customization_generator</xilinx:name>
+               </xilinx:fileSet>
+               <xilinx:fileSet>
+                  <xilinx:name>ip_xco_generator</xilinx:name>
+                  <xilinx:file>
+                     <xilinx:name>./cmp_rec_mmcm.xco</xilinx:name>
+                     <xilinx:userFileType>xco</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Aug 29 19:43:28 GMT 2011</xilinx:timeStamp>
+                     <xilinx:checkSum>0xA2841C06</xilinx:checkSum>
+                  </xilinx:file>
+               </xilinx:fileSet>
+               <xilinx:fileSet>
+                  <xilinx:name>implementation_netlist_generator</xilinx:name>
+                  <xilinx:file>
+                     <xilinx:name>./cmp_rec_mmcm/clk_wiz_readme.txt</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>txt</xilinx:userFileType>
+                     <xilinx:timeStamp>Fri Dec 03 06:09:31 GMT 2010</xilinx:timeStamp>
+                     <xilinx:checkSum>0x38557869</xilinx:checkSum>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./cmp_rec_mmcm/cmp_rec_mmcm.ucf</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>ucf</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Aug 29 19:43:31 GMT 2011</xilinx:timeStamp>
+                     <xilinx:checkSum>0x1DA7BD38</xilinx:checkSum>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./cmp_rec_mmcm/doc/clk_wiz_ds709.pdf</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>pdf</xilinx:userFileType>
+                     <xilinx:timeStamp>Fri Dec 03 06:09:31 GMT 2010</xilinx:timeStamp>
+                     <xilinx:checkSum>0x731E57BB</xilinx:checkSum>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./cmp_rec_mmcm/doc/clk_wiz_gsg521.pdf</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>pdf</xilinx:userFileType>
+                     <xilinx:timeStamp>Fri Dec 03 06:09:31 GMT 2010</xilinx:timeStamp>
+                     <xilinx:checkSum>0xD75FFDE5</xilinx:checkSum>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./cmp_rec_mmcm/example_design/cmp_rec_mmcm_exdes.v</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>verilog</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Aug 29 19:43:29 GMT 2011</xilinx:timeStamp>
+                     <xilinx:checkSum>0x0A808090</xilinx:checkSum>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./cmp_rec_mmcm/example_design/cmp_rec_mmcm_exdes.vhd</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>vhdl</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Aug 29 19:43:29 GMT 2011</xilinx:timeStamp>
+                     <xilinx:checkSum>0xD13D41B3</xilinx:checkSum>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./cmp_rec_mmcm/implement/implement.bat</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Aug 29 19:43:31 GMT 2011</xilinx:timeStamp>
+                     <xilinx:checkSum>0xF8AF5F33</xilinx:checkSum>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./cmp_rec_mmcm/implement/implement.sh</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Aug 29 19:43:31 GMT 2011</xilinx:timeStamp>
+                     <xilinx:checkSum>0x882942F8</xilinx:checkSum>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./cmp_rec_mmcm/implement/xst.prj</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Aug 29 19:43:31 GMT 2011</xilinx:timeStamp>
+                     <xilinx:checkSum>0x0AC8E315</xilinx:checkSum>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./cmp_rec_mmcm/implement/xst.scr</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Aug 29 19:43:31 GMT 2011</xilinx:timeStamp>
+                     <xilinx:checkSum>0x7CB96ABA</xilinx:checkSum>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./cmp_rec_mmcm/simulation/cmp_rec_mmcm_tb.v</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>verilog</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Aug 29 19:43:29 GMT 2011</xilinx:timeStamp>
+                     <xilinx:checkSum>0x962812F1</xilinx:checkSum>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./cmp_rec_mmcm/simulation/cmp_rec_mmcm_tb.vhd</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>vhdl</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Aug 29 19:43:29 GMT 2011</xilinx:timeStamp>
+                     <xilinx:checkSum>0xAC3A80DF</xilinx:checkSum>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./cmp_rec_mmcm/simulation/functional/simcmds.tcl</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>tcl</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Aug 29 19:43:30 GMT 2011</xilinx:timeStamp>
+                     <xilinx:checkSum>0xE2202810</xilinx:checkSum>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./cmp_rec_mmcm/simulation/functional/simulate_isim.sh</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Aug 29 19:43:30 GMT 2011</xilinx:timeStamp>
+                     <xilinx:checkSum>0xFF15A806</xilinx:checkSum>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./cmp_rec_mmcm/simulation/functional/simulate_mti.do</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Aug 29 19:43:30 GMT 2011</xilinx:timeStamp>
+                     <xilinx:checkSum>0x3F674007</xilinx:checkSum>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./cmp_rec_mmcm/simulation/functional/simulate_ncsim.sh</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Aug 29 19:43:30 GMT 2011</xilinx:timeStamp>
+                     <xilinx:checkSum>0x43594C85</xilinx:checkSum>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./cmp_rec_mmcm/simulation/functional/simulate_vcs.sh</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Aug 29 19:43:30 GMT 2011</xilinx:timeStamp>
+                     <xilinx:checkSum>0xABABB32E</xilinx:checkSum>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./cmp_rec_mmcm/simulation/functional/ucli_commands.key</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Aug 29 19:43:30 GMT 2011</xilinx:timeStamp>
+                     <xilinx:checkSum>0x8C44C5AC</xilinx:checkSum>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./cmp_rec_mmcm/simulation/functional/vcs_session.tcl</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>tcl</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Aug 29 19:43:31 GMT 2011</xilinx:timeStamp>
+                     <xilinx:checkSum>0x23BE9C40</xilinx:checkSum>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./cmp_rec_mmcm/simulation/functional/wave.do</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Aug 29 19:43:30 GMT 2011</xilinx:timeStamp>
+                     <xilinx:checkSum>0xEDC843CF</xilinx:checkSum>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./cmp_rec_mmcm/simulation/functional/wave.sv</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Aug 29 19:43:30 GMT 2011</xilinx:timeStamp>
+                     <xilinx:checkSum>0x95AA5FBB</xilinx:checkSum>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./cmp_rec_mmcm.asy</xilinx:name>
+                     <xilinx:userFileType>asy</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Aug 29 19:43:41 GMT 2011</xilinx:timeStamp>
+                     <xilinx:checkSum>0x34570A65</xilinx:checkSum>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./cmp_rec_mmcm.ejp</xilinx:name>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Aug 29 19:43:28 GMT 2011</xilinx:timeStamp>
+                     <xilinx:checkSum>0xF2EA0A21</xilinx:checkSum>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./cmp_rec_mmcm.v</xilinx:name>
+                     <xilinx:userFileType>verilog</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Aug 29 19:43:29 GMT 2011</xilinx:timeStamp>
+                     <xilinx:checkSum>0xD455C785</xilinx:checkSum>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./cmp_rec_mmcm.veo</xilinx:name>
+                     <xilinx:userFileType>veo</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Aug 29 19:43:29 GMT 2011</xilinx:timeStamp>
+                     <xilinx:checkSum>0x073A528D</xilinx:checkSum>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./cmp_rec_mmcm.vhd</xilinx:name>
+                     <xilinx:userFileType>vhdl</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Aug 29 19:43:29 GMT 2011</xilinx:timeStamp>
+                     <xilinx:checkSum>0x64D96215</xilinx:checkSum>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./cmp_rec_mmcm.vho</xilinx:name>
+                     <xilinx:userFileType>vho</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Aug 29 19:43:29 GMT 2011</xilinx:timeStamp>
+                     <xilinx:checkSum>0x12DAA9F7</xilinx:checkSum>
+                  </xilinx:file>
+               </xilinx:fileSet>
+               <xilinx:fileSet>
+                  <xilinx:name>instantiation_template_generator</xilinx:name>
+                  <xilinx:file>
+                     <xilinx:name>./cmp_rec_mmcm.ejp</xilinx:name>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Aug 29 19:43:41 GMT 2011</xilinx:timeStamp>
+                     <xilinx:checkSum>0xF2EA0A21</xilinx:checkSum>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./cmp_rec_mmcm.veo</xilinx:name>
+                     <xilinx:userFileType>veo</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Aug 29 19:43:41 GMT 2011</xilinx:timeStamp>
+                     <xilinx:checkSum>0x073A528D</xilinx:checkSum>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./cmp_rec_mmcm.vho</xilinx:name>
+                     <xilinx:userFileType>vho</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Aug 29 19:43:42 GMT 2011</xilinx:timeStamp>
+                     <xilinx:checkSum>0x12DAA9F7</xilinx:checkSum>
+                  </xilinx:file>
+               </xilinx:fileSet>
+               <xilinx:fileSet>
+                  <xilinx:name>xco_generator</xilinx:name>
+                  <xilinx:file>
+                     <xilinx:name>./cmp_rec_mmcm.xco</xilinx:name>
+                     <xilinx:userFileType>xco</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Aug 29 19:43:42 GMT 2011</xilinx:timeStamp>
+                     <xilinx:checkSum>0xED0C12DA</xilinx:checkSum>
+                  </xilinx:file>
+               </xilinx:fileSet>
+               <xilinx:fileSet>
+                  <xilinx:name>xmdf_generator</xilinx:name>
+                  <xilinx:file>
+                     <xilinx:name>./cmp_rec_mmcm_xmdf.tcl</xilinx:name>
+                     <xilinx:userFileType>tclXmdf</xilinx:userFileType>
+                     <xilinx:userFileType>tcl</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Aug 29 19:43:42 GMT 2011</xilinx:timeStamp>
+                     <xilinx:checkSum>0xC2EDF787</xilinx:checkSum>
+                  </xilinx:file>
+               </xilinx:fileSet>
+               <xilinx:fileSet>
+                  <xilinx:name>ise_generator</xilinx:name>
+                  <xilinx:file>
+                     <xilinx:name>./_xmsgs/pn_parser.xmsgs</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Aug 29 19:43:44 GMT 2011</xilinx:timeStamp>
+                     <xilinx:checkSum>0x31AD5878</xilinx:checkSum>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./cmp_rec_mmcm.gise</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>gise</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Aug 29 19:43:44 GMT 2011</xilinx:timeStamp>
+                     <xilinx:checkSum>0x82428C73</xilinx:checkSum>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./cmp_rec_mmcm.xise</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>xise</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Aug 29 19:43:44 GMT 2011</xilinx:timeStamp>
+                     <xilinx:checkSum>0x43B7E357</xilinx:checkSum>
+                  </xilinx:file>
+               </xilinx:fileSet>
+               <xilinx:fileSet>
+                  <xilinx:name>deliver_readme_generator</xilinx:name>
+               </xilinx:fileSet>
+               <xilinx:fileSet>
+                  <xilinx:name>flist_generator</xilinx:name>
+                  <xilinx:file>
+                     <xilinx:name>./cmp_rec_mmcm_flist.txt</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>txtFlist</xilinx:userFileType>
+                     <xilinx:userFileType>txt</xilinx:userFileType>
+                     <xilinx:timeStamp>Mon Aug 29 19:43:44 GMT 2011</xilinx:timeStamp>
+                     <xilinx:checkSum>0xA7FE6DFA</xilinx:checkSum>
+                  </xilinx:file>
+               </xilinx:fileSet>
+               <xilinx:fileSet>
+                  <xilinx:name>view_readme_generator</xilinx:name>
+               </xilinx:fileSet>
+            </xilinx:generationHistory>
+         </spirit:vendorExtensions>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+         <spirit:instanceName>trg_mmcm</spirit:instanceName>
+         <spirit:displayName></spirit:displayName>
+         <spirit:description></spirit:description>
+         <spirit:componentRef spirit:vendor="xilinx.com" spirit:library="ip" spirit:name="clk_wiz" spirit:version="1.8" />
+         <spirit:configurableElementValues>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkout5_requested_out_freq">100.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkout1_requested_duty_cycle">50.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_locked">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_clkin2_period">10.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clk_out1_use_fine_ps_gui">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_pll_clkout1_phase">0.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_clkout0_duty_cycle">0.500</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_clkout6_divide">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_pll_ref_jitter">0.010</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clk_out5_use_fine_ps_gui">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_pll_clkout5_divide">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_pll_clkin_period">10.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkout1_requested_out_freq">160.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkout1_requested_phase">270.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_clkout1_divide">14</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_min_o_jitter">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_pll_clkout0_phase">0.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_clkout4_use_fine_ps">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_clkout1_use_fine_ps">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkout5_requested_phase">0.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_pll_clkout0_divide">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_ref_jitter1">0.010</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_ref_jitter2">0.010</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_relative_inclk">REL_PRIMARY</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_dcm_clk_out4_port">CLK0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_clock_hold">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_secondary_source">Single_ended_clock_capable_pin</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkout3_drives">No_buffer</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_feedback_source">FDBK_AUTO</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_pll_bandwidth">HIGH</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkout4_used">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_dcm_clkdv_divide">2.0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_dcm_clkgen_clkfxdv_divide">2</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_override_dcm">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_power_down">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkout4_requested_duty_cycle">50.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_dcm_clkgen_notes">None</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_in_jitter_units">Units_UI</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_clkin1_period">12.500</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_clkout5_divide">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_clkout4_cascade">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_pll_clkout4_divide">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_jitter_sel">Min_O_Jitter</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_pll_clkfbout_mult">4</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkout4_requested_out_freq">80.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_in_freq_units">Units_MHz</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_dcm_clkgen_clkfx_multiply">4</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clk_out2_use_fine_ps_gui">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkout7_drives">BUFG</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_divclk_divide">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_dcm_deskew_adjust">SYSTEM_SYNCHRONOUS</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_dcm_clk_out5_port">CLK0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clk_out6_use_fine_ps_gui">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_compensation">ZHOLD</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_pll_clkout5_duty_cycle">0.500</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_secondary_in_freq">100.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkout2_requested_phase">315.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkout2_drives">No_buffer</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkout6_requested_phase">0.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_dyn_phase_shift">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_clkout5_duty_cycle">0.500</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkin1_jitter_ps">125.0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkout5_used">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_pll_clkout3_duty_cycle">0.500</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkout7_requested_duty_cycle">50.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_override_mmcm">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_clkout5_use_fine_ps">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_clkout2_use_fine_ps">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkout2_requested_duty_cycle">50.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_dcm_clkgen_clk_out1_port">CLKFX</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_clkout3_duty_cycle">0.500</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_pll_clkout1_duty_cycle">0.500</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_dcm_clk_feedback">1X</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_clkout4_divide">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_pll_divclk_divide">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkin2_jitter_ps">100.0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_pll_clkout3_divide">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkout7_requested_out_freq">100.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_spread_spectrum">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_dcm_phase_shift">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_dcm_clk_out6_port">CLK0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_clkout1_duty_cycle">0.500</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkout6_drives">BUFG</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_num_out_clks">3</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_platform">nt64</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_dcm_clk_out1_port">CLK0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clk_out3_use_fine_ps_gui">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkout3_requested_out_freq">40.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkout1_drives">BUFG</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clk_out7_use_fine_ps_gui">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkout6_used">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkout3_requested_phase">0.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_prim_source">No_buffer</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_prim_in_jitter">0.010</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_secondary_in_jitter">0.010</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_clkfbout_mult_f">14.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkout7_requested_phase">0.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_prim_in_freq">80.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkout5_requested_duty_cycle">50.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkin1_ui_jitter">0.010</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_clk_valid">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_dcm_clkgen_clk_out2_port">CLKFX</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_freq_synth">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_pll_notes">None</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_freeze">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_reset">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_clkout3_divide">14</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_clkout6_phase">0.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_startup_wait">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_inclk_stopped">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_pll_clkout2_divide">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_dcm_clkgen_clkfx_divide">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_dcm_clkgen_clkin_period">10.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkin2_ui_jitter">0.010</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_pll_clkfbout_phase">0.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_jitter_options">UI</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_dcm_clkfx_divide">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_dcm_clkin_period">10.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_clkout5_phase">0.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkout5_drives">BUFG</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_inclk_switchover">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_dcm_clk_out2_port">CLK0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_clkout6_use_fine_ps">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_clkout3_use_fine_ps">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkout6_requested_out_freq">100.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_clkout4_phase">0.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_clkout0_use_fine_ps">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkout7_used">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_max_i_jitter">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_min_power">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_clkout3_phase">0.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clk_out4_use_fine_ps_gui">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_summary_strings">empty</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_dcm_clkfx_multiply">4</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkout2_used">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_bandwidth">OPTIMIZED</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkout2_requested_out_freq">80.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkout3_requested_duty_cycle">50.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_notes">None</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_dcm_clkgen_clk_out3_port">CLKFX</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_pll_clk_feedback">CLKFBOUT</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkout4_requested_phase">90.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_phase_alignment">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_clkout6_duty_cycle">0.500</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_clkout2_phase">0.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_dcm_clkgen_spread_spectrum">NONE</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_pll_clkout4_duty_cycle">0.500</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkfb_in_signaling">SINGLE</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_dcm_clkgen_clkfx_md_max">0.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_dcm_clkin_divide_by_2">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_clkout0_divide_f">7.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_clkout2_divide">28</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_pll_clkout5_phase">0.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_clkout1_phase">315.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_pll_clkout1_divide">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_clkfbout_phase">0.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_clkout4_duty_cycle">0.500</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_dcm_notes">None</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_pll_clkout2_duty_cycle">0.500</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_pll_clkout4_phase">0.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_dcm_clk_out3_port">CLK0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_clkout0_phase">270.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_clkfbout_use_fine_ps">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkout4_drives">BUFG</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_status">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_dcm_clkout_phase_shift">NONE</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_dcm_clkgen_startup_wait">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_dyn_reconfig">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_dcm_startup_wait">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_pll_compensation">SYSTEM_SYNCHRONOUS</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_override_dcm_clkgen">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_pll_clkout3_phase">0.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_primtype_sel">MMCM_ADV</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_mmcm_clkout2_duty_cycle">0.500</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_calc_done">DONE</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_pll_clkout0_duty_cycle">0.500</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clock_mgr_type">MANUAL</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_override_pll">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkout3_used">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_clkout6_requested_duty_cycle">50.000</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_pll_clkout2_phase">0.000</spirit:configurableElementValue>
+         </spirit:configurableElementValues>
+         <spirit:vendorExtensions>
+            <xilinx:instanceProperties xmlns:xilinx="http://www.xilinx.com">
+             <xilinx:projectOptions>
+               <xilinx:projectName>coregen</xilinx:projectName>
+               <xilinx:outputDirectory>./</xilinx:outputDirectory>
+               <xilinx:workingDirectory>./tmp/</xilinx:workingDirectory>
+               <xilinx:subWorkingDirectory>./tmp/_cg</xilinx:subWorkingDirectory>
+             </xilinx:projectOptions>
+             <xilinx:part>
+               <xilinx:device>xc6vlx130t</xilinx:device>
+               <xilinx:deviceFamily>virtex6</xilinx:deviceFamily>
+               <xilinx:package>ff1156</xilinx:package>
+               <xilinx:speedGrade>-1</xilinx:speedGrade>
+             </xilinx:part>
+             <xilinx:flowOptions>
+               <xilinx:busFormat>BusFormatAngleBracketNotRipped</xilinx:busFormat>
+               <xilinx:designEntry>Verilog</xilinx:designEntry>
+               <xilinx:asySymbol>true</xilinx:asySymbol>
+               <xilinx:flowVendor>Foundation_ISE</xilinx:flowVendor>
+               <xilinx:addPads>false</xilinx:addPads>
+               <xilinx:removeRPMs>false</xilinx:removeRPMs>
+               <xilinx:createNDF>false</xilinx:createNDF>
+               <xilinx:implementationFileType>Ngc</xilinx:implementationFileType>
+               <xilinx:formalVerification>false</xilinx:formalVerification>
+             </xilinx:flowOptions>
+             <xilinx:simulationOptions>
+               <xilinx:simulationModel>Behavioral</xilinx:simulationModel>
+               <xilinx:simulationLanguage>VHDL_and_Verilog</xilinx:simulationLanguage>
+               <xilinx:foundationSym>false</xilinx:foundationSym>
+             </xilinx:simulationOptions>
+           </xilinx:instanceProperties>
+         </spirit:vendorExtensions>
+      </spirit:componentInstance>
+   </spirit:componentInstances>
+   <spirit:description></spirit:description>
+   <spirit:vendorExtensions>
+      <xilinx:instanceProperties xmlns:xilinx="http://www.xilinx.com">
+       <xilinx:projectOptions>
+         <xilinx:projectName>coregen</xilinx:projectName>
+         <xilinx:outputDirectory>./</xilinx:outputDirectory>
+         <xilinx:workingDirectory>./tmp/</xilinx:workingDirectory>
+         <xilinx:subWorkingDirectory>./tmp/_cg</xilinx:subWorkingDirectory>
+       </xilinx:projectOptions>
+       <xilinx:part>
+         <xilinx:device>xc6vlx195t</xilinx:device>
+         <xilinx:deviceFamily>virtex6</xilinx:deviceFamily>
+         <xilinx:package>ff1156</xilinx:package>
+         <xilinx:speedGrade>-1</xilinx:speedGrade>
+       </xilinx:part>
+       <xilinx:flowOptions>
+         <xilinx:busFormat>BusFormatAngleBracketNotRipped</xilinx:busFormat>
+         <xilinx:designEntry>Verilog</xilinx:designEntry>
+         <xilinx:asySymbol>true</xilinx:asySymbol>
+         <xilinx:flowVendor>Foundation_ISE</xilinx:flowVendor>
+         <xilinx:addPads>false</xilinx:addPads>
+         <xilinx:removeRPMs>false</xilinx:removeRPMs>
+         <xilinx:createNDF>false</xilinx:createNDF>
+         <xilinx:implementationFileType>Ngc</xilinx:implementationFileType>
+         <xilinx:formalVerification>false</xilinx:formalVerification>
+       </xilinx:flowOptions>
+       <xilinx:simulationOptions>
+         <xilinx:simulationModel>Behavioral</xilinx:simulationModel>
+         <xilinx:simulationLanguage>VHDL_and_Verilog</xilinx:simulationLanguage>
+         <xilinx:foundationSym>false</xilinx:foundationSym>
+       </xilinx:simulationOptions>
+     </xilinx:instanceProperties>
+   </spirit:vendorExtensions>
+</spirit:design>
