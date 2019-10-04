@@ -10,3 +10,7 @@ folder: mez2012testing_ProTest
 
 ### emulator fw for production test
 folder: cfeb_test_ProTestTx
+
+
+### radiation test fw using mezzanine card
+folder: rad2test
