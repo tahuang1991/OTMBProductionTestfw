@@ -14,3 +14,6 @@ folder: cfeb_test_ProTestTx
 
 ### radiation test fw using mezzanine card
 folder: rad2test
+
+### radiation test fw using mezzanine card, with 12 fibers enabled
+folder: rad19test  
