@@ -80,6 +80,7 @@
 //         --rev4: include all 12 fibers in rx/txresetdone (snap12_t20r20_test.v), increase TXDIFFCTRL to 11 (905mV).
 //         --rev5: use the same seed for all 12 fibers
 //         --rev6: reduce TXDIFFCTRL to 0x0110 (590mV).
+//  4.43: starting from rev6 above... added snap_waiting[3] register for sync control of gtx_wait after reset
 //
 // 
 //  MTP Fiber Mapping to Signal Name, FPGA GTX channels, Diff. Pin Numbers, verilog name
@@ -160,6 +161,7 @@ module rad19test(
    wire        all_rx_ready, all_tx_ready;
    wire        snap_clk2, ck160_locked;
    wire        snap_wait;
+   reg  [3:0]  snap_waiting;
    wire [11:0]  check_ok_snapr, check_bad_snapr;
    wire [11:0]  rxdv_snapr, rxcomma_snapr, synced_snapt;
    wire [11:0]  rxdv_diff, rxcomma_diff;
@@ -418,6 +420,7 @@ module rad19test(
       err_seq = 24'h001001; // JG, was 32'h01010101;
       force_err = 0;
       init_csrlfsr = 39'h0a5b9ce876;
+      snap_waiting[3:0] = 4'hf;
    end
 
 
@@ -1049,11 +1052,15 @@ module rad19test(
      begin
 	time_r_snap <= time_count;
 	time_snap <= time_r_snap;  // transfer slow clk time counter to snap USR clock domain
+	snap_waiting[3] <= |snap_waiting[2:0] | snap_wait | reset;
+	snap_waiting[2] <= snap_waiting[1];
+	snap_waiting[1] <= snap_waiting[0];
+	snap_waiting[0] <= snap_wait | reset;
      end
 
-   always @(posedge snap_clk2 or posedge reset or posedge snap_wait) // things that use snap USR clock, w/Reset
+   always @(posedge snap_clk2 or posedge reset) // things that use snap USR clock, w/Reset
      begin
-	if (reset | snap_wait) begin
+	if ( snap_waiting[3] | reset) begin
 	   snap_comma_align <= 0;
 	   snap_count_send <= 0;
 	   snap_count <= 0;
@@ -1121,7 +1128,7 @@ module rad19test(
 	      test_led[6] = !locked;    // Lo.
 	      test_led[7] = ck125_locklost; // Lo.
 	      test_led[8] = gtx_reset;  // Lo.
-	      test_led[9] = snap_wait;  // Lo. t12_fault, r12_fok,
+	      test_led[9] = snap_waiting[3];  // Lo. t12_fault, r12_fok,
 	      test_led[10]  = 1'b1;     // sw8 High
 /*	      test_led[8:1] = l_gbe_rxdat[15:8]; // 
 	      test_led[9]   = kchar_r[1]; //
@@ -1142,7 +1149,7 @@ module rad19test(
 	   test_led[4:3]   = llost_snapr[1:0]; // 
 	   test_led[6:5]   = lgood_snapr[1:0]; // 
  */
-	      test_led[1] = snap_wait;  // 0 Hi --BAD   = !(&synced_snapt & all_rx_ready & ck160_locked);
+	      test_led[1] = snap_waiting[3];  // 0 Hi --BAD   = !(&synced_snapt & all_rx_ready & ck160_locked);
 	      test_led[2] = !all_ready; // 0 Hi --BAD   =  ... & tx_resetdone_r & rx_resetdone_r;
 	      test_led[3] = !time_r[7]; // 0 Hi --BAD   [requires gtx_ready]
 	      test_led[4] = !lock40;    // 0 Lo  -OK
@@ -1223,7 +1230,7 @@ module rad19test(
 	   .GTXTXRESET_IN (reset),
 	   .GTXRXRESET_IN (reset),
 	   .SEED_STEP (SEEDSTEP),      // replace with SEEDSTEP 15-0
-	   .gtx_wait (snap_wait),
+	   .gtx_wait (snap_waiting[3]),
 	   .force_err_wait (err_wait),
      // JG, was  .force_err_flag (err_flag[31:24]),
            .force_err_flag (err_flag[23:12]),
