@@ -81,6 +81,8 @@
 //         --rev5: use the same seed for all 12 fibers
 //         --rev6: reduce TXDIFFCTRL to 0x0110 (590mV).
 //  4.43: starting from rev6 above... added snap_waiting[3] register for sync control of gtx_wait after reset
+//         --rev2: use snap_waiting[3] to control "reset" in GTX prbs stage
+//         --rev3: undo rev2, but make snap_waiting last longer
 //
 // 
 //  MTP Fiber Mapping to Signal Name, FPGA GTX channels, Diff. Pin Numbers, verilog name
@@ -1060,7 +1062,8 @@ module rad19test(
 
    always @(posedge snap_clk2 or posedge reset) // things that use snap USR clock, w/Reset
      begin
-	if ( snap_waiting[3] | reset) begin
+	if (reset) begin
+// was	if ( snap_waiting[3] | reset) begin
 	   snap_comma_align <= 0;
 	   snap_count_send <= 0;
 	   snap_count <= 0;
@@ -1265,7 +1268,8 @@ module rad19test(
     );
 
    assign send_lim = 16'h0800; // h0800=dec 2048, h0300=dec 768  --now try to ignore this!
-   assign snap_wait = !(&synced_snapt & all_rx_ready & ck160_locked);
+   assign snap_wait = !(&synced_snapt & all_rx_ready & ck160_locked & time_snap[7]);
+// was   assign snap_wait = !(&synced_snapt & all_rx_ready & ck160_locked);
 
 
 // logic for rxdv False:  rxer[0-5]
