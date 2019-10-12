@@ -1,0 +1,276 @@
+# this UCF is compatible with Mez2010 and Rev3 boards
+NET "led_hi[10]" LOC = N24;
+NET "led_hi[11]" LOC = N23;
+NET "led_hi[12]" LOC = F23;
+NET "led_hi[13]" LOC = F24;
+NET "led_hi[14]" LOC = L24;
+NET "led_hi[15]" LOC = M23;
+NET "led_hi[8]" LOC = G23;
+NET "led_hi[9]" LOC = H23;
+NET "led_low[0]" LOC = AF24;
+NET "led_low[1]" LOC = AF25;
+NET "led_low[2]" LOC = W24;
+NET "led_low[3]" LOC = V24;
+NET "led_low[4]" LOC = H24;
+NET "led_low[5]" LOC = H25;
+NET "led_low[6]" LOC = P24;
+NET "led_low[7]" LOC = R24;
+NET "gbe_fok"    LOC = K23;
+NET "f_sclk"     LOC = W27;
+# NET "f_sdat"     LOC = R32;
+NET "rst_qpll"   LOC = U30;
+NET "qpll_lock"  LOC = M22;
+NET "fcs" LOC = Y24;
+
+NET "pb" LOC = V29;
+NET "pb" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "sw[7]" LOC = U25;
+NET "sw[7]" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "sw[8]" LOC = U26;
+NET "sw[8]" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "test_led[1]" LOC = T29;
+NET "test_led[2]" LOC = R31;
+NET "test_led[3]" LOC = T26;
+NET "test_led[4]" LOC = R29;
+NET "test_led[5]" LOC = R27;
+NET "test_led[6]" LOC = T30;
+NET "test_led[7]" LOC = U28;
+NET "test_led[8]" LOC = T28;
+NET "test_led[9]" LOC = T25;
+NET "test_led[10]" LOC = U27;
+# should try LV_DCI standard sometime...
+
+NET "ck125n" LOC = H9 | IOSTANDARD = "LVDS_25";
+NET "ck125p" LOC = J9 | IOSTANDARD = "LVDS_25";
+NET "ck125" TNM_NET = "clock125";
+TIMESPEC "TS_clock125" = PERIOD "clock125" 8 ns HIGH 50%;
+# NET "ck125p" period=8ns high 50%;
+
+NET "ck_gben" LOC = P5 | IOSTANDARD = "LVDS_25";
+NET "ck_gbep" LOC = P6 | IOSTANDARD = "LVDS_25";
+NET "ckgbe" TNM_NET = "clock_gbe";
+TIMESPEC "TS_clock_gbe" = PERIOD "clock_gbe" 8 ns HIGH 50%;
+# NET "ck_gbep" period=8ns high 50%;
+
+NET "ck160n" LOC = AB5 | IOSTANDARD = "LVDS_25";
+NET "ck160p" LOC = AB6 | IOSTANDARD = "LVDS_25";
+# NET "ck160" TNM_NET = "clock160";
+NET "snap_clk2" TNM_NET = "clock160";
+TIMESPEC "TS_clock160" = PERIOD "clock160" 6.25 ns HIGH 50%;
+
+NET "cp160n" LOC = F5 | IOSTANDARD = "LVDS_25";
+NET "cp160p" LOC = F6 | IOSTANDARD = "LVDS_25";
+
+NET "lhc_ckn" LOC = B10 | IOSTANDARD = "LVDS_25";  // this is differential 40 MHz from QPLL
+NET "lhc_ckp" LOC = A10 | IOSTANDARD = "LVDS_25";
+NET "lhc_ck" TNM_NET = "lhc_clock";
+TIMESPEC "TS_LHC_clock" = PERIOD "lhc_clock" 25 ns HIGH 50%;
+
+#NET "ck80n" LOC = AD5 | IOSTANDARD = "LVDS_25";
+#NET "ck80p" LOC = AD6 | IOSTANDARD = "LVDS_25";
+#NET "ck80" TNM_NET = "clock80";
+#TIMESPEC "TS_clock80" = PERIOD "clock80" 12.5 ns HIGH 50%;
+
+
+# location for gbe mgt: gtx19
+NET "gbe_txn" LOC = M2 | IOSTANDARD = "LVDS_25";   #was A4
+NET "gbe_txp" LOC = M1 | IOSTANDARD = "LVDS_25";   #was A3
+NET "gbe_rxn" LOC = N4 | IOSTANDARD = "LVDS_25";   #was B6
+NET "gbe_rxp" LOC = N3 | IOSTANDARD = "LVDS_25";   #was B5
+
+# location for snap fiber1 mgt: gtx3/rx0
+NET "txn[0]" LOC = AK2 | IOSTANDARD = "LVDS_25";#  "snap fiber 1"
+NET "txp[0]" LOC = AK1 | IOSTANDARD = "LVDS_25";
+NET "rxn[0]" LOC = AP6 | IOSTANDARD = "LVDS_25";#  "snap fiber 1"
+NET "rxp[0]" LOC = AP5 | IOSTANDARD = "LVDS_25";
+#NET "rxn[0]" LOC = AG4 | IOSTANDARD = "LVDS_25";#  "snap fiber 5"
+#NET "rxp[0]" LOC = AG3 | IOSTANDARD = "LVDS_25";
+
+# location for snap fiber2 mgt: gtx4/rx1
+NET "txn[1]" LOC = AH2 | IOSTANDARD = "LVDS_25";#  "snap fiber 2"
+NET "txp[1]" LOC = AH1 | IOSTANDARD = "LVDS_25";
+NET "rxn[1]" LOC = AM6 | IOSTANDARD = "LVDS_25";#  "snap fiber 2"
+NET "rxp[1]" LOC = AM5 | IOSTANDARD = "LVDS_25";
+#NET "rxn[1]" LOC = AF6 | IOSTANDARD = "LVDS_25";#  "snap fiber 6"
+#NET "rxp[1]" LOC = AF5 | IOSTANDARD = "LVDS_25";
+
+# location for snap fiber3 mgt: gtx7/rx2
+NET "txn[2]" LOC = AB2 | IOSTANDARD = "LVDS_25";#  "snap fiber 3"
+NET "txp[2]" LOC = AB1 | IOSTANDARD = "LVDS_25";
+NET "rxn[2]" LOC = AL4 | IOSTANDARD = "LVDS_25";#  "snap fiber 3"
+NET "rxp[2]" LOC = AL3 | IOSTANDARD = "LVDS_25";
+#NET "rxn[2]" LOC = AE4 | IOSTANDARD = "LVDS_25";#  "snap fiber 7"
+#NET "rxp[2]" LOC = AE3 | IOSTANDARD = "LVDS_25";
+
+# location for snap fiber4 mgt: gtx8/rx3
+NET "txn[3]" LOC = Y2 | IOSTANDARD = "LVDS_25";#  "snap fiber 4"
+NET "txp[3]" LOC = Y1 | IOSTANDARD = "LVDS_25";
+NET "rxn[3]" LOC = AJ4 | IOSTANDARD = "LVDS_25";#  "snap fiber 4"
+NET "rxp[3]" LOC = AJ3 | IOSTANDARD = "LVDS_25";
+#NET "rxn[3]" LOC = AC4 | IOSTANDARD = "LVDS_25";#  "snap fiber 8"
+#NET "rxp[3]" LOC = AC3 | IOSTANDARD = "LVDS_25";
+
+# location for snap fiber9 mgt: gtx9/rx8
+NET "txn[4]" LOC = V2 | IOSTANDARD = "LVDS_25";#  "snap fiber 9"
+NET "txp[4]" LOC = V1 | IOSTANDARD = "LVDS_25";
+NET "rxn[4]" LOC = AA4 | IOSTANDARD = "LVDS_25";#  "snap fiber 9"
+NET "rxp[4]" LOC = AA3 | IOSTANDARD = "LVDS_25";
+
+# location for snap fiber10 mgt: gtx10/rx9
+NET "txn[5]" LOC = T2 | IOSTANDARD = "LVDS_25";#  "snap fiber 10"
+NET "txp[5]" LOC = T1 | IOSTANDARD = "LVDS_25";
+NET "rxn[5]" LOC = W4 | IOSTANDARD = "LVDS_25";#  "snap fiber 10"
+NET "rxp[5]" LOC = W3 | IOSTANDARD = "LVDS_25";
+
+# location for snap fiber11 mgt: gtx11/rx10
+NET "txn[6]" LOC = P2 | IOSTANDARD = "LVDS_25";#  "snap fiber 11"
+NET "txp[6]" LOC = P1 | IOSTANDARD = "LVDS_25";
+NET "rxn[6]" LOC = U4 | IOSTANDARD = "LVDS_25";#  "snap fiber 11"
+NET "rxp[6]" LOC = U3 | IOSTANDARD = "LVDS_25";
+
+# location for snap fiber12 mgt: gtx2/rx11
+NET "txn[7]" LOC = AM2 | IOSTANDARD = "LVDS_25";#  "snap fiber 12"
+NET "txp[7]" LOC = AM1 | IOSTANDARD = "LVDS_25";
+NET "rxn[7]" LOC = R4 | IOSTANDARD = "LVDS_25";#  "snap fiber 12"
+NET "rxp[7]" LOC = R3 | IOSTANDARD = "LVDS_25";
+
+# Snap & FireFly fiber5 mgt: gtx?/rx8 fixed
+NET "txp[8]"		LOC = AN3 | IOSTANDARD = "LVDS_25";	# MGTTXP1_112
+NET "txn[8]"		LOC = AN4 | IOSTANDARD = "LVDS_25";	# MGTTXN1_112
+# Snap & FireFly fiber5, gemRX0/rx4   --GEM0 for OTMB--
+NET "gemrxp[0]"	LOC = AG3  | IOSTANDARD = "LVDS_25";	# MTP fiber 5 on GTX4
+NET "gemrxn[0]"	LOC = AG4  | IOSTANDARD = "LVDS_25";	# MGT Quad 113
+
+# Snap & FireFly fiber6 mgt: gtx?/rx9 fixed
+NET "txp[9]"		LOC = AP1 | IOSTANDARD = "LVDS_25";	# MGTTXP2_112
+NET "txn[9]"		LOC = AP2 | IOSTANDARD = "LVDS_25";	# MGTTXN2_112
+# Snap & FireFly fiber6, gemRX1/rx5   --GEM1 for OTMB--
+NET "gemrxp[1]"	LOC = AF5  | IOSTANDARD = "LVDS_25";	# MTP fiber 6 on GTX5
+NET "gemrxn[1]"	LOC = AF6  | IOSTANDARD = "LVDS_25";	# MGT Quad 113
+
+# Snap & FireFly fiber7 mgt: gtx?/rx10 fixed
+NET "txp[10]"		LOC = AD1 | IOSTANDARD = "LVDS_25";	# MGTTXP3_113
+NET "txn[10]"		LOC = AD2 | IOSTANDARD = "LVDS_25";	# MGTTXN3_113
+# Snap & FireFly fiber7, gemRX2/rx6   --GEM2 for OTMB--
+NET "gemrxp[2]"	LOC = AE3  | IOSTANDARD = "LVDS_25";	# MTP fiber 7 on GTX6
+NET "gemrxn[2]"	LOC = AE4  | IOSTANDARD = "LVDS_25";	# MGT Quad 113
+
+# Snap & FireFly fiber8 mgt: gtx?/rx11 fixed
+NET "txp[11]"		LOC = AF1 | IOSTANDARD = "LVDS_25";	# MGTTXP2_113
+NET "txn[11]"		LOC = AF2 | IOSTANDARD = "LVDS_25";	# MGTTXN2_113
+# Snap & FireFly fiber8, gemRX3/rx7   --GEM3 for OTMB--
+NET "gemrxp[3]"	LOC = AC3  | IOSTANDARD = "LVDS_25";	# MTP fiber 8 on GTX7
+NET "gemrxn[3]"	LOC = AC4  | IOSTANDARD = "LVDS_25";	# MGT Quad 113
+
+# location for BiDir Firefly fiber11/2 mgt: gtx12 quad 116 pos 3
+NET "txn[12]" LOC = A4 | IOSTANDARD = "LVDS_25";#  "fiber 11"
+NET "txp[12]" LOC = A3 | IOSTANDARD = "LVDS_25";
+NET "birxn[0]" LOC = B6 | IOSTANDARD = "LVDS_25";#  "fiber 2"
+NET "birxp[0]" LOC = B5 | IOSTANDARD = "LVDS_25";
+
+# location for BiDir Firefly fiber10/3 mgt: gtx13 quad 116 pos 1
+NET "txn[13]" LOC = C4 | IOSTANDARD = "LVDS_25";#  "fiber 10"
+NET "txp[13]" LOC = C3 | IOSTANDARD = "LVDS_25";
+NET "birxn[1]" LOC = E4 | IOSTANDARD = "LVDS_25";#  "fiber 3"
+NET "birxp[1]" LOC = E3 | IOSTANDARD = "LVDS_25";
+
+# location for BiDir Firefly fiber9/4 mgt: gtx14 quad 115 pos 3
+NET "txn[14]" LOC = F2 | IOSTANDARD = "LVDS_25";#  "fiber 9"
+NET "txp[14]" LOC = F1 | IOSTANDARD = "LVDS_25";
+NET "birxn[2]" LOC = J4 | IOSTANDARD = "LVDS_25";#  "fiber 4"
+NET "birxp[2]" LOC = J3 | IOSTANDARD = "LVDS_25";
+
+
+# snap Tx/Rx control lines
+NET "t12_rst"   LOC = AC24;
+NET "t12_sclk"  LOC = V27;
+NET "t12_fault" LOC = P32;
+# NET "t12_sda"   LOC = A31;
+NET "r12_sclk"  LOC = W26;
+NET "r12_fok"   LOC = M30;
+# NET "r12_sda"   LOC = H29;
+
+
+
+# 3.3V initial testing inputs
+NET "alct_rx[7]" LOC = D24;   # io333
+NET "alct_rx[8]" LOC = E24;   # io332
+NET "alct_rx[9]" LOC = E22;   # io331
+NET "alct_rx[10]" LOC = E23;  # io330
+NET "alct_rx[11]" LOC = C23;  # io329
+NET "alct_rx13" LOC = C22;  # io327
+NET "alct_rx19" LOC = H22;  # io321
+NET "alct_rx23" LOC = G22;  # io317
+
+NET "prom_d3" LOC = D15;    # io279
+NET "prom_d7" LOC = D17;    # io275
+
+NET "jtag_fpga3" LOC = K16; # io263
+
+NET "sda0" LOC = K21;       # io302
+NET "tmb_sn" LOC = F20;     # io274
+NET "t_crit" LOC = M16;    # io267
+
+# TI Level Shifter to FPGA  Checked All LOC pins!
+#NET "rpc_rx[2]" LOC = AG30; # io_370
+NET "rpc_rx[5]" LOC = H30; #  io_373  -F33 H30 Wrong in FPGA1.net
+NET "rpc_rx[6]" LOC = B32; #  io_374  -E32 B32
+NET "rpc_rx[7]" LOC = F30; #  io_375  -G32 F30
+NET "rpc_rx[8]" LOC = J30; #  io_376  -H34 J30
+NET "rpc_rx[9]" LOC = B34; #  io_377  -H33 B34
+NET "rpc_rx[10]" LOC = A33; # io_378  -M30 A33
+NET "rpc_rx[11]" LOC = B33; # io_379  -W26 B33
+NET "rpc_rx[12]" LOC = E31; # io_380  -V29 E31
+NET "rpc_rx[13]" LOC = C33; # io_381  -V28 C33
+NET "rpc_rx[14]" LOC = D31; # io_382  -L25 D31 xp4.d38=io259  was io346 -below
+NET "rpc_rx[15]" LOC = G31; # io_383  -A33 G31
+NET "rpc_rx[16]" LOC = G30; # io_384  -B33 G30
+NET "rpc_rx[17]" LOC = C32; # io_385  -E31 C32 xp4.d32=io283  was io349 -below
+NET "rpc_rx[18]" LOC = C34; # io_386  -C33 C34 xp4.d28=io299  was io342 -below
+NET "rpc_rx[19]" LOC = F31; # io_387  -D31 F31
+NET "rpc_rx[20]" LOC = E33; # io_388  -G31 E33
+NET "rpc_rx[21]" LOC = D32; # io_389  -G30 D32 xp4.d31=io287  was io345 -below
+NET "rpc_rx[22]" LOC = D34; # io_390  -C32 D34 xp4.d26=io307  was io310 -below
+NET "rpc_rx[23]" LOC = G33; # io_391  -C34 G33
+NET "rpc_rx[24]" LOC = F33; # io_392  -F31 F33
+NET "rpc_rx[25]" LOC = E32; # io_393  -E33 E32 xp4.d30=io291  was io341 -below
+NET "rpc_rx[26]" LOC = G32; # io_394  -D32 G32 xp4.d25=io311  was io306 -below
+NET "rpc_rx[27]" LOC = H34; # io_395  -D34 H34
+NET "rpc_rx[28]" LOC = H33; # io_396  -G33 H33
+
+# FPGA to TI Level Shifter via Loopback board
+# added for new loopback board
+NET "io_259" LOC = G15; # cfeb_oe     -replaces io_346
+NET "io_283" LOC = J19; # prom_ctrl5  -replaces io_349
+NET "io_287" LOC = H18; # prom_ctrl1  -replaces io_345
+NET "io_291" LOC = G18; # sel_usr1    -replaces io_341
+NET "io_299" LOC = D19; # step2       -replaces io_342
+NET "io_307" LOC = K22; # ~dmb_oe     -replaces io_310
+NET "io_311" LOC = F21; # ~gtl_oe     -replaces io_306
+# original loopback board
+NET "io_286" LOC = M18; # prom_ctrl2 -OK
+NET "io_298" LOC = L20; # step3 -OK
+NET "io_306" LOC = J21; # rpc_loop -OK
+NET "io_310" LOC = G20; # ccbstat_oe -OK
+NET "io_[340]" LOC = D25; # rpc_tx3
+NET "io_[341]" LOC = F25; # alct_rxoe_tx
+NET "io_[342]" LOC = F26; # alct_loop
+NET "io_[343]" LOC = E26; # alct_tx23
+NET "io_[344]" LOC = G27; # alct_tx22
+NET "io_[345]" LOC = G26; # alct_tx21
+NET "io_[346]" LOC = E27; # alct_tx20
+NET "io_[347]" LOC = D27; # alct_txoe
+NET "io_[348]" LOC = D26; # alct_clk_en
+NET "io_[349]" LOC = K26; # alct_tx19  -AC27 Wrong in FPGA1.net
+NET "io_[350]" LOC = K27; # alct_tx16  -AF28
+NET "io_[351]" LOC = E28; # alct_tx15
+NET "io_[352]" LOC = J26; # alct_tx14  -AE28
+NET "io_[353]" LOC = G28; # alct_tx13
+NET "io_[354]" LOC = L26; # alct_tx12  -AE29
+NET "io_[355]" LOC = D29; # alct_tx11
+NET "io_[356]" LOC = F28; # alct_tx10
+NET "io_[357]" LOC = H27; # alct_tx9
+NET "io_[358]" LOC = J27; # alct_tx8  -AF31  -- don't need
+NET "io_[359]" LOC = K29; # alct_tx7   -K26
+NET "io_[360]" LOC = J29; #  -- don't need
+NET "io_[361]" LOC = K28; # alct_tx5   -J26
