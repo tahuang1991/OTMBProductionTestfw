@@ -1559,7 +1559,8 @@ module mezz2012(
 	      test_led[1] = |nzdat[1]; //  --FREE--
 	      test_led[2] = |nzdat[2]; //  --FREE--
 	      test_led[3] = scl[0]; // SDin for DDD chips
-	      test_led[4] = ck40;       // used to check ck40 freq. from snap gtx rx_clk
+	      //test_led[4] = ck40;       // used to check ck40 freq. from snap gtx rx_clk
+	      test_led[4] = qpll_ck40;       // used to check ck40 freq. from snap gtx rx_clk
 	      test_led[5] = |nzdat[3];    //  --FREE--
 	      test_led[6] = sda0;  // SDout back from DDD chips
 	      test_led[7] = |nzdat[4];//  --FREE--
