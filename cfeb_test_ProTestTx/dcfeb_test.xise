@@ -158,7 +158,7 @@
     <property xil_pn:name="Default Enum Encoding Goal" xil_pn:value="default" xil_pn:valueState="default"/>
     <property xil_pn:name="Delay Values To Be Read from SDF" xil_pn:value="Setup Time" xil_pn:valueState="default"/>
     <property xil_pn:name="Delay Values To Be Read from SDF ModelSim" xil_pn:value="Setup Time" xil_pn:valueState="default"/>
-    <property xil_pn:name="Device" xil_pn:value="xc6vlx195t" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="Device" xil_pn:value="xc6vlx240t" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Device Family" xil_pn:value="Virtex6" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Device Speed Grade/Select ABS Minimum" xil_pn:value="-1" xil_pn:valueState="default"/>
     <property xil_pn:name="Disable Detailed Package Model Insertion" xil_pn:value="false" xil_pn:valueState="default"/>
@@ -185,6 +185,7 @@
     <property xil_pn:name="Equivalent Register Removal" xil_pn:value="true" xil_pn:valueState="default"/>
     <property xil_pn:name="Equivalent Register Removal XST" xil_pn:value="true" xil_pn:valueState="default"/>
     <property xil_pn:name="Essential Bits" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Evaluation Development Board" xil_pn:value="None Specified" xil_pn:valueState="default"/>
     <property xil_pn:name="Exclude Compilation of Deprecated EDK Cores" xil_pn:value="false" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Exclude Compilation of EDK Sub-Libraries" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Extra Cost Tables Map virtex6" xil_pn:value="0" xil_pn:valueState="default"/>
@@ -419,7 +420,7 @@
     <property xil_pn:name="Specify Top Level Instance Names Behavioral" xil_pn:value="Default" xil_pn:valueState="default"/>
     <property xil_pn:name="Specify Top Level Instance Names Post-Route" xil_pn:value="Default" xil_pn:valueState="default"/>
     <property xil_pn:name="Speed Grade" xil_pn:value="-1" xil_pn:valueState="non-default"/>
-    <property xil_pn:name="Starting Address for Fallback Configuration virtex6" xil_pn:value="0x00000000" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="Starting Address for Fallback Configuration virtex6" xil_pn:value="" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Starting Placer Cost Table (1-100)" xil_pn:value="1" xil_pn:valueState="default"/>
     <property xil_pn:name="Starting Placer Cost Table (1-100) Map" xil_pn:value="1" xil_pn:valueState="default"/>
     <property xil_pn:name="Starting Placer Cost Table (1-100) Par" xil_pn:value="1" xil_pn:valueState="default"/>
