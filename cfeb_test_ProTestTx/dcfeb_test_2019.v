@@ -194,6 +194,7 @@ module dcfeb_test(
    )/* synthesis syn_useioff = 1 */;
 
 
+   parameter Nfibers = 4'd12;
 // snap12 GTX signals
    wire        synced_snapt, all_tx_ready;
    wire        snap_clk2, ck160_locked, ck160_rst;
@@ -210,7 +211,6 @@ module dcfeb_test(
 
    parameter SEEDBASE = 64'h8731c6ef4a5b0d29;
    parameter SEEDSTEP = 16'hc01d;
-   parameter Nfibers = 4'd12;
    reg [5:0]  ireg;  // not used
    reg [22:0] free_count;
    reg 	      free_tc, free_tc_r;
@@ -770,7 +770,7 @@ module dcfeb_test(
 	 ferr_done <= 0;
 	 triad_word <= 0;
 	 triad_word_r <= 0;
-	 frand[Nfibers:1] <= Nfibers'h001;
+	 frand[Nfibers:1] <= 12'h001;
 	 ferr_f[Nfibers:1] <= 0;
       end
       else begin   // syncing forced single-clock effects (debounced, for bit error or triad word)
