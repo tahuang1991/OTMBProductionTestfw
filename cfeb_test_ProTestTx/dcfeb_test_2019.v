@@ -1767,51 +1767,51 @@ module dcfeb_test(
 	);
 
 
-/*  JGhere: removed Rx GTX... also FIFO and comp_dat handling, all ck125
+//  JGhere: removed Rx GTX... also FIFO and comp_dat handling, all ck125
 // JGhere, begin fiber Rx input section:
-   comp_fiber_in dcfeb_in (
-	.CMP_RX_VIO_CNTRL (), // empty or Delete from code
-	.CMP_RX_LA_CNTRL (),  // empty or Delete from code
-	.RST (gtx_reset),     // gtx_reset =  PBrst | !TxSyncDone | !RxSyncDone
-        .CMP_SIGDET (),       //  N/A
-        .CMP_RX_N (rxn[1]),   // pick a fiber
-        .CMP_RX_P (rxp[1]),   // pick a fiber
-	.CMP_TDIS (),      //  N/A
-	.CMP_TX_N (),      // empty
-	.CMP_TX_P (),      // empty
-        .CMP_RX_REFCLK (ck160), // QPLL 160 via GTX Clock
-        .CMP_SD (),        // from IBUF, useless output. N/A
-	.CMP_RX_CLK160 (rx_clk), //*7 Rx recovered clock out.  Use for now as Logic Fabric clock
-			           //   Needed to sync all 7 CFEBs with Fabric clock!
-	.STRT_MTCH (rx_strt), //*7 gets set when the Start Pattern is present, N/A for Comp data.  To TP for debug.  --sw8,7
-	.VALID (rx_valid),    //*7 send this output to TP (only valid after StartMtch has come by)
-	.MATCH (rx_match),    //*7 send this output to TP  AND use for counting errors
-			           // VALID="should match" when true, !MATCH is an error
-        .RCV_DATA (comp_dat),  //*7 48 bit comp. data output, send to GbE if |48  > 0
-		 	 //  keep 3 48-bit words now,  3 48-bit words before,  plus 3 48-bit words after
-        .NONZERO_WORD (nz),
-        .CEW0 (word[0]),     //*7 access four phases of 40 MHz cycle...frame sep. out from GTX
-        .CEW1 (word[1]),
-        .CEW2 (word[2]),
-        .CEW3 (word[3]),     //*7 on CEW3_r (== CEW3 + 1) the RCV_DATA is valid, use to clock into pipeline
-        .LTNCY_TRIG (rx_fc), //*7 flags when RX sees "FC" for latency msm't.  Send raw to TP  --sw8,7
-        .RX_SYNC_DONE (synced_snapr) //*7  use inverse of this as Reset for GTXs etc?
-	);
+//   comp_fiber_in dcfeb_in (
+//	.CMP_RX_VIO_CNTRL (), // empty or Delete from code
+//	.CMP_RX_LA_CNTRL (),  // empty or Delete from code
+//	.RST (gtx_reset),     // gtx_reset =  PBrst | !TxSyncDone | !RxSyncDone
+//        .CMP_SIGDET (),       //  N/A
+//        .CMP_RX_N (rxn[1]),   // pick a fiber
+//        .CMP_RX_P (rxp[1]),   // pick a fiber
+//	.CMP_TDIS (),      //  N/A
+//	.CMP_TX_N (),      // empty
+//	.CMP_TX_P (),      // empty
+//        .CMP_RX_REFCLK (ck160), // QPLL 160 via GTX Clock
+//        .CMP_SD (),        // from IBUF, useless output. N/A
+//	.CMP_RX_CLK160 (rx_clk), //*7 Rx recovered clock out.  Use for now as Logic Fabric clock
+//			           //   Needed to sync all 7 CFEBs with Fabric clock!
+//	.STRT_MTCH (rx_strt), //*7 gets set when the Start Pattern is present, N/A for Comp data.  To TP for debug.  --sw8,7
+//	.VALID (rx_valid),    //*7 send this output to TP (only valid after StartMtch has come by)
+//	.MATCH (rx_match),    //*7 send this output to TP  AND use for counting errors
+//			           // VALID="should match" when true, !MATCH is an error
+//        .RCV_DATA (comp_dat),  //*7 48 bit comp. data output, send to GbE if |48  > 0
+//		 	 //  keep 3 48-bit words now,  3 48-bit words before,  plus 3 48-bit words after
+//        .NONZERO_WORD (nz),
+//        .CEW0 (word[0]),     //*7 access four phases of 40 MHz cycle...frame sep. out from GTX
+//        .CEW1 (word[1]),
+//        .CEW2 (word[2]),
+//        .CEW3 (word[3]),     //*7 on CEW3_r (== CEW3 + 1) the RCV_DATA is valid, use to clock into pipeline
+//        .LTNCY_TRIG (rx_fc), //*7 flags when RX sees "FC" for latency msm't.  Send raw to TP  --sw8,7
+//        .RX_SYNC_DONE (synced_snapr) //*7  use inverse of this as Reset for GTXs etc?
+//	);
+//
+//// JGhere, begin fiber Rx data storage section *7:
+//   fifo_48b_256_async comp_fifo (
+//	.rst    (reset),
+//	.wr_clk (rx_clk),        //*7
+//	.rd_clk (ck125),
+//	.din    (comp_dat_4r),   //*7
+//	.wr_en  (push_fifo),     //*7
+//	.rd_en  (JGhere),        //*7   The data needs to go someplace!
+//	.dout   (comp_dout),     //*7
+//	.full   (comp_overflow), //*7
+//	.empty  (no_comp_dav)    //*7
+//	);
+//   assign snap_wait = !(synced_snapr & ck160_locked);  // allows pattern checks when RX1 is ready
 
-// JGhere, begin fiber Rx data storage section *7:
-   fifo_48b_256_async comp_fifo (
-	.rst    (reset),
-	.wr_clk (rx_clk),        //*7
-	.rd_clk (ck125),
-	.din    (comp_dat_4r),   //*7
-	.wr_en  (push_fifo),     //*7
-	.rd_en  (JGhere),        //*7   The data needs to go someplace!
-	.dout   (comp_dout),     //*7
-	.full   (comp_overflow), //*7
-	.empty  (no_comp_dav)    //*7
-	);
-   assign snap_wait = !(synced_snapr & ck160_locked);  // allows pattern checks when RX1 is ready
-*/
 
 endmodule
 
