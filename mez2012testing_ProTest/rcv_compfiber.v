@@ -88,7 +88,8 @@ module rcv_compfiber(
      end
 
 
-   assign snap_wait = !(synced_snapr & ref_locked);  // allows pattern checks when RX is ready
+   //assign snap_wait = !(synced_snapr & ref_locked);  // allows pattern checks when RX is ready
+   assign snap_wait = !(synced_snapr );  // allows pattern checks when RX is ready
    assign push_fifo = ( word[0] && save_triad );
    always @(posedge rx_clk or posedge reset or posedge snap_wait) // things that use 160 MHz snap rx USR clock, w/Reset
      begin

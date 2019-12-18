@@ -164,7 +164,7 @@ module mezz2012(
     input             rxn0, rxp0,
     input  [7:1]      rxn, rxp,
     input  [3:0]      gemrxn, gemrxp,
-    output [1:1]      txn, txp,
+    //output [1:1]      txn, txp,
     output 	      t12_rst, t12_sclk, r12_sclk
    )/* synthesis syn_useioff = 1 */;
 
@@ -172,6 +172,7 @@ module mezz2012(
 // snap12 GTX signals
    wire        all_tx_ready;
    wire        snap_clk2, ck160_locked;
+   assign ck160_locked = 1'b1; // not used
    wire        snap_wait;
    wire [7:0]  check_ok_snapr, check_bad_snapr;
    wire [7:0]  rxdv_snapr, rxcomma_snapr, synced_snapt;
@@ -212,6 +213,7 @@ module mezz2012(
    wire reset, gtx_reset;
 
    wire stopped, locked, locked160, dmbfifo_step1ck;
+   assign locked160 = 1'b1;// not used
    wire ck160, lhc_ck, lhc_clk, qpll_ck40, slwclk;   // ref QPLL160, ccb_ck40, QPLL40, ccb_ck40/25=1.6MHz
    wire lhc_ck0, lhc_ck90, lhc_ck180, lhc_ck270, lhcckfbout, lhcckfbout_buf, lhc_clk90;
    wire zero, one;
@@ -228,8 +230,8 @@ module mezz2012(
    reg [15:0]  cfeb0errcnt, cfeb1errcnt, cfeb2errcnt, cfeb3errcnt, cfeb4errcnt;
 
 // JGhere, Add-ons for Ben dCFEB testing:
-   wire        tx_clk_out, tx_clk;
-   wire        tx_begin, tx_fc; // JGnew
+   //wire        tx_clk_out, tx_clk;
+   //wire        tx_begin, tx_fc; // JGnew
 /*
     output reg rx_start_r, rx_fc_r, rx_valid_r, rx_match_r, synced_snapr_r,   // bring to fabric domain!
     output reg compfifo_dav_r, compfifo_overflow_r, err_r,   // bring to fabric domain!
@@ -261,7 +263,7 @@ module mezz2012(
    reg 	       debounced_bit;    // sets one pulse for 200 ns  (5 MHz clock)
    reg 	       pb_pulse;  //  <- sw7 & !pb, clears on pb high after 2nd seq. shift (debounce), lasts a while!
    reg 	       err_wait;   // pb_pulse & tc & !wait -> load rnd_word, set wait.  !pb_pulse & tc & wait -> clear wait
-   reg 	       ferr_i, ferr_r, ferr_rr, ferr_done;
+   //reg 	       ferr_i, ferr_r, ferr_rr, ferr_done;
 
 
    assign cfeb_oe = 1'b1;
@@ -831,30 +833,30 @@ module mezz2012(
    end
 
 
-   always @(posedge tx_clk or posedge reset) begin
-      if(reset) begin
-	 ferr_i <= 0;
-	 ferr_r <= 0;
-	 ferr_rr <= 0;	      
-	 triad_word_r <= 0;
-      end
-      else begin   // syncing forced single-clock effects (debounced, for bit error or triad word)
-	 ferr_i <= debounced_bit;  // normally zero
-	 ferr_r <= ferr_i;
-	 if (!sw[8]) triad_word <= rnd_word[23:0];  // normally zero
-	 if (!ferr_done & ferr_r) begin  // begin the Forced Error sequence, sync with snap tx_clk
-	    ferr_rr <= ferr_r;  // true for exactly one tx_clk cycle
-	    triad_word_r <= triad_word;  // loaded for exactly one tx_clk cycle
-	 end
-	 else begin  // end the Forced Error sequence when PB is released (ferr_i goes low)
-	    ferr_rr <= 0;
-	    triad_word_r <= 0;
-	 end
-	 ferr_done <= ferr_r;
+   //always @(posedge tx_clk or posedge reset) begin
+   //   if(reset) begin
+   //      ferr_i <= 0;
+   //      ferr_r <= 0;
+   //      ferr_rr <= 0;	      
+   //      triad_word_r <= 0;
+   //   end
+   //   else begin   // syncing forced single-clock effects (debounced, for bit error or triad word)
+   //      ferr_i <= debounced_bit;  // normally zero
+   //      ferr_r <= ferr_i;
+   //      if (!sw[8]) triad_word <= rnd_word[23:0];  // normally zero
+   //      if (!ferr_done & ferr_r) begin  // begin the Forced Error sequence, sync with snap tx_clk
+   //         ferr_rr <= ferr_r;  // true for exactly one tx_clk cycle
+   //         triad_word_r <= triad_word;  // loaded for exactly one tx_clk cycle
+   //      end
+   //      else begin  // end the Forced Error sequence when PB is released (ferr_i goes low)
+   //         ferr_rr <= 0;
+   //         triad_word_r <= 0;
+   //      end
+   //      ferr_done <= ferr_r;
 
-      end
+   //   end
 
-   end // always @ (posedge tx_clk or posedge reset)
+   //end // always @ (posedge tx_clk or posedge reset)
 
 
 // start of DSN control & readout logic
@@ -1608,42 +1610,42 @@ module mezz2012(
 
    
 //   mmcm from 80 MHz:         In,    out80,  out160,   out40, reset,         locked
-   bufg_x2div2 snap_mmcm (tx_clk_out, tx_clk, snap_clk2, ck40, !ck160_locked, locked160); // from Tx GTX PLL out clk
+   //bufg_x2div2 snap_mmcm (tx_clk_out, tx_clk, snap_clk2, ck40, !ck160_locked, locked160); // from Tx GTX PLL out clk
 
 // JGhere:  was Snap12 module, not cfeb-tmb test code
-   tmb_fiber_out  dcfeb_out (
-	.RST (reset),   // Manual only
-	.TRG_SIGDET (), // from IPAD to IBUF.  N/A?
-	.TRG_RX_N (),   // empty
-	.TRG_RX_P (),   // empty
-	.TRG_TDIS (),   // OBUF output, for what?  N/A?
-	.TRG_TX_N (txn[1]),   // pick a fiber, match LOC constraint in module
-	.TRG_TX_P (txp[1]),   // pick a fiber
-	.G1C (triad_word_r[7:0]),  // Comp data for TX to TMB...use to send a low-rate pattern on !sw8 & sw7 & !PB
-	.G2C (triad_word_r[15:8]),  //   if ENA_TEST_PAT then it's prbs so these don't matter...
-	.G3C (triad_word_r[23:16]),  //   unless I want to test low-rate non-zero triad data:
-	.G4C (triad_word_r[7:0]),
-	.G5C (triad_word_r[15:8]),
-	.G6C (triad_word_r[23:16]),
-	.TRG_TX_REFCLK (ck160),  // QPLL 160 from MGT clk
-	.TRG_TXUSRCLK (snap_clk2),  // get 160 from TXOUTCLK (times 2)
-	.TRG_CLK80 (tx_clk),     // get 80 from TXOUTCLK
-	.TRG_GTXTXRST (0),   // maybe Manual "reset" only
-	.TRG_TX_PLLRST (0),  //  Tie LOW.
-	.TRG_RST (gtx_reset),       // gtx_reset = PBrst | !RxSyncDone
-	.ENA_TEST_PAT (sw[8]),   // HIGH for PRBS!  (Low will send data from GxC registers)  Use This Later, send low-rate pattern.
-	.INJ_ERR (ferr_rr & sw[8]),  // use my switch/PB combo logic for this, high-true? Pulse high once.
-	.TRG_SD (),          // from IBUF, useless output. N/A
-	.TRG_TXOUTCLK (tx_clk_out),   // 80 MHz; This has to go to MCM to generate 160/80
-	.TRG_TX_PLL_LOCK (ck160_locked), // inverse holds the MCM in Reset  // Tx GTX PLL Ref lock
-	.TRG_TXRESETDONE (), // N/A
-	.TX_SYNC_DONE (synced_snapt[1]), // NOT used... inverse could hold logic in Reset someplace, via gtx_ready?
-	.STRT_LTNCY (tx_begin),  // after every Reset, to TP for debug only  -- !sw7 ?
-	.LTNCY_TRIG (tx_fc),     // bring out to TP.  Signals when TX sends "FC" (once every 128 BX).  Send raw to TP  --sw8,7
-	.MON_TX_SEL (),      //  N/A
-	.MON_TRG_TX_ISK (),  //  N/A returns 4 bits
-	.MON_TRG_TX_DATA ()  //  N/A returns 32 bits
-	);
+   //tmb_fiber_out  dcfeb_out (
+   //     .RST (reset),   // Manual only
+   //     .TRG_SIGDET (), // from IPAD to IBUF.  N/A?
+   //     .TRG_RX_N (),   // empty
+   //     .TRG_RX_P (),   // empty
+   //     .TRG_TDIS (),   // OBUF output, for what?  N/A?
+   //     .TRG_TX_N (txn[1]),   // pick a fiber, match LOC constraint in module
+   //     .TRG_TX_P (txp[1]),   // pick a fiber
+   //     .G1C (triad_word_r[7:0]),  // Comp data for TX to TMB...use to send a low-rate pattern on !sw8 & sw7 & !PB
+   //     .G2C (triad_word_r[15:8]),  //   if ENA_TEST_PAT then it's prbs so these don't matter...
+   //     .G3C (triad_word_r[23:16]),  //   unless I want to test low-rate non-zero triad data:
+   //     .G4C (triad_word_r[7:0]),
+   //     .G5C (triad_word_r[15:8]),
+   //     .G6C (triad_word_r[23:16]),
+   //     .TRG_TX_REFCLK (ck160),  // QPLL 160 from MGT clk
+   //     .TRG_TXUSRCLK (snap_clk2),  // get 160 from TXOUTCLK (times 2)
+   //     .TRG_CLK80 (tx_clk),     // get 80 from TXOUTCLK
+   //     .TRG_GTXTXRST (0),   // maybe Manual "reset" only
+   //     .TRG_TX_PLLRST (0),  //  Tie LOW.
+   //     .TRG_RST (gtx_reset),       // gtx_reset = PBrst | !RxSyncDone
+   //     .ENA_TEST_PAT (sw[8]),   // HIGH for PRBS!  (Low will send data from GxC registers)  Use This Later, send low-rate pattern.
+   //     .INJ_ERR (ferr_rr & sw[8]),  // use my switch/PB combo logic for this, high-true? Pulse high once.
+   //     .TRG_SD (),          // from IBUF, useless output. N/A
+   //     .TRG_TXOUTCLK (tx_clk_out),   // 80 MHz; This has to go to MCM to generate 160/80
+   //     .TRG_TX_PLL_LOCK (ck160_locked), // inverse holds the MCM in Reset  // Tx GTX PLL Ref lock
+   //     .TRG_TXRESETDONE (), // N/A
+   //     .TX_SYNC_DONE (synced_snapt[1]), // NOT used... inverse could hold logic in Reset someplace, via gtx_ready?
+   //     .STRT_LTNCY (tx_begin),  // after every Reset, to TP for debug only  -- !sw7 ?
+   //     .LTNCY_TRIG (tx_fc),     // bring out to TP.  Signals when TX sends "FC" (once every 128 BX).  Send raw to TP  --sw8,7
+   //     .MON_TX_SEL (),      //  N/A
+   //     .MON_TRG_TX_ISK (),  //  N/A returns 4 bits
+   //     .MON_TRG_TX_DATA ()  //  N/A returns 32 bits
+   //     );
 
     genvar r;  //  need to generate receive logic for comparator fibers 1-7.  remember to Swap Rx Polarity for 5 & 6.
     generate

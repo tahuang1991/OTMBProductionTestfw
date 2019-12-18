@@ -50,7 +50,7 @@
 //  5.29: For Production Mez Boards: only change UCF, swap bits for DMB_TX39 & 40
 //  5.30: change ODDR for step[1]/dmbfifo_step1ck to run off of lhc_clk90
 //  5.31: changed trg_tx_ & cmp_rx_buf_bypass "powersave" GTX bits to work wirh ISE 14; also changed "div25" MMCM (slwclk) params to keep FVCO over 600 MHz to meet speed grade -1 limitations... but now it is only divide by 8.533333, so "bufg_div8p5clk" module is created. Finally, for LHC_clk MMCM, try using the FB clock to drive logic (saves a bufg)
-//  5.33: extend the 7 fibers to 12 fibers 
+//  5.33: extend the 7 fibers to 12 fibers  and copy it to mezz2019.v
 //  
 // 
 //  -- also bring out some data bits to show they are random and all channels are equal, and perhaps phase shifted.
