@@ -204,8 +204,8 @@ module dcfeb_test(
 //   reg  [7:1]  rxdvr_snapr, rxcommar_snapr, check_okr_snapr, check_badr_snapr;
    reg  [Nfibers:1]  frand, ferr_f;
    reg [15:0]  err_count;
-   reg  [7:0]  time_r_snap;
-   reg  [7:0]  time_snap;
+   //reg  [7:0]  time_r_snap;
+   //reg  [7:0]  time_snap;
    wire  stopped, locked, lock40, dmbfifo_step1ck;
 
    parameter SEEDBASE = 64'h8731c6ef4a5b0d29;
@@ -609,7 +609,7 @@ module dcfeb_test(
       ferr_done = 0;
       triad_word = 0;
       triad_word_r = 0;
-      frand[Nfibers:1] = Nfibers'h001;
+      frand[Nfibers:1] = 12'h001;
       ferr_f[Nfibers:1] = 0;
       err_wait = 0;
       rnd_word = 0;
