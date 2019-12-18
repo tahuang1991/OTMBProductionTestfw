@@ -189,7 +189,7 @@ module dcfeb_test(
     output reg [15:8] led_hi,
     output reg [10:5] test_led,
     input 	      t12_fault, r12_fok,
-    input  [7:1]      rxn, rxp,
+    input  [1:1]      rxn, rxp,
     output [7:1]      txn, txp,
     output 	      t12_rst, t12_sclk, r12_sclk
    )/* synthesis syn_useioff = 1 */;
