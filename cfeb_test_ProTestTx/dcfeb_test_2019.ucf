@@ -181,8 +181,8 @@ NET "txp[12]" LOC = AK1 | IOSTANDARD = "LVDS_25";
 # location for snap fiber1 mgt: gtx4/rx1
 NET "txn[1]" LOC = AH2 | IOSTANDARD = "LVDS_25";
 NET "txp[1]" LOC = AH1 | IOSTANDARD = "LVDS_25";
-NET "rxn[1]" LOC = AM6 | IOSTANDARD = "LVDS_25";
-NET "rxp[1]" LOC = AM5 | IOSTANDARD = "LVDS_25";
+#NET "rxn[1]" LOC = AM6 | IOSTANDARD = "LVDS_25";
+#NET "rxp[1]" LOC = AM5 | IOSTANDARD = "LVDS_25";
 
 # location for snap fiber2 mgt: gtx7/rx2
 NET "txn[2]" LOC = AB2 | IOSTANDARD = "LVDS_25";
