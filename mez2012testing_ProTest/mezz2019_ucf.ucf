@@ -171,8 +171,8 @@ NET "test_led[10]" LOC = U27;
 NET "ck160n" LOC = AB5 | IOSTANDARD = "LVDS_25";
 NET "ck160p" LOC = AB6 | IOSTANDARD = "LVDS_25";
 # NET "ck160" TNM_NET = "clock160";
-NET "snap_clk2" TNM_NET = "clock160";
-TIMESPEC "TS_clock160" = PERIOD "clock160" 6.25 ns HIGH 50%;
+#NET "snap_clk2" TNM_NET = "clock160";
+#TIMESPEC "TS_clock160" = PERIOD "clock160" 6.25 ns HIGH 50%;
 
 NET "lhc_ckn" LOC = B10 | IOSTANDARD = "LVDS_25";  # this is differential 40 MHz from QPLL
 NET "lhc_ckp" LOC = A10 | IOSTANDARD = "LVDS_25";
@@ -197,8 +197,8 @@ NET "rxp0" LOC = AP5 | IOSTANDARD = "LVDS_25";
 #NET "rxn[0]" LOC = AG4 | IOSTANDARD = "LVDS_25";#  "snap fiber 5"
 
 # location for snap fiber1 mgt: gtx4/rx1
-NET "txn[1]" LOC = AH2 | IOSTANDARD = "LVDS_25";
-NET "txp[1]" LOC = AH1 | IOSTANDARD = "LVDS_25";
+#NET "txn[1]" LOC = AH2 | IOSTANDARD = "LVDS_25";
+#NET "txp[1]" LOC = AH1 | IOSTANDARD = "LVDS_25";
 NET "rxn[1]" LOC = AM6 | IOSTANDARD = "LVDS_25";
 NET "rxp[1]" LOC = AM5 | IOSTANDARD = "LVDS_25";
 
