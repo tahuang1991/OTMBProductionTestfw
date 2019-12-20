@@ -9,6 +9,7 @@ module rcv_compfiber(
     output reg [15:0] err_count_r,  // bring to fabric domain!
     output reg [47:0] comp_dout,  // bring to fabric domain!
     output [47:0] compfifo_dout,
+    output rx_pll_locked,
     output k_sync,
     output k_synclost,
     output reg [3:1] nzdat
@@ -67,6 +68,7 @@ module rcv_compfiber(
         .CEW2 (word[2]),
         .CEW3 (word[3]),        // on CEW3_r (== CEW3 + 1) the RCV_DATA is valid, use to clock into pipeline
         .LTNCY_TRIG (rx_fc),  // flags when RX sees "FC" for latency msm't.  Send raw to TP or LED
+        .RX_PLL_LOCKED (rx_pll_locked),
         .RX_SYNC_DONE (synced_snapr), // inverse of this goes into GTX Reset
         .SYNCWORD (k_sync),
         .SYNCLOST (k_synclost)

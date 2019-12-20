@@ -45,6 +45,7 @@ module comp_fiber_in #(
     output reg CEW2,
     output reg CEW3,
     output reg LTNCY_TRIG,
+    output RX_PLL_LOCKED,
     output RX_SYNC_DONE,
     output reg SYNCWORD,
     output reg SYNCLOST
@@ -84,6 +85,7 @@ wire cmp_rx_clk80;
 wire cmp_rx_clk40;
 wire cmp_rx_rec_lock;
 
+assign RX_PLL_LOCKED = cmp_rx_pll_lock;
 
 
 wire sync_match;

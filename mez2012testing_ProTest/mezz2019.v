@@ -114,7 +114,7 @@
 //   Q0=quad_112, Q1=quad_113, Q2=quad_114, Q3=quad_115, Q4=quad_116
 // 
 //////////////////////////////////////////////////////////////////////////////////
-module mezz2012(
+module mezz2019(
 //    input 	      ck125n, ck125p,
     input 	      ck160n, ck160p,
     input 	      lhc_ckn, lhc_ckp,
@@ -172,7 +172,6 @@ module mezz2012(
 // snap12 GTX signals
    wire        all_tx_ready;
    wire        snap_clk2, ck160_locked;
-   assign ck160_locked = 1'b1; // not used
    wire        snap_wait;
    wire [7:0]  check_ok_snapr, check_bad_snapr;
    wire [7:0]  rxdv_snapr, rxcomma_snapr, synced_snapt;
@@ -242,15 +241,16 @@ module mezz2012(
    // ================================
    //one per fiber !!, Tao
    // ================================
-   wire [Nfibers:1]  synced_snapr, rx_strt, rx_valid, rx_match, rx_fc, compfifo_dav, compfifo_overflow, err_f, ksync, ksynclost;
+   wire [Nfibers:1]  synced_snapr, rx_strt, rx_valid, rx_match, rx_fc, compfifo_dav, compfifo_overflow, err_f, ksync, ksynclost, rx_pll_locked;
    wire [15:0] err_count_f[Nfibers:1];
    wire [47:0] comp_data[Nfibers:1], compfifo_data[Nfibers:1];
    wire [3:1]  nzdat[Nfibers:1];
    reg  [23:0] triad_word, triad_word_r;
-   reg [Nfibers:0]  fiber_stat, fiber_invalid; // these are synched to fabric clock
+   reg  [Nfibers:0]  fiber_stat, fiber_invalid; // these are synched to fabric clock
    reg [11:0]  error_f1count, error_f2count, error_f3count, error_f4count, error_f5count, error_f6count, error_f7count, error_f8count,error_f9count,error_f10count,error_f11count, error_f12count;
    reg [3:0]   f1stat, f2stat, f3stat, f4stat, f5stat, f6stat, f7stat, f8stat, f9stat, f10stat, f11stat, f12stat;
 
+   assign ck160_locked = rx_pll_locked[1]; // not used
    // to flag any bad fiber
    reg fiber_stat_all, fiber_invalid_all;
    reg [6:0]   d_reg, o_reg;
@@ -640,9 +640,9 @@ module mezz2012(
       f11stat = 0;
       f12stat = 0;
       fiber_stat = 0;
-      fiber_invalid <= 0;
-      fiber_stat_all <= 0;
-      fiber_invalid_all  <= 0;
+      fiber_invalid = 0;
+      fiber_stat_all = 0;
+      fiber_invalid_all  = 0;
       for (i = 0; i < 27; i = i + 1) begin
 	 init_dmbloop[i] = 39'd15 + 11401017*i;
       end
@@ -1404,7 +1404,7 @@ module mezz2012(
 		    if(last_cmd[7:0]==8'hE3) results_r <= {cfeb2errcnt[11:0],last_cmd[7:0]};  // for cable 3
 		    if(last_cmd[7:0]==8'hE4) results_r <= {cfeb3errcnt[11:0],last_cmd[7:0]};  // for cable 4
 		    if(last_cmd[7:0]==8'hE5) results_r <= {cfeb4errcnt[11:0],last_cmd[7:0]};  // for cable 5
-		    if(last_cmd[7:0]==8'hF0) results_r <= {fiber_stat[11:0],last_cmd[7:0]};  // all fibers link + enable status
+		    if(last_cmd[7:0]==8'hF0) results_r <= {fiber_stat[12:1],last_cmd[7:0]};  // all fibers link + enable status
 		    if(last_cmd[7:0]==8'hF1) results_r <= {error_f1count[11:0],last_cmd[7:0]};  // for fiber 1
 		    if(last_cmd[7:0]==8'hF2) results_r <= {error_f2count[11:0],last_cmd[7:0]};  // for fiber 2
 		    if(last_cmd[7:0]==8'hF3) results_r <= {error_f3count[11:0],last_cmd[7:0]};  // for fiber 3
@@ -1418,7 +1418,7 @@ module mezz2012(
 		    if(last_cmd[7:0]==8'hE8) results_r <= {error_f10count[11:0],last_cmd[7:0]};  // for fiber 10
 		    if(last_cmd[7:0]==8'hE9) results_r <= {error_f11count[11:0],last_cmd[7:0]};  // for fiber 11
 		    if(last_cmd[7:0]==8'hEA) results_r <= {error_f12count[11:0],last_cmd[7:0]};  // for fiber 12
-		    if(last_cmd[7:0]==8'hF8) results_r <= {fiber_invalid[11:0],last_cmd[7:0]};  // all fibers invalid trips
+		    if(last_cmd[7:0]==8'hF8) results_r <= {fiber_invalid[12:1],last_cmd[7:0]};  // all fibers invalid trips
 		    if(last_cmd[7:0]==8'hFC) results_r <= {cable_count[11:0],last_cmd[7:0]};   // count of cable test cycles
 		    if(last_cmd[7:0]==8'hFD) results_r <= {loop_count[31:20],last_cmd[7:0]}; // #1.05M counts @40MHz Loopback test cycles
 		    if(last_cmd[7:0]==8'hFE) results_r <= {slowloop_count[26:15],last_cmd[7:0]}; // #32K counts @1.6 MHz Loopback cycles
@@ -1655,7 +1655,7 @@ module mezz2012(
 				  time_40r[7], sw[8], en_fibertests, (r==5 || r==6),
 				  rx_strt[r], rx_fc[r], rx_valid[r], rx_match[r], synced_snapr[r],
 				  compfifo_dav[r], compfifo_overflow[r], err_f[r], err_count_f[r],
-				  comp_data[r], compfifo_data[r], ksync[r], ksynclost[r], nzdat[r] );
+				  comp_data[r], compfifo_data[r], rx_pll_locked[r], ksync[r], ksynclost[r], nzdat[r] );
        end
     endgenerate
 
