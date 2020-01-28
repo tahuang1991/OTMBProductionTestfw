@@ -588,7 +588,7 @@ module mezz2019(
       en_fibertests = 1'b0;
       llout_dmbloop = 0;
       lout_dmbloop = 0;
-      in_dmbloop <= 0;
+      in_dmbloop = 0;
       dmbloop_errcnt = 0;
       dmbloop1_stat = 0;
       dmbloop2_stat = 0;
@@ -1377,7 +1377,8 @@ module mezz2019(
 // lock test results as late as possible for some commands, at end of last_cmd register transmission:
 		 if (!late_load_done && get_bit_ptr == 5'h07) begin  // the final bit of "last_cmd" field before sending "results"
 		    late_load_done <= 1'b1;  // prevents re-update of Results during an over-looped series of CC cmds
-		    if ((last_cmd[7:0]&8'hf8)==8'h18) results_r <= {en_fibertests, en_cabletests, en_loopbacks,1'b0, ccb_data_r[7:0],last_cmd[7:0]}; // show "en_test" status and also CCB data bus content ---> eventually this reads "testLED switch control" setting
+		    //if ((last_cmd[7:0]&8'hf8)==8'h18) results_r <= {en_fibertests, en_cabletests, en_loopbacks,1'b0, ccb_data_r[7:0],last_cmd[7:0]}; // show "en_test" status and also CCB data bus content ---> eventually this reads "testLED switch control" setting
+		    if ((last_cmd[7:0]&8'hf8)==8'h18) results_r <= {en_fibertests, en_cabletests, en_loopbacks, fiber_stat[0], ccb_data_r[7:0],last_cmd[7:0]}; // show "en_test" status and also CCB data bus content ---> eventually this reads "testLED switch control" setting
 
 		    if(last_cmd[7:0]==8'hD0) results_r <= {dmbloop_errcnt[11:0],last_cmd[7:0]}; // total errors in 27 DMB loops, bit 11 = rollover
 		    if(last_cmd[7:0]==8'hD1) results_r <= {dmbloop1_stat[11:0],last_cmd[7:0]};  // DMB loop1 signals with error
@@ -1648,7 +1649,7 @@ module mezz2019(
    //     .MON_TRG_TX_DATA ()  //  N/A returns 32 bits
    //     );
 
-    genvar r;  //  need to generate receive logic for comparator fibers 1-7.  remember to Swap Rx Polarity for 5 & 6.
+    genvar r;  //  need to generate receive logic for comparator fibers 1-12.  remember to Swap Rx Polarity for 5 & 6.
     generate
        for (r=1; r<=Nfibers; r=r+1) begin:rcv_comp_gen
 	  rcv_compfiber comp_in ( rxn_12[r], rxp_12[r], ck160, lhc_clk, ck160_locked, reset, gtx_reset, rst_errcnt,
