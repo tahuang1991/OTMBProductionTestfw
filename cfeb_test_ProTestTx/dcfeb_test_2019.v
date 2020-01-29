@@ -150,7 +150,7 @@
 //
 // 
 //////////////////////////////////////////////////////////////////////////////////
-module dcfeb_test(
+module dcfeb_test_2019(
     input 	      ck160n, ck160p,
     input 	      lhc_ckn, lhc_ckp,
     input  [8:7]      sw,
