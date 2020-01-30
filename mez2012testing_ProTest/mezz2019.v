@@ -1654,33 +1654,33 @@ module mezz2019(
        for (r=1; r<=Nfibers; r=r+1) begin:rcv_comp_gen
     
          rcv_compfiber  #(.iFIBER(r)) comp_in(
-            rxn (rxn_12[r]), 
-            rxp (rxp_12[r]),
-            ref_clk (ck160), 
-            fabric_clk (lhc_clk), 
-            ref_locked (ck160_locked),
-            reset (reset), 
-            gtx_reset (gtx_reset), 
-            rst_errcount (rst_errcnt), 
-            startup_ready (en_fibertests), 
-            en_prbstest (sw[8]), 
-            en_fiforead (en_fibertests),
-            rx_pol_swap (r==5 || r==6),
-            rx_start_r ( rx_strt[r]), 
-            rx_fc_r (rx_fc[r]), 
-            rx_valid_r ( rx_valid[r]), 
-            rx_match_r (rx_match[r]), 
-            synced_snapr_r (synced_snapr[r]),   // bring to fabric domain!
-            compfifo_dav_r (compfifo_dav[r]), 
-            compfifo_overflow_r ( compfifo_overflow[r]), 
-            err_r  ( err_f[r]),   // bring to fabric domain!
-            err_count_r (err_count_f[r]),  // bring to fabric domain!
-            comp_dout (comp_data[r]),  // bring to fabric domain!
-            compfifo_dout (compfifo_data[r]),
-            rx_pll_locked (rx_pll_locked[r]),
-            k_sync (ksync[r]),
-            k_synclost ( ksynclost[r]),
-            nzdat ( nzdat[r])
+            .rxn (rxn_12[r]), 
+            .rxp (rxp_12[r]),
+            .ref_clk (ck160), 
+            .fabric_clk (lhc_clk), 
+            .ref_locked (ck160_locked),
+            .reset (reset), 
+            .gtx_reset (gtx_reset), 
+            .rst_errcount (rst_errcnt), 
+            .startup_ready (en_fibertests), 
+            .en_prbstest (sw[8]), 
+            .en_fiforead (en_fibertests),
+            .rx_pol_swap (r==5 || r==6),
+            .rx_start_r ( rx_strt[r]), 
+            .rx_fc_r (rx_fc[r]), 
+            .rx_valid_r ( rx_valid[r]), 
+            .rx_match_r (rx_match[r]), 
+            .synced_snapr_r (synced_snapr[r]),   // bring to fabric domain!
+            .compfifo_dav_r (compfifo_dav[r]), 
+            .compfifo_overflow_r ( compfifo_overflow[r]), 
+            .err_r  ( err_f[r]),   // bring to fabric domain!
+            .err_count_r (err_count_f[r]),  // bring to fabric domain!
+            .comp_dout (comp_data[r]),  // bring to fabric domain!
+            .compfifo_dout (compfifo_data[r]),
+            .rx_pll_locked (rx_pll_locked[r]),
+            .k_sync (ksync[r]),
+            .k_synclost ( ksynclost[r]),
+            .nzdat ( nzdat[r])
         );
        end
     endgenerate
