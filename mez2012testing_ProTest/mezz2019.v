@@ -1652,7 +1652,7 @@ module mezz2019(
     genvar r;  //  need to generate receive logic for comparator fibers 1-12.  remember to Swap Rx Polarity for 5 & 6.
     generate
        for (r=1; r<=Nfibers; r=r+1) begin:rcv_comp_gen
-	  rcv_compfiber comp_in ( rxn_12[r], rxp_12[r], ck160, lhc_clk, ck160_locked, reset, gtx_reset, rst_errcnt,
+	  rcv_compfiber  #(.iFIBER(r)) comp_in ( rxn_12[r], rxp_12[r], ck160, lhc_clk, ck160_locked, reset, gtx_reset, rst_errcnt,
 				  time_40r[7], sw[8], en_fibertests, (r==5 || r==6),
 				  rx_strt[r], rx_fc[r], rx_valid[r], rx_match[r], synced_snapr[r],
 				  compfifo_dav[r], compfifo_overflow[r], err_f[r], err_count_f[r],

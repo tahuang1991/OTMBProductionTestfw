@@ -15,6 +15,7 @@ module rcv_compfiber(
     output reg [3:1] nzdat
      );
    
+     parameter iFIBER = 0;
   
 // rx module reqs, IN:  rxp/n[i], reset, gtx_reset, refclk=ck160, lhc_clk, ck160_locked,
 //                      time_snap[7], rst_errcount, "sw[8]"=en_PRBStest?
