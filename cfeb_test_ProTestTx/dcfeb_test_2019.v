@@ -609,7 +609,7 @@ module dcfeb_test_2019(
       ferr_done = 0;
       triad_word = 0;
       triad_word_r = 0;
-      frand[Nfibers:1] = 12'h001;
+      frand[Nfibers:1] = 12'h003;
       ferr_f[Nfibers:1] = 0;
       err_wait = 0;
       rnd_word = 0;
@@ -785,7 +785,7 @@ module dcfeb_test_2019(
 	 end
 	 else begin  // end the Forced Error sequence when PB is released (ferr_i goes low)
 //	    ferr_f[7:1] <= 0;
-	    if (!ferr_done) ferr_f[Nfibers:1] <= 0;  // add this so errors persist until button release
+	    if (ferr_done) ferr_f[Nfibers:1] <= 0;  // add this so errors persist until button release
 	    triad_word_r <= 0;
 	 end
 
