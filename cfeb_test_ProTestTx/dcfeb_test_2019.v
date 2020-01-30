@@ -770,7 +770,7 @@ module dcfeb_test_2019(
 	 ferr_done <= 0;
 	 triad_word <= 0;
 	 triad_word_r <= 0;
-	 frand[Nfibers:1] <= 12'h001;
+	 frand[Nfibers:1] <= 12'h003;
 	 ferr_f[Nfibers:1] <= 0;
       end
       else begin   // syncing forced single-clock effects (debounced, for bit error or triad word)
