@@ -170,17 +170,17 @@ module mezz2019(
 
 
 // snap12 GTX signals
-   wire        all_tx_ready;
-   wire        snap_clk2, ck160_locked;
-   wire        snap_wait;
-   wire [7:0]  check_ok_snapr, check_bad_snapr;
-   wire [7:0]  rxdv_snapr, rxcomma_snapr, synced_snapt;
-   wire [7:0]  rxdv_diff, rxcomma_diff;
-   wire [7:0]  lgood_snapr, lbad_snapr, llost_snapr;
-   wire [15:0] snap_rxdat;
-   wire [1:0]  snap_rxk;
-   reg  [7:0]  time_r_snap;
-   reg [15:0]  snap_tx_dat;
+   //wire        all_tx_ready;
+   //wire        snap_clk2, ck160_locked;
+   //wire        snap_wait;
+   //wire [7:0]  check_ok_snapr, check_bad_snapr;
+   //wire [7:0]  rxdv_snapr, rxcomma_snapr, synced_snapt;
+   //wire [7:0]  rxdv_diff, rxcomma_diff;
+   //wire [7:0]  lgood_snapr, lbad_snapr, llost_snapr;
+   //wire [15:0] snap_rxdat;
+   //wire [1:0]  snap_rxk;
+   //reg  [7:0]  time_r_snap;
+   //reg [15:0]  snap_tx_dat;
     
    parameter Nfibers = 4'd12;
    wire [Nfibers:1] rxn_12, rxp_12;
@@ -800,7 +800,7 @@ module mezz2019(
 
    assign reset = !_ccb_rx[1] || (!sw[7] & !pb);  // careful, this ccb_rx signal can screw up on-bench tests...
 
-   assign gtx_ready = locked160 & ck160_locked & (|synced_snapr); // JGhere, need to AND or OR 7 synced_snapr?  Only used for time_count startup delay.
+   assign gtx_ready = locked160 & ck160_locked & ( &synced_snapr); // JGhere, need to AND or OR 7 synced_snapr?  Only used for time_count startup delay.
    assign gtx_reset = reset | !gtx_ready;  // JGhere, is this a good idea?  Think SEU & mechanical troubles...ugh.
 
 
