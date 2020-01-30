@@ -1539,9 +1539,9 @@ module mezz2019(
 	      test_led[6] = (&rx_strt);   // M1+M11: always LO; 200/225ns pulse after RST.  CHECK.
 // for each dcfeb fiber, latch any NOT valid?
 	      test_led[7] = (&rx_valid);  // M1+M11: always HI; Lo @RST.  CHECK.
-	      test_led[8] = nzdat[1][1]; //  --FREE--
-	      test_led[9] = nzdat[1][2]; //  --FREE--
-	      test_led[10] = nzdat[1][3];//  --FREE--
+	      test_led[8] = (|rx_strt); //  --FREE--
+	      test_led[9] = (|rx_valid); //  --FREE--
+	      test_led[10] = (comp_data[1] == 48'hFFFFFF000000);//  --FREE--
 //	      test_led[8] = bc0;    //
 //	      test_led[9] = ccb_code7c; //
 //	      test_led[10]  = reset;    //
