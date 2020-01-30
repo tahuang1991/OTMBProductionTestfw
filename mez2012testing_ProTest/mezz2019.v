@@ -1652,11 +1652,36 @@ module mezz2019(
     genvar r;  //  need to generate receive logic for comparator fibers 1-12.  remember to Swap Rx Polarity for 5 & 6.
     generate
        for (r=1; r<=Nfibers; r=r+1) begin:rcv_comp_gen
-	  rcv_compfiber  #(.iFIBER(r)) comp_in ( rxn_12[r], rxp_12[r], ck160, lhc_clk, ck160_locked, reset, gtx_reset, rst_errcnt,
-				  time_40r[7], sw[8], en_fibertests, (r==5 || r==6),
-				  rx_strt[r], rx_fc[r], rx_valid[r], rx_match[r], synced_snapr[r],
-				  compfifo_dav[r], compfifo_overflow[r], err_f[r], err_count_f[r],
-				  comp_data[r], compfifo_data[r], rx_pll_locked[r], ksync[r], ksynclost[r], nzdat[r] );
+    
+         rcv_compfiber  #(.iFIBER(r)) comp_in(
+            rxn (rxn_12[r]), 
+            rxp (rxp_12[r]),
+            ref_clk (ck160), 
+            fabric_clk (lhc_clk), 
+            ref_locked (ck160_locked),
+            reset (reset), 
+            gtx_reset (gtx_reset), 
+            rst_errcount (rst_errcnt), 
+            startup_ready (en_fibertests), 
+            en_prbstest (sw[8]), 
+            en_fiforead (en_fibertests),
+            rx_pol_swap (r==5 || r==6),
+            rx_start_r ( rx_strt[r]), 
+            rx_fc_r (rx_fc[r]), 
+            rx_valid_r ( rx_valid[r]), 
+            rx_match_r (rx_match[r]), 
+            synced_snapr_r (synced_snapr[r]),   // bring to fabric domain!
+            compfifo_dav_r (compfifo_dav[r]), 
+            compfifo_overflow_r ( compfifo_overflow[r]), 
+            err_r  ( err_f[r]),   // bring to fabric domain!
+            err_count_r (err_count_f[r]),  // bring to fabric domain!
+            comp_dout (comp_data[r]),  // bring to fabric domain!
+            compfifo_dout (compfifo_data[r]),
+            rx_pll_locked (rx_pll_locked[r]),
+            k_sync (ksync[r]),
+            k_synclost ( ksynclost[r]),
+            nzdat ( nzdat[r])
+        );
        end
     endgenerate
 
