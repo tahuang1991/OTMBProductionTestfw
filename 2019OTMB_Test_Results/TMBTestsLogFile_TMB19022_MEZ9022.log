@@ -1,0 +1,417 @@
+TMB-RAT Tests ME+1/1/1 output:
+TMBTester: testing Boot Register
+compareValues:  bootreg bit -> PASS = 1
+compareValues:  bootreg bit -> PASS = 2
+compareValues:  bootreg bit -> PASS = 4
+compareValues:  bootreg bit -> PASS = 8
+compareValues:  bootreg bit -> PASS = 10
+compareValues:  bootreg bit -> PASS = 20
+compareValues:  bootreg bit -> PASS = 40
+compareValues:  bootreg bit -> PASS = 80
+compareValues:  bootreg bit -> PASS = 100
+compareValues:  bootreg bit -> PASS = 200
+compareValues:  bootreg bit -> PASS = 400
+compareValues:  bootreg bit -> PASS = 800
+compareValues:  bootreg bit -> PASS = 1000
+compareValues:  bootreg bit -> PASS = 2000
+compareValues:  bootreg bit -> PASS = 0
+compareValues:  bootreg bit -> PASS = 0
+compareValues:  Number of boot register errors -> PASS = 0
+Boot Register -> PASS
+TMBTester: testing VME FPGA Data Register
+compareValues:  Register value -> PASS = 1
+compareValues:  Register value -> PASS = 2
+compareValues:  Register value -> PASS = 4
+compareValues:  Register value -> PASS = 8
+compareValues:  Register value -> PASS = 10
+compareValues:  Register value -> PASS = 20
+compareValues:  Register value -> PASS = 40
+compareValues:  Register value -> PASS = 80
+compareValues:  Register value -> PASS = 100
+compareValues:  Register value -> PASS = 200
+compareValues:  Register value -> PASS = 400
+compareValues:  Register value -> PASS = 800
+compareValues:  Register value -> PASS = 1000
+compareValues:  Register value -> PASS = 2000
+compareValues:  Register value -> PASS = 4000
+compareValues:  Register value -> PASS = 8000
+compareValues:  Number of VME FPGA data reg errors -> PASS = 0
+VME FPGA data register -> PASS
+TMBTester: testing Firmware date
+Firmware day.month.year = 7.c.7e3
+compareValues:  Firmware Day -> PASS = 7
+compareValues:  Firmware Month -> PASS = c
+compareValues:  Firmware Year -> PASS = 7e3
+Firmware Date -> PASS
+TMBTester: testing Firmware Type
+compareValues:  Firmware Type -> PASS = c
+Firmware Type -> PASS
+TMBTester: testing Firmware Version
+compareValues:  Firmware Version -> PASS = e
+Firmware Version -> PASS
+TMBTester: testing Firmware Revision Code
+compareValues:  Firmware Revcode FPGA -> PASS = 6
+Firmware Revcode FPGA -> PASS
+TMBTester: Checking Mezzanine FPGA and PROMs ID codes
+compareValues:  Mezz FPGA ID code -> PASS = 4250093
+Mezzanine FPGA/PROM ID -> PASS
+TMBTester: Checking User PROM ID codes
+compareValues:  ID 0 = ID 1 -> PASS = d5033093
+compareValues:  User PROM 0 ID code -> PASS = 5022093
+compareValues:  User PROM 1 ID code -> PASS = 5022093
+PROM User ID -> PASS
+TMBTester: Checking User PROM Data Path Ignored by TAO HUANG
+TMBTester: Checking Digital Serial Numbers for TMB
+DSN readback (Hex): 5f00001ae2db3a01
+compareValues:  CRC equal dsn[56-63] -> PASS = 5f
+compareValues:  CRC value  -> PASS -> 5f not equal to 0
+TMBTester: Checking Digital Serial Numbers for Mezzanine
+DSN readback (Hex): ba00001c1f7b3f01
+compareValues:  CRC equal dsn[56-63] -> PASS = ba
+compareValues:  CRC value  -> PASS -> ba not equal to 0
+TMBTester: Checking Virtex-6 FPGA's DNA
+DNA (Hex) : 00-80-C7-35-B8-32-08-B0
+TMBTester: Checking Digital Serial Numbers for RAT
+TMB DSN -> PASS
+Mezzanine DSN -> PASS
+RAT DSN ignored!  -> PASS
+All Digital Serial Numbers -> PASS
+TMBTester: Checking ADC and status
+compareValues:  5.0V status bit -> PASS = 1
+compareValues:  3.3V status bit -> PASS = 1
+compareValues:  1.8V status bit -> PASS = 1
+compareValues:  1.5V status bit -> PASS = 1
+compareValues:  FPGA and board temperatures status bit -> PASS = 1
+compareValues tolerance:  +5.0V TMB       -> PASS!
++5.0V TMB       value = 4.936 within 0.125 of 5
+compareValues tolerance:  +3.3V TMB       -> PASS!
++3.3V TMB       value = 3.176 within 0.4875 of 3.25
+compareValues tolerance:  +1.5V core      -> PASS!
++1.5V core      value = 1.491 within 0.045 of 1.5
+compareValues tolerance:  +1.5V TT        -> PASS!
++1.5V TT        value = 1.494 within 0.037325 of 1.493
+compareValues tolerance:  +1.0V TT        -> PASS!
++1.0V TT        value = 1.001 within 0.02 of 1
+compareValues tolerance:  +vref/2         -> PASS!
++vref/2         value = 2.048 within 0.02048 of 2.048
+compareValues tolerance:  +vzero          -> PASS!
++vzero          value = 0 within 0 of 0
+compareValues tolerance:  +vref           -> PASS!
++vref           value = 4.095 within 0.04095 of 4.095
++5.0V TMB Current      = 2.125 A
++3.3V TMB Current      = 2.255 A
++1.5V TMB core Current = 3.26 A
++1.5V TMB TT Current   = 3.278 A
++1.8V RAT core Current = 0.08 A
+Total power = 27.5534 Watts
+ADC voltages and temperatures -> PASS
+TMBTester: Verifying 3d3444 operation
+compareValues:  delay values  -> PASS = 0
+compareValues:  delay values  -> PASS = 1
+compareValues:  delay values  -> PASS = 2
+compareValues:  delay values  -> PASS = 3
+compareValues:  delay values  -> PASS = 4
+compareValues:  delay values  -> PASS = 5
+compareValues:  delay values  -> PASS = 6
+compareValues:  delay values  -> PASS = 7
+compareValues:  delay values  -> PASS = 8
+compareValues:  delay values  -> PASS = 9
+compareValues:  delay values  -> PASS = a
+compareValues:  delay values  -> PASS = b
+compareValues:  delay values  -> PASS = c
+compareValues:  delay values  -> PASS = d
+compareValues:  delay values  -> PASS = e
+compareValues:  delay values  -> PASS = f
+compareValues:  delay values  -> PASS = 0
+compareValues:  delay values  -> PASS = 10
+compareValues:  delay values  -> PASS = 20
+compareValues:  delay values  -> PASS = 30
+compareValues:  delay values  -> PASS = 40
+compareValues:  delay values  -> PASS = 50
+compareValues:  delay values  -> PASS = 60
+compareValues:  delay values  -> PASS = 70
+compareValues:  delay values  -> PASS = 80
+compareValues:  delay values  -> PASS = 90
+compareValues:  delay values  -> PASS = a0
+compareValues:  delay values  -> PASS = b0
+compareValues:  delay values  -> PASS = c0
+compareValues:  delay values  -> PASS = d0
+compareValues:  delay values  -> PASS = e0
+compareValues:  delay values  -> PASS = f0
+compareValues:  delay values  -> PASS = 0
+compareValues:  delay values  -> PASS = 100
+compareValues:  delay values  -> PASS = 200
+compareValues:  delay values  -> PASS = 300
+compareValues:  delay values  -> PASS = 400
+compareValues:  delay values  -> PASS = 500
+compareValues:  delay values  -> PASS = 600
+compareValues:  delay values  -> PASS = 700
+compareValues:  delay values  -> PASS = 800
+compareValues:  delay values  -> PASS = 900
+compareValues:  delay values  -> PASS = a00
+compareValues:  delay values  -> PASS = b00
+compareValues:  delay values  -> PASS = c00
+compareValues:  delay values  -> PASS = d00
+compareValues:  delay values  -> PASS = e00
+compareValues:  delay values  -> PASS = f00
+compareValues:  delay values  -> PASS = 0
+compareValues:  delay values  -> PASS = 1000
+compareValues:  delay values  -> PASS = 2000
+compareValues:  delay values  -> PASS = 3000
+compareValues:  delay values  -> PASS = 4000
+compareValues:  delay values  -> PASS = 5000
+compareValues:  delay values  -> PASS = 6000
+compareValues:  delay values  -> PASS = 7000
+compareValues:  delay values  -> PASS = 8000
+compareValues:  delay values  -> PASS = 9000
+compareValues:  delay values  -> PASS = a000
+compareValues:  delay values  -> PASS = b000
+compareValues:  delay values  -> PASS = c000
+compareValues:  delay values  -> PASS = d000
+compareValues:  delay values  -> PASS = e000
+compareValues:  delay values  -> PASS = f000
+compareValues:  delay values  -> PASS = 0
+compareValues:  delay values  -> PASS = 1
+compareValues:  delay values  -> PASS = 2
+compareValues:  delay values  -> PASS = 3
+compareValues:  delay values  -> PASS = 4
+compareValues:  delay values  -> PASS = 5
+compareValues:  delay values  -> PASS = 6
+compareValues:  delay values  -> PASS = 7
+compareValues:  delay values  -> PASS = 8
+compareValues:  delay values  -> PASS = 9
+compareValues:  delay values  -> PASS = a
+compareValues:  delay values  -> PASS = b
+compareValues:  delay values  -> PASS = c
+compareValues:  delay values  -> PASS = d
+compareValues:  delay values  -> PASS = e
+compareValues:  delay values  -> PASS = f
+compareValues:  delay values  -> PASS = 0
+compareValues:  delay values  -> PASS = 10
+compareValues:  delay values  -> PASS = 20
+compareValues:  delay values  -> PASS = 30
+compareValues:  delay values  -> PASS = 40
+compareValues:  delay values  -> PASS = 50
+compareValues:  delay values  -> PASS = 60
+compareValues:  delay values  -> PASS = 70
+compareValues:  delay values  -> PASS = 80
+compareValues:  delay values  -> PASS = 90
+compareValues:  delay values  -> PASS = a0
+compareValues:  delay values  -> PASS = b0
+compareValues:  delay values  -> PASS = c0
+compareValues:  delay values  -> PASS = d0
+compareValues:  delay values  -> PASS = e0
+compareValues:  delay values  -> PASS = f0
+compareValues:  delay values  -> PASS = 0
+compareValues:  delay values  -> PASS = 100
+compareValues:  delay values  -> PASS = 200
+compareValues:  delay values  -> PASS = 300
+compareValues:  delay values  -> PASS = 400
+compareValues:  delay values  -> PASS = 500
+compareValues:  delay values  -> PASS = 600
+compareValues:  delay values  -> PASS = 700
+compareValues:  delay values  -> PASS = 800
+compareValues:  delay values  -> PASS = 900
+compareValues:  delay values  -> PASS = a00
+compareValues:  delay values  -> PASS = b00
+compareValues:  delay values  -> PASS = c00
+compareValues:  delay values  -> PASS = d00
+compareValues:  delay values  -> PASS = e00
+compareValues:  delay values  -> PASS = f00
+compareValues:  delay values  -> PASS = 0
+compareValues:  delay values  -> PASS = 1000
+compareValues:  delay values  -> PASS = 2000
+compareValues:  delay values  -> PASS = 3000
+compareValues:  delay values  -> PASS = 4000
+compareValues:  delay values  -> PASS = 5000
+compareValues:  delay values  -> PASS = 6000
+compareValues:  delay values  -> PASS = 7000
+compareValues:  delay values  -> PASS = 8000
+compareValues:  delay values  -> PASS = 9000
+compareValues:  delay values  -> PASS = a000
+compareValues:  delay values  -> PASS = b000
+compareValues:  delay values  -> PASS = c000
+compareValues:  delay values  -> PASS = d000
+compareValues:  delay values  -> PASS = e000
+compareValues:  delay values  -> PASS = f000
+compareValues:  delay values  -> PASS = 0
+compareValues:  delay values  -> PASS = 1
+compareValues:  delay values  -> PASS = 2
+compareValues:  delay values  -> PASS = 3
+compareValues:  delay values  -> PASS = 4
+compareValues:  delay values  -> PASS = 5
+compareValues:  delay values  -> PASS = 6
+compareValues:  delay values  -> PASS = 7
+compareValues:  delay values  -> PASS = 8
+compareValues:  delay values  -> PASS = 9
+compareValues:  delay values  -> PASS = a
+compareValues:  delay values  -> PASS = b
+compareValues:  delay values  -> PASS = c
+compareValues:  delay values  -> PASS = d
+compareValues:  delay values  -> PASS = e
+compareValues:  delay values  -> PASS = f
+compareValues:  delay values  -> PASS = 0
+compareValues:  delay values  -> PASS = 10
+compareValues:  delay values  -> PASS = 20
+compareValues:  delay values  -> PASS = 30
+compareValues:  delay values  -> PASS = 40
+compareValues:  delay values  -> PASS = 50
+compareValues:  delay values  -> PASS = 60
+compareValues:  delay values  -> PASS = 70
+compareValues:  delay values  -> PASS = 80
+compareValues:  delay values  -> PASS = 90
+compareValues:  delay values  -> PASS = a0
+compareValues:  delay values  -> PASS = b0
+compareValues:  delay values  -> PASS = c0
+compareValues:  delay values  -> PASS = d0
+compareValues:  delay values  -> PASS = e0
+compareValues:  delay values  -> PASS = f0
+compareValues:  delay values  -> PASS = 0
+compareValues:  delay values  -> PASS = 100
+compareValues:  delay values  -> PASS = 200
+compareValues:  delay values  -> PASS = 300
+compareValues:  delay values  -> PASS = 400
+compareValues:  delay values  -> PASS = 500
+compareValues:  delay values  -> PASS = 600
+compareValues:  delay values  -> PASS = 700
+compareValues:  delay values  -> PASS = 800
+compareValues:  delay values  -> PASS = 900
+compareValues:  delay values  -> PASS = a00
+compareValues:  delay values  -> PASS = b00
+compareValues:  delay values  -> PASS = c00
+compareValues:  delay values  -> PASS = d00
+compareValues:  delay values  -> PASS = e00
+compareValues:  delay values  -> PASS = f00
+compareValues:  delay values  -> PASS = 0
+compareValues:  delay values  -> PASS = 1000
+compareValues:  delay values  -> PASS = 2000
+compareValues:  delay values  -> PASS = 3000
+compareValues:  delay values  -> PASS = 4000
+compareValues:  delay values  -> PASS = 5000
+compareValues:  delay values  -> PASS = 6000
+compareValues:  delay values  -> PASS = 7000
+compareValues:  delay values  -> PASS = 8000
+compareValues:  delay values  -> PASS = 9000
+compareValues:  delay values  -> PASS = a000
+compareValues:  delay values  -> PASS = b000
+compareValues:  delay values  -> PASS = c000
+compareValues:  delay values  -> PASS = d000
+compareValues:  delay values  -> PASS = e000
+compareValues:  delay values  -> PASS = f000
+compareValues:  delay values  -> PASS = 0
+compareValues:  delay values  -> PASS = 1
+compareValues:  delay values  -> PASS = 2
+compareValues:  delay values  -> PASS = 3
+compareValues:  delay values  -> PASS = 4
+compareValues:  delay values  -> PASS = 5
+compareValues:  delay values  -> PASS = 6
+compareValues:  delay values  -> PASS = 7
+compareValues:  delay values  -> PASS = 8
+compareValues:  delay values  -> PASS = 9
+compareValues:  delay values  -> PASS = a
+compareValues:  delay values  -> PASS = b
+compareValues:  delay values  -> PASS = c
+compareValues:  delay values  -> PASS = d
+compareValues:  delay values  -> PASS = e
+compareValues:  delay values  -> PASS = f
+compareValues:  delay values  -> PASS = 0
+compareValues:  delay values  -> PASS = 10
+compareValues:  delay values  -> PASS = 20
+compareValues:  delay values  -> PASS = 30
+compareValues:  delay values  -> PASS = 40
+compareValues:  delay values  -> PASS = 50
+compareValues:  delay values  -> PASS = 60
+compareValues:  delay values  -> PASS = 70
+compareValues:  delay values  -> PASS = 80
+compareValues:  delay values  -> PASS = 90
+compareValues:  delay values  -> PASS = a0
+compareValues:  delay values  -> PASS = b0
+compareValues:  delay values  -> PASS = c0
+compareValues:  delay values  -> PASS = d0
+compareValues:  delay values  -> PASS = e0
+compareValues:  delay values  -> PASS = f0
+compareValues:  delay values  -> PASS = 0
+compareValues:  delay values  -> PASS = 100
+compareValues:  delay values  -> PASS = 200
+compareValues:  delay values  -> PASS = 300
+compareValues:  delay values  -> PASS = 400
+compareValues:  delay values  -> PASS = 500
+compareValues:  delay values  -> PASS = 600
+compareValues:  delay values  -> PASS = 700
+compareValues:  delay values  -> PASS = 800
+compareValues:  delay values  -> PASS = 900
+compareValues:  delay values  -> PASS = a00
+compareValues:  delay values  -> PASS = b00
+compareValues:  delay values  -> PASS = c00
+compareValues:  delay values  -> PASS = d00
+compareValues:  delay values  -> PASS = e00
+compareValues:  delay values  -> PASS = f00
+compareValues:  delay values  -> PASS = 0
+compareValues:  delay values  -> PASS = 1000
+compareValues:  delay values  -> PASS = 2000
+compareValues:  delay values  -> PASS = 3000
+compareValues:  delay values  -> PASS = 4000
+compareValues:  delay values  -> PASS = 5000
+compareValues:  delay values  -> PASS = 6000
+compareValues:  delay values  -> PASS = 7000
+compareValues:  delay values  -> PASS = 8000
+compareValues:  delay values  -> PASS = 9000
+compareValues:  delay values  -> PASS = a000
+compareValues:  delay values  -> PASS = b000
+compareValues:  delay values  -> PASS = c000
+compareValues:  delay values  -> PASS = d000
+compareValues:  delay values  -> PASS = e000
+compareValues:  delay values  -> PASS = f000
+3d3444 Verification -> PASS
+TMBTester: Testing RAT temperature threshold bit Ignored by TAO HUANG
+TMBTester: Testing RAT ID codes
+compareValues:  RAT FPGA ID code -> PASS = 20a10093
+compareValues:  RAT PROM ID code -> PASS = 5024093
+RAT ID codes -> PASS
+TMBTester: Testing RAT User codes ignored By TAO HUANG
+TMBTester: Testing TMB U76 bus-hold chip
+Initial Boot Contents = c000
+TMBTester: testing Firmware Type
+compareValues:  Firmware Type -> PASS = c
+Firmware Type -> PASS
+TMBTester: Checking Mezzanine FPGA and PROMs ID codes
+compareValues:  Mezz FPGA ID code -> PASS = 4250093
+Mezzanine FPGA/PROM ID -> PASS
+Boot Contents after JTAG = c000
+Boot Contents after putting back to power up state= c000
+Write = 40
+compareValues:  Test pattern before hardreset!  -> PASS = 40
+After hard reset, boot register = c000
+compareValues:  Test pattern -> FAIL!
+Test pattern expected value = 40, returned value = 7f
+Write = 20
+compareValues:  Test pattern before hardreset!  -> PASS = 20
+After hard reset, boot register = c000
+compareValues:  Test pattern -> FAIL!
+Test pattern expected value = 20, returned value = 7f
+Write = 10
+compareValues:  Test pattern before hardreset!  -> PASS = 10
+After hard reset, boot register = c000
+compareValues:  Test pattern -> FAIL!
+Test pattern expected value = 10, returned value = 7f
+Write = 8
+compareValues:  Test pattern before hardreset!  -> PASS = 8
+After hard reset, boot register = c000
+compareValues:  Test pattern -> FAIL!
+Test pattern expected value = 8, returned value = 7f
+Write = 4
+compareValues:  Test pattern before hardreset!  -> PASS = 4
+After hard reset, boot register = c000
+compareValues:  Test pattern -> FAIL!
+Test pattern expected value = 4, returned value = 7f
+Write = 2
+compareValues:  Test pattern before hardreset!  -> PASS = 2
+After hard reset, boot register = c000
+compareValues:  Test pattern -> FAIL!
+Test pattern expected value = 2, returned value = 7f
+Write = 1
+compareValues:  Test pattern before hardreset!  -> PASS = 1
+After hard reset, boot register = c000
+compareValues:  Test pattern -> FAIL!
+Test pattern expected value = 1, returned value = 7f
+TMB U76 bus-hold chip -> FAIL <-

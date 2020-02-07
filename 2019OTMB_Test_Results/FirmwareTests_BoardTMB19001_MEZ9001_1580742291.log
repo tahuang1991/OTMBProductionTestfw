@@ -1,0 +1,713 @@
+Firmware Tests ME+_ProductionTest output:
+Test with label TestDMBLoopback ... start
+DMBLoopback Test With Fiber OFF -> PASS
+Test with label TestDMBLoopback status ...  -> PASS
+Test with label TestRPCLoopback ... start
+RPCLoopback Test With Fiber OFF -> PASS
+RPCLoopback Test With Fiber ON -> PASS
+RPCLoopbackSlow Test With Fiber OFF -> PASS
+RPCLoopbackSlow Test With Fiber ON -> PASS
+Test with label TestRPCLoopback status ...  -> PASS
+Test with label TestFiberConnector ... start
+Fiber Test: Enabled,  status code:  fff
+All Links Active: True
+Checking errors on each fiber 
+Fiber0:ON: Error Count: 0 command: f1
+Fiber1:ON: Error Count: 0 command: f2
+Fiber2:ON: Error Count: 0 command: f3
+Fiber3:ON: Error Count: 0 command: f4
+Fiber4:ON: Error Count: 0 command: f5
+Fiber5:ON: Error Count: 0 command: f6
+Fiber6:ON: Error Count: 0 command: f7
+Fiber7:ON: Error Count: 0 command: e6
+Fiber8:ON: Error Count: 0 command: e7
+Fiber9:ON: Error Count: 0 command: e8
+Fibera:ON: Error Count: 0 command: e9
+Fiberb:ON: Error Count: 0 command: ea
+Checking errors on each fiber -- > pass: no error on all fibers 
+Unable to generate error on single fiber!
+Successful generation of error on single fiber!
+Successful generation of errors on all fibers!
+Fiber0:ON: Error Count: 0 command: f1
+Fiber1:ON: Error Count: 0 command: f2
+Fiber2:ON: Error Count: 0 command: f3
+Fiber3:ON: Error Count: 0 command: f4
+Fiber4:ON: Error Count: 0 command: f5
+Fiber5:ON: Error Count: 0 command: f6
+Fiber6:ON: Error Count: 0 command: f7
+Fiber7:ON: Error Count: 0 command: e6
+Fiber8:ON: Error Count: 0 command: e7
+Fiber9:ON: Error Count: 0 command: e8
+Fibera:ON: Error Count: 0 command: e9
+Fiberb:ON: Error Count: 0 command: ea
+Test with label TestFiberConnector status ...  -> PASS
+Test with label CheckFirmwareTestStatus ... start
+Loopback Firmware Test Status: ON
+RPC Loop Hz Test Status: OFF
+Fiber Firmware Test Status: ON
+Fiber0:ON: Error Count: 0 command: f1
+Fiber1:ON: Error Count: 0 command: f2
+Fiber2:ON: Error Count: 0 command: f3
+Fiber3:ON: Error Count: 0 command: f4
+Fiber4:ON: Error Count: 0 command: f5
+Fiber5:ON: Error Count: 0 command: f6
+Fiber6:ON: Error Count: 0 command: f7
+Fiber7:ON: Error Count: 0 command: e6
+Fiber8:ON: Error Count: 0 command: e7
+Fiber9:ON: Error Count: 0 command: e8
+Fibera:ON: Error Count: 0 command: e9
+Fiberb:ON: Error Count: 0 command: ea
+Test with label CheckFirmwareTestStatus status ...  -> PASS
+Test with label CheckFirmwareTestStatus ... start
+Loopback Firmware Test Status: ON
+RPC Loop Hz Test Status: OFF
+Fiber Firmware Test Status: ON
+Fiber0:ON: Error Count: 0 command: f1
+Fiber1:ON: Error Count: 0 command: f2
+Fiber2:ON: Error Count: 0 command: f3
+Fiber3:ON: Error Count: 0 command: f4
+Fiber4:ON: Error Count: 0 command: f5
+Fiber5:ON: Error Count: 0 command: f6
+Fiber6:ON: Error Count: 0 command: f7
+Fiber7:ON: Error Count: 0 command: e6
+Fiber8:ON: Error Count: 0 command: e7
+Fiber9:ON: Error Count: 0 command: e8
+Fibera:ON: Error Count: 0 command: e9
+Fiberb:ON: Error Count: 0 command: ea
+Test with label CheckFirmwareTestStatus status ...  -> PASS
+Test with label TestDMBLoopback ... start
+DMBLoopback Test With Fiber OFF -> PASS
+Test with label TestDMBLoopback status ...  -> PASS
+Test with label TestRPCLoopback ... start
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 3c1 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 10c != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 36b != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 1fe != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 2c5 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 73c != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 642 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 5ba != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 5db != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 214 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 751 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 4cb != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 611 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 8d != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 264 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 18 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 533 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : ea != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 7cb != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 1c0 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 25c != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 327 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 507 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 358 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+RPCLoopback Test With Fiber OFF -> FAIL
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 7c4 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : db != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 7a4 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 6e5 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 323 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 5c2 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 2db != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : a1 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 570 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 316 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 23f != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 115 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 760 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 7d1 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 6bf != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 140 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 7f3 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : e6 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 50e != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : c9 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 7bd != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 154 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 2f3 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 2bb != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+RPCLoopback Test With Fiber ON -> FAIL
+RPCLoopbackSlow Test With Fiber OFF -> PASS
+RPCLoopbackSlow Test With Fiber ON -> PASS
+Test with label TestRPCLoopback status ...  -> FAIL
+Test with label TestRPCLoopback ... start
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 7ac != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 768 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 6ad != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 356 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 4a != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 2ed != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 79a != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 14b != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 51c != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 1e3 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 106 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 2ee != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 71c != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 382 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 26e != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 763 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 71f != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 64c != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 2d4 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 49e != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 334 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 3bb != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 7c7 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 2ae != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+RPCLoopback Test With Fiber OFF -> FAIL
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 10c != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 4aa != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : bc != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 379 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 648 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 51e != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : bd != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 57b != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : cf != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 33a != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 50d != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 1 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 1c9 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 5dc != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 6a5 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 439 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 775 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 386 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 14f != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 167 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 36f != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 2e6 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 6f5 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 23e != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+RPCLoopback Test With Fiber ON -> FAIL
+RPCLoopbackSlow Test With Fiber OFF -> PASS
+RPCLoopbackSlow Test With Fiber ON -> PASS
+Test with label TestRPCLoopback status ...  -> FAIL
+Test with label TestRPCLoopback ... start
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 402 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 11d != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 549 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 62c != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 516 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 425 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 405 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 290 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 5ed != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 120 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 4c7 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : d4 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : b4 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 3f7 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 422 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 6c7 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 5aa != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 738 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 751 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 4a9 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 15a != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : ff != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 41a != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+RPCLoopback Test With Fiber OFF -> FAIL
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 1d9 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 592 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : dc != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 4ee != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 191 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 7ba != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 448 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 1d8 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : d4 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 3bb != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 343 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 6ed != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 44f != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 325 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 1 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 412 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 273 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 1d9 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 62f != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 3c9 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 485 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 2dc != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 140 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 682 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+RPCLoopback Test With Fiber ON -> FAIL
+RPCLoopbackSlow Test With Fiber OFF -> PASS
+RPCLoopbackSlow Test With Fiber ON -> PASS
+Test with label TestRPCLoopback status ...  -> FAIL
+Test with label TestFiberConnector ... start
+Fiber Test: Enabled,  status code:  fff
+All Links Active: True
+Checking errors on each fiber 
+Fiber0:ON: Error Count: 0 command: f1
+Fiber1:ON: Error Count: 0 command: f2
+Fiber2:ON: Error Count: 0 command: f3
+Fiber3:ON: Error Count: 0 command: f4
+Fiber4:ON: Error Count: 0 command: f5
+Fiber5:ON: Error Count: 0 command: f6
+Fiber6:ON: Error Count: 0 command: f7
+Fiber7:ON: Error Count: 0 command: e6
+Fiber8:ON: Error Count: 0 command: e7
+Fiber9:ON: Error Count: 0 command: e8
+Fibera:ON: Error Count: 0 command: e9
+Fiberb:ON: Error Count: 0 command: ea
+Checking errors on each fiber -- > pass: no error on all fibers 
+Unable to generate error on single fiber!
+Successful generation of error on single fiber!
+Successful generation of errors on all fibers!
+Fiber0:ON: Error Count: 0 command: f1
+Fiber1:ON: Error Count: 0 command: f2
+Fiber2:ON: Error Count: 0 command: f3
+Fiber3:ON: Error Count: 0 command: f4
+Fiber4:ON: Error Count: 0 command: f5
+Fiber5:ON: Error Count: 0 command: f6
+Fiber6:ON: Error Count: 0 command: f7
+Fiber7:ON: Error Count: 0 command: e6
+Fiber8:ON: Error Count: 0 command: e7
+Fiber9:ON: Error Count: 0 command: e8
+Fibera:ON: Error Count: 0 command: e9
+Fiberb:ON: Error Count: 0 command: ea
+Test with label TestFiberConnector status ...  -> PASS
+Test with label TestRPCLoopback ... start
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 5be != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 666 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 425 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 7d != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 64f != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 1e0 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 42c != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 749 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 60 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 2b != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 404 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 38e != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 4c0 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 18f != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 15b != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 5e7 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 3b2 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 63b != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 66 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 56b != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 76 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 557 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : be != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : b != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+RPCLoopback Test With Fiber OFF -> FAIL
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 31f != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : ae != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 6d2 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 797 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 3ec != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 46a != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 76d != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 1f0 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 4a8 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 168 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 31b != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 2e8 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 3ed != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : fc != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 1e3 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 432 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 574 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 11a != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 677 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 2a9 != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 3ed != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 4cd != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 27f != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+CompareValues:  CheckStatusLoopback RAT error count -> FAIL! : 4be != 0
+CompareValues:  CheckStatusLoopback RAT counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATLOOP1_STAT -> FAIL! : 40 != 0
+RPCLoopback Test With Fiber ON -> FAIL
+RPCLoopbackSlow Test With Fiber OFF -> PASS
+RPCLoopbackSlow Test With Fiber ON -> PASS
+Test with label TestRPCLoopback status ...  -> FAIL

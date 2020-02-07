@@ -1,0 +1,169 @@
+Firmware Tests ME+_ProductionTest output:
+Test with label TestFiberConnector ... start
+Fiber Test: Enabled,  status code:  fff
+All Links Active: True
+Checking errors on each fiber 
+Fiber0:ON: Error Count: 0 command: f1
+Fiber1:ON: Error Count: 0 command: f2
+Fiber2:ON: Error Count: 0 command: f3
+Fiber3:ON: Error Count: 0 command: f4
+Fiber4:ON: Error Count: 0 command: f5
+Fiber5:ON: Error Count: 0 command: f6
+Fiber6:ON: Error Count: 0 command: f7
+Fiber7:ON: Error Count: 0 command: e6
+Fiber8:ON: Error Count: 0 command: e7
+Fiber9:ON: Error Count: 0 command: e8
+Fibera:ON: Error Count: 0 command: e9
+Fiberb:ON: Error Count: 0 command: ea
+Checking errors on each fiber -- > pass: no error on all fibers 
+Unable to generate error on single fiber!
+Successful generation of error on single fiber!
+Successful generation of errors on all fibers!
+Fiber0:ON: Error Count: 0 command: f1
+Fiber1:ON: Error Count: 0 command: f2
+Fiber2:ON: Error Count: 0 command: f3
+Fiber3:ON: Error Count: 0 command: f4
+Fiber4:ON: Error Count: 0 command: f5
+Fiber5:ON: Error Count: 0 command: f6
+Fiber6:ON: Error Count: 0 command: f7
+Fiber7:ON: Error Count: 0 command: e6
+Fiber8:ON: Error Count: 0 command: e7
+Fiber9:ON: Error Count: 0 command: e8
+Fibera:ON: Error Count: 0 command: e9
+Fiberb:ON: Error Count: 0 command: ea
+Test with label TestFiberConnector status ...  -> PASS
+Test with label TestDMBLoopback ... start
+DMBLoopback Test With Fiber OFF -> PASS
+Test with label TestDMBLoopback status ...  -> PASS
+Test with label TestRPCLoopback ... start
+RPCLoopback Test With Fiber OFF -> PASS
+RPCLoopback Test With Fiber ON -> PASS
+RPCLoopbackSlow Test With Fiber OFF -> PASS
+RPCLoopbackSlow Test With Fiber ON -> PASS
+Test with label TestRPCLoopback status ...  -> PASS
+Test with label TestFiberConnector ... start
+Fiber Test: Enabled,  status code:  fff
+All Links Active: True
+Checking errors on each fiber 
+Fiber0:ON: Error Count: 0 command: f1
+Fiber1:ON: Error Count: 0 command: f2
+Fiber2:ON: Error Count: 0 command: f3
+Fiber3:ON: Error Count: 0 command: f4
+Fiber4:ON: Error Count: 0 command: f5
+Fiber5:ON: Error Count: 0 command: f6
+Fiber6:ON: Error Count: 0 command: f7
+Fiber7:ON: Error Count: 0 command: e6
+Fiber8:ON: Error Count: 0 command: e7
+Fiber9:ON: Error Count: 0 command: e8
+Fibera:ON: Error Count: 0 command: e9
+Fiberb:ON: Error Count: 0 command: ea
+Checking errors on each fiber -- > pass: no error on all fibers 
+Unable to generate error on single fiber!
+Successful generation of error on single fiber!
+Successful generation of errors on all fibers!
+Fiber0:ON: Error Count: 0 command: f1
+Fiber1:ON: Error Count: 0 command: f2
+Fiber2:ON: Error Count: 0 command: f3
+Fiber3:ON: Error Count: 0 command: f4
+Fiber4:ON: Error Count: 0 command: f5
+Fiber5:ON: Error Count: 0 command: f6
+Fiber6:ON: Error Count: 0 command: f7
+Fiber7:ON: Error Count: 0 command: e6
+Fiber8:ON: Error Count: 0 command: e7
+Fiber9:ON: Error Count: 0 command: e8
+Fibera:ON: Error Count: 0 command: e9
+Fiberb:ON: Error Count: 0 command: ea
+Test with label TestFiberConnector status ...  -> PASS
+Test with label CheckFirmwareTestStatus ... start
+Loopback Firmware Test Status: ON
+RPC Loop Hz Test Status: OFF
+Fiber Firmware Test Status: ON
+Fiber0:ON: Error Count: 0 command: f1
+Fiber1:ON: Error Count: 0 command: f2
+Fiber2:ON: Error Count: 0 command: f3
+Fiber3:ON: Error Count: 0 command: f4
+Fiber4:ON: Error Count: 0 command: f5
+Fiber5:ON: Error Count: 0 command: f6
+Fiber6:ON: Error Count: 0 command: f7
+Fiber7:ON: Error Count: 0 command: e6
+Fiber8:ON: Error Count: 0 command: e7
+Fiber9:ON: Error Count: 0 command: e8
+Fibera:ON: Error Count: 0 command: e9
+Fiberb:ON: Error Count: 0 command: ea
+Test with label CheckFirmwareTestStatus status ...  -> PASS
+Test with label CheckFirmwareTestStatus ... start
+Loopback Firmware Test Status: ON
+RPC Loop Hz Test Status: OFF
+Fiber Firmware Test Status: ON
+Fiber0:ON: Error Count: 0 command: f1
+Fiber1:ON: Error Count: 0 command: f2
+Fiber2:ON: Error Count: 0 command: f3
+Fiber3:ON: Error Count: 0 command: f4
+Fiber4:ON: Error Count: 0 command: f5
+Fiber5:ON: Error Count: 0 command: f6
+Fiber6:ON: Error Count: 0 command: f7
+Fiber7:ON: Error Count: 0 command: e6
+Fiber8:ON: Error Count: 0 command: e7
+Fiber9:ON: Error Count: 0 command: e8
+Fibera:ON: Error Count: 0 command: e9
+Fiberb:ON: Error Count: 0 command: ea
+Test with label CheckFirmwareTestStatus status ...  -> PASS
+Test with label CheckFirmwareTestStatus ... start
+Loopback Firmware Test Status: ON
+RPC Loop Hz Test Status: OFF
+Fiber Firmware Test Status: ON
+Fiber0:ON: Error Count: 0 command: f1
+Fiber1:ON: Error Count: 0 command: f2
+Fiber2:ON: Error Count: 0 command: f3
+Fiber3:ON: Error Count: 0 command: f4
+Fiber4:ON: Error Count: 0 command: f5
+Fiber5:ON: Error Count: 0 command: f6
+Fiber6:ON: Error Count: 0 command: f7
+Fiber7:ON: Error Count: 0 command: e6
+Fiber8:ON: Error Count: 0 command: e7
+Fiber9:ON: Error Count: 0 command: e8
+Fibera:ON: Error Count: 0 command: e9
+Fiberb:ON: Error Count: 0 command: ea
+Test with label CheckFirmwareTestStatus status ...  -> PASS
+Test with label TestDMBLoopback ... start
+DMBLoopback Test With Fiber OFF -> PASS
+Test with label TestDMBLoopback status ...  -> PASS
+Test with label TestRPCLoopback ... start
+RPCLoopback Test With Fiber OFF -> PASS
+RPCLoopback Test With Fiber ON -> PASS
+RPCLoopbackSlow Test With Fiber OFF -> PASS
+RPCLoopbackSlow Test With Fiber ON -> PASS
+Test with label TestRPCLoopback status ...  -> PASS
+Test with label TestFiberConnector ... start
+Fiber Test: Enabled,  status code:  fff
+All Links Active: True
+Checking errors on each fiber 
+Fiber0:ON: Error Count: 0 command: f1
+Fiber1:ON: Error Count: 0 command: f2
+Fiber2:ON: Error Count: 0 command: f3
+Fiber3:ON: Error Count: 0 command: f4
+Fiber4:ON: Error Count: 0 command: f5
+Fiber5:ON: Error Count: 0 command: f6
+Fiber6:ON: Error Count: 0 command: f7
+Fiber7:ON: Error Count: 0 command: e6
+Fiber8:ON: Error Count: 0 command: e7
+Fiber9:ON: Error Count: 0 command: e8
+Fibera:ON: Error Count: 0 command: e9
+Fiberb:ON: Error Count: 0 command: ea
+Checking errors on each fiber -- > pass: no error on all fibers 
+Unable to generate error on single fiber!
+Successful generation of error on single fiber!
+Successful generation of errors on all fibers!
+Fiber0:ON: Error Count: 0 command: f1
+Fiber1:ON: Error Count: 0 command: f2
+Fiber2:ON: Error Count: 0 command: f3
+Fiber3:ON: Error Count: 0 command: f4
+Fiber4:ON: Error Count: 0 command: f5
+Fiber5:ON: Error Count: 0 command: f6
+Fiber6:ON: Error Count: 0 command: f7
+Fiber7:ON: Error Count: 0 command: e6
+Fiber8:ON: Error Count: 0 command: e7
+Fiber9:ON: Error Count: 0 command: e8
+Fibera:ON: Error Count: 0 command: e9
+Fiberb:ON: Error Count: 0 command: ea
+Test with label TestFiberConnector status ...  -> PASS

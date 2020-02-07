@@ -1,0 +1,251 @@
+Firmware Tests ME+_ProductionTest output:
+Test with label TestDMBLoopback ... start
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 2b2 != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : 1 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 492 != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : 1 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 115 != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : 1 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 2c8 != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : 1 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 493 != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : 1 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 35b != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : 1 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 378 != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : 1 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 4d0 != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : 1 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 6c0 != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : 1 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 7e4 != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : 1 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 390 != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : 1 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 721 != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : 1 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 746 != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : 1 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 48b != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : 1 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 3af != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : 1 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 26 != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : 1 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 287 != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : 1 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 26e != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : 1 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 7dc != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : 1 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 5c5 != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : 1 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 1b0 != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : 1 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 3b2 != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : 1 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 449 != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : 1 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 226 != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : 1 != 0
+DMBLoopback Test With Fiber OFF -> FAIL
+Test with label TestDMBLoopback status ...  -> FAIL
+Test with label TestRPCLoopback ... start
+RPCLoopback Test With Fiber OFF -> PASS
+RPCLoopback Test With Fiber ON -> PASS
+CompareValues:  CheckStatusLoopback RATSlow error count -> FAIL! : 453 != 0
+CompareValues:  CheckStatusLoopback RATSlow counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATSlowLOOP1_STAT -> FAIL! : 80 != 0
+CompareValues:  CheckStatusLoopback RATSlow error count -> FAIL! : 1f1 != 0
+CompareValues:  CheckStatusLoopback RATSlow counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATSlowLOOP1_STAT -> FAIL! : 80 != 0
+CompareValues:  CheckStatusLoopback RATSlow error count -> FAIL! : 7b9 != 0
+CompareValues:  CheckStatusLoopback RATSlow counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATSlowLOOP1_STAT -> FAIL! : 80 != 0
+CompareValues:  CheckStatusLoopback RATSlow error count -> FAIL! : 7f3 != 0
+CompareValues:  CheckStatusLoopback RATSlow counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATSlowLOOP1_STAT -> FAIL! : 80 != 0
+CompareValues:  CheckStatusLoopback RATSlow error count -> FAIL! : 5fd != 0
+CompareValues:  CheckStatusLoopback RATSlow counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATSlowLOOP1_STAT -> FAIL! : 80 != 0
+CompareValues:  CheckStatusLoopback RATSlow error count -> FAIL! : ec != 0
+CompareValues:  CheckStatusLoopback RATSlow counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATSlowLOOP1_STAT -> FAIL! : 80 != 0
+CompareValues:  CheckStatusLoopback RATSlow error count -> FAIL! : 5f9 != 0
+CompareValues:  CheckStatusLoopback RATSlow counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATSlowLOOP1_STAT -> FAIL! : 80 != 0
+CompareValues:  CheckStatusLoopback RATSlow counter overflow -> FAIL! : 1 != 0
+CompareValues:  CheckStatusLoopback RATSlow counter overflow -> FAIL! : 1 != 0
+CompareValues:  CheckStatusLoopback RATSlow error count -> FAIL! : 3c1 != 0
+CompareValues:  CheckStatusLoopback RATSlow counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATSlowLOOP1_STAT -> FAIL! : 80 != 0
+CompareValues:  CheckStatusLoopback RATSlow counter overflow -> FAIL! : 1 != 0
+CompareValues:  CheckStatusLoopback RATSlow error count -> FAIL! : 609 != 0
+CompareValues:  CheckStatusLoopback RATSlow counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATSlowLOOP1_STAT -> FAIL! : 80 != 0
+CompareValues:  CheckStatusLoopback RATSlow error count -> FAIL! : 244 != 0
+CompareValues:  CheckStatusLoopback RATSlow counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATSlowLOOP1_STAT -> FAIL! : 80 != 0
+CompareValues:  CheckStatusLoopback RATSlow error count -> FAIL! : 43a != 0
+CompareValues:  CheckStatusLoopback RATSlow counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATSlowLOOP1_STAT -> FAIL! : 80 != 0
+CompareValues:  CheckStatusLoopback RATSlow counter overflow -> FAIL! : 1 != 0
+CompareValues:  CheckStatusLoopback RATSlow error count -> FAIL! : 76a != 0
+CompareValues:  CheckStatusLoopback RATSlow counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATSlowLOOP1_STAT -> FAIL! : 80 != 0
+CompareValues:  CheckStatusLoopback RATSlow error count -> FAIL! : 554 != 0
+CompareValues:  CheckStatusLoopback RATSlow counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATSlowLOOP1_STAT -> FAIL! : 80 != 0
+RPCLoopbackSlow Test With Fiber OFF -> FAIL
+RPCLoopbackSlow Test With Fiber ON -> PASS
+Test with label TestRPCLoopback status ...  -> FAIL
+Test with label TestRPCLoopback ... start
+RPCLoopback Test With Fiber OFF -> PASS
+RPCLoopback Test With Fiber ON -> PASS
+CompareValues:  CheckStatusLoopback RATSlow error count -> FAIL! : 7ea != 0
+CompareValues:  CheckStatusLoopback RATSlow counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATSlowLOOP1_STAT -> FAIL! : 80 != 0
+CompareValues:  CheckStatusLoopback RATSlow error count -> FAIL! : 151 != 0
+CompareValues:  CheckStatusLoopback RATSlow counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATSlowLOOP1_STAT -> FAIL! : 80 != 0
+CompareValues:  CheckStatusLoopback RATSlow error count -> FAIL! : 3db != 0
+CompareValues:  CheckStatusLoopback RATSlow counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATSlowLOOP1_STAT -> FAIL! : 80 != 0
+CompareValues:  CheckStatusLoopback RATSlow error count -> FAIL! : 4f3 != 0
+CompareValues:  CheckStatusLoopback RATSlow counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATSlowLOOP1_STAT -> FAIL! : 80 != 0
+CompareValues:  CheckStatusLoopback RATSlow error count -> FAIL! : 19c != 0
+CompareValues:  CheckStatusLoopback RATSlow counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATSlowLOOP1_STAT -> FAIL! : 80 != 0
+CompareValues:  CheckStatusLoopback RATSlow error count -> FAIL! : 349 != 0
+CompareValues:  CheckStatusLoopback RATSlow counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATSlowLOOP1_STAT -> FAIL! : 80 != 0
+CompareValues:  CheckStatusLoopback RATSlow counter overflow -> FAIL! : 1 != 0
+CompareValues:  CheckStatusLoopback RATSlow counter overflow -> FAIL! : 1 != 0
+CompareValues:  CheckStatusLoopback RATSlow error count -> FAIL! : 4a5 != 0
+CompareValues:  CheckStatusLoopback RATSlow counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATSlowLOOP1_STAT -> FAIL! : 80 != 0
+CompareValues:  CheckStatusLoopback RATSlow counter overflow -> FAIL! : 1 != 0
+CompareValues:  CheckStatusLoopback RATSlow counter overflow -> FAIL! : 1 != 0
+CompareValues:  CheckStatusLoopback RATSlow error count -> FAIL! : 272 != 0
+CompareValues:  CheckStatusLoopback RATSlow counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATSlowLOOP1_STAT -> FAIL! : 80 != 0
+CompareValues:  CheckStatusLoopback RATSlow error count -> FAIL! : 549 != 0
+CompareValues:  CheckStatusLoopback RATSlow counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATSlowLOOP1_STAT -> FAIL! : 80 != 0
+CompareValues:  CheckStatusLoopback RATSlow counter overflow -> FAIL! : 1 != 0
+CompareValues:  CheckStatusLoopback RATSlow error count -> FAIL! : 3c0 != 0
+CompareValues:  CheckStatusLoopback RATSlow counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATSlowLOOP1_STAT -> FAIL! : 80 != 0
+CompareValues:  CheckStatusLoopback RATSlow error count -> FAIL! : a7 != 0
+CompareValues:  CheckStatusLoopback RATSlow counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATSlowLOOP1_STAT -> FAIL! : 80 != 0
+RPCLoopbackSlow Test With Fiber OFF -> FAIL
+RPCLoopbackSlow Test With Fiber ON -> PASS
+Test with label TestRPCLoopback status ...  -> FAIL
+Test with label TestRPCLoopback ... start
+RPCLoopback Test With Fiber OFF -> PASS
+RPCLoopback Test With Fiber ON -> PASS
+CompareValues:  CheckStatusLoopback RATSlow error count -> FAIL! : dc != 0
+CompareValues:  CheckStatusLoopback RATSlow counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATSlowLOOP1_STAT -> FAIL! : 80 != 0
+CompareValues:  CheckStatusLoopback RATSlow error count -> FAIL! : 3a1 != 0
+CompareValues:  CheckStatusLoopback RATSlow counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATSlowLOOP1_STAT -> FAIL! : 80 != 0
+CompareValues:  CheckStatusLoopback RATSlow error count -> FAIL! : 575 != 0
+CompareValues:  CheckStatusLoopback RATSlow counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATSlowLOOP1_STAT -> FAIL! : 80 != 0
+CompareValues:  CheckStatusLoopback RATSlow error count -> FAIL! : 2ec != 0
+CompareValues:  CheckStatusLoopback RATSlow counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATSlowLOOP1_STAT -> FAIL! : 80 != 0
+CompareValues:  CheckStatusLoopback RATSlow error count -> FAIL! : 182 != 0
+CompareValues:  CheckStatusLoopback RATSlow counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATSlowLOOP1_STAT -> FAIL! : 80 != 0
+CompareValues:  CheckStatusLoopback RATSlow error count -> FAIL! : 42d != 0
+CompareValues:  CheckStatusLoopback RATSlow counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATSlowLOOP1_STAT -> FAIL! : 80 != 0
+CompareValues:  CheckStatusLoopback RATSlow error count -> FAIL! : 36b != 0
+CompareValues:  CheckStatusLoopback RATSlow counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATSlowLOOP1_STAT -> FAIL! : 80 != 0
+CompareValues:  CheckStatusLoopback RATSlow counter overflow -> FAIL! : 1 != 0
+CompareValues:  CheckStatusLoopback RATSlow counter overflow -> FAIL! : 1 != 0
+CompareValues:  CheckStatusLoopback RATSlow error count -> FAIL! : 4e7 != 0
+CompareValues:  CheckStatusLoopback RATSlow counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATSlowLOOP1_STAT -> FAIL! : 80 != 0
+CompareValues:  CheckStatusLoopback RATSlow counter overflow -> FAIL! : 1 != 0
+CompareValues:  CheckStatusLoopback RATSlow error count -> FAIL! : 2f2 != 0
+CompareValues:  CheckStatusLoopback RATSlow counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATSlowLOOP1_STAT -> FAIL! : 80 != 0
+CompareValues:  CheckStatusLoopback RATSlow error count -> FAIL! : 4b3 != 0
+CompareValues:  CheckStatusLoopback RATSlow counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATSlowLOOP1_STAT -> FAIL! : 80 != 0
+CompareValues:  CheckStatusLoopback RATSlow error count -> FAIL! : 355 != 0
+CompareValues:  CheckStatusLoopback RATSlow counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATSlowLOOP1_STAT -> FAIL! : 80 != 0
+CompareValues:  CheckStatusLoopback RATSlow counter overflow -> FAIL! : 1 != 0
+CompareValues:  CheckStatusLoopback RATSlow error count -> FAIL! : 183 != 0
+CompareValues:  CheckStatusLoopback RATSlow counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATSlowLOOP1_STAT -> FAIL! : 80 != 0
+CompareValues:  CheckStatusLoopback RATSlow error count -> FAIL! : 436 != 0
+CompareValues:  CheckStatusLoopback RATSlow counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATSlowLOOP1_STAT -> FAIL! : 80 != 0
+RPCLoopbackSlow Test With Fiber OFF -> FAIL
+RPCLoopbackSlow Test With Fiber ON -> PASS
+Test with label TestRPCLoopback status ...  -> FAIL
+Test with label TestFiberConnector ... start
+Fiber Test: Enabled,  status code:  fff
+All Links Active: True
+Checking errors on each fiber 
+Fiber0:ON: Error Count: 0 command: f1
+Fiber1:ON: Error Count: 0 command: f2
+Fiber2:ON: Error Count: 0 command: f3
+Fiber3:ON: Error Count: 0 command: f4
+Fiber4:ON: Error Count: 0 command: f5
+Fiber5:ON: Error Count: 0 command: f6
+Fiber6:ON: Error Count: 0 command: f7
+Fiber7:ON: Error Count: 0 command: e6
+Fiber8:ON: Error Count: 0 command: e7
+Fiber9:ON: Error Count: 0 command: e8
+Fibera:ON: Error Count: 0 command: e9
+Fiberb:ON: Error Count: 0 command: ea
+Checking errors on each fiber -- > pass: no error on all fibers 
+Unable to generate error on single fiber!
+Successful generation of error on single fiber!
+Successful generation of errors on all fibers!
+Fiber0:ON: Error Count: 0 command: f1
+Fiber1:ON: Error Count: 0 command: f2
+Fiber2:ON: Error Count: 0 command: f3
+Fiber3:ON: Error Count: 0 command: f4
+Fiber4:ON: Error Count: 0 command: f5
+Fiber5:ON: Error Count: 0 command: f6
+Fiber6:ON: Error Count: 0 command: f7
+Fiber7:ON: Error Count: 0 command: e6
+Fiber8:ON: Error Count: 0 command: e7
+Fiber9:ON: Error Count: 0 command: e8
+Fibera:ON: Error Count: 0 command: e9
+Fiberb:ON: Error Count: 0 command: ea
+Test with label TestFiberConnector status ...  -> PASS

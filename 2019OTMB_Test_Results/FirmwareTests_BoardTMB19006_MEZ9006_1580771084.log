@@ -1,0 +1,162 @@
+Firmware Tests ME+_ProductionTest output:
+Test with label TestDMBLoopback ... start
+DMBLoopback Test With Fiber OFF -> PASS
+Test with label TestDMBLoopback status ...  -> PASS
+Test with label TestRPCLoopback ... start
+RPCLoopback Test With Fiber OFF -> PASS
+RPCLoopback Test With Fiber ON -> PASS
+RPCLoopbackSlow Test With Fiber OFF -> PASS
+RPCLoopbackSlow Test With Fiber ON -> PASS
+Test with label TestRPCLoopback status ...  -> PASS
+Test with label TestFiberConnector ... start
+Fiber Test: Enabled
+All Links Active: False
+Fiber Status: 0
+Fiber Invalid Status: 0
+Fiber0:OFF: Error Count: 0 command: f1
+Fiber1:OFF: Error Count: 0 command: f2
+Fiber2:OFF: Error Count: 0 command: f3
+Fiber3:OFF: Error Count: 0 command: f4
+Fiber4:OFF: Error Count: 0 command: f5
+Fiber5:OFF: Error Count: 0 command: f6
+Fiber6:OFF: Error Count: 0 command: f7
+Fiber7:OFF: Error Count: 0 command: e6
+Fiber8:OFF: Error Count: 0 command: e7
+Fiber9:OFF: Error Count: 0 command: e8
+Fibera:OFF: Error Count: 1428 command: e9
+Fiberb:OFF: Error Count: 0 command: ea
+Fiber Test: end.  return errcode=1
+Test with label TestFiberConnector status ...  -> FAIL
+Test with label TestFiberConnector ... start
+Fiber Test: Enabled
+All Links Active: False
+Fiber Status: 0
+Fiber Invalid Status: 0
+Fiber0:OFF: Error Count: 0 command: f1
+Fiber1:OFF: Error Count: 0 command: f2
+Fiber2:OFF: Error Count: 0 command: f3
+Fiber3:OFF: Error Count: 0 command: f4
+Fiber4:OFF: Error Count: 0 command: f5
+Fiber5:OFF: Error Count: 0 command: f6
+Fiber6:OFF: Error Count: 0 command: f7
+Fiber7:OFF: Error Count: 0 command: e6
+Fiber8:OFF: Error Count: 0 command: e7
+Fiber9:OFF: Error Count: 0 command: e8
+Fibera:OFF: Error Count: 1053 command: e9
+Fiberb:OFF: Error Count: 0 command: ea
+Fiber Test: end.  return errcode=1
+Test with label TestFiberConnector status ...  -> FAIL
+Test with label TestFiberConnector ... start
+Fiber Test: Enabled
+All Links Active: False
+Fiber Status: 0
+Fiber Invalid Status: 0
+Fiber0:OFF: Error Count: 0 command: f1
+Fiber1:OFF: Error Count: 0 command: f2
+Fiber2:OFF: Error Count: 0 command: f3
+Fiber3:OFF: Error Count: 0 command: f4
+Fiber4:OFF: Error Count: 0 command: f5
+Fiber5:OFF: Error Count: 0 command: f6
+Fiber6:OFF: Error Count: 0 command: f7
+Fiber7:OFF: Error Count: 0 command: e6
+Fiber8:OFF: Error Count: 0 command: e7
+Fiber9:OFF: Error Count: 0 command: e8
+Fibera:OFF: Error Count: 1053 command: e9
+Fiberb:OFF: Error Count: 0 command: ea
+Fiber Test: end.  return errcode=1
+Test with label TestFiberConnector status ...  -> FAIL
+Test with label TestFiberConnector ... start
+Fiber Test: Enabled
+All Links Active: False
+Fiber Status: 0
+Fiber Invalid Status: 0
+Fiber0:OFF: Error Count: 0 command: f1
+Fiber1:OFF: Error Count: 0 command: f2
+Fiber2:OFF: Error Count: 0 command: f3
+Fiber3:OFF: Error Count: 0 command: f4
+Fiber4:OFF: Error Count: 0 command: f5
+Fiber5:OFF: Error Count: 0 command: f6
+Fiber6:OFF: Error Count: 0 command: f7
+Fiber7:OFF: Error Count: 0 command: e6
+Fiber8:OFF: Error Count: 0 command: e7
+Fiber9:OFF: Error Count: 0 command: e8
+Fibera:OFF: Error Count: 3811 command: e9
+Fiberb:OFF: Error Count: 0 command: ea
+Fiber Test: end.  return errcode=1
+Test with label TestFiberConnector status ...  -> FAIL
+Test with label TestFiberConnector ... start
+Fiber Test: Enabled
+All Links Active: False
+Fiber Status: 0
+Fiber Invalid Status: 0
+Fiber0:OFF: Error Count: 0 command: f1
+Fiber1:OFF: Error Count: 0 command: f2
+Fiber2:OFF: Error Count: 0 command: f3
+Fiber3:OFF: Error Count: 0 command: f4
+Fiber4:OFF: Error Count: 0 command: f5
+Fiber5:OFF: Error Count: 0 command: f6
+Fiber6:OFF: Error Count: 0 command: f7
+Fiber7:OFF: Error Count: 0 command: e6
+Fiber8:OFF: Error Count: 0 command: e7
+Fiber9:OFF: Error Count: 0 command: e8
+Fibera:OFF: Error Count: 0 command: e9
+Fiberb:OFF: Error Count: 0 command: ea
+Fiber Test: end.  return errcode=1
+Test with label TestFiberConnector status ...  -> FAIL
+Test with label TestFiberConnector ... start
+Fiber Test: Enabled
+All Links Active: False
+Fiber Status: 0
+Fiber Invalid Status: 0
+Fiber0:OFF: Error Count: 0 command: f1
+Fiber1:OFF: Error Count: 0 command: f2
+Fiber2:OFF: Error Count: 0 command: f3
+Fiber3:OFF: Error Count: 0 command: f4
+Fiber4:OFF: Error Count: 0 command: f5
+Fiber5:OFF: Error Count: 0 command: f6
+Fiber6:OFF: Error Count: 0 command: f7
+Fiber7:OFF: Error Count: 0 command: e6
+Fiber8:OFF: Error Count: 0 command: e7
+Fiber9:OFF: Error Count: 0 command: e8
+Fibera:OFF: Error Count: 1 command: e9
+Fiberb:OFF: Error Count: 0 command: ea
+Fiber Test: end.  return errcode=1
+Test with label TestFiberConnector status ...  -> FAIL
+Test with label TestFiberConnector ... start
+Fiber Test: Enabled
+All Links Active: False
+Fiber Status: 0
+Fiber Invalid Status: 0
+Fiber0:OFF: Error Count: 0 command: f1
+Fiber1:OFF: Error Count: 0 command: f2
+Fiber2:OFF: Error Count: 0 command: f3
+Fiber3:OFF: Error Count: 0 command: f4
+Fiber4:OFF: Error Count: 0 command: f5
+Fiber5:OFF: Error Count: 0 command: f6
+Fiber6:OFF: Error Count: 0 command: f7
+Fiber7:OFF: Error Count: 0 command: e6
+Fiber8:OFF: Error Count: 0 command: e7
+Fiber9:OFF: Error Count: 0 command: e8
+Fibera:OFF: Error Count: 1 command: e9
+Fiberb:OFF: Error Count: 0 command: ea
+Fiber Test: end.  return errcode=1
+Test with label TestFiberConnector status ...  -> FAIL
+Test with label TestFiberConnector ... start
+Fiber Test: Enabled
+All Links Active: False
+Fiber Status: 0
+Fiber Invalid Status: 0
+Fiber0:OFF: Error Count: 0 command: f1
+Fiber1:OFF: Error Count: 0 command: f2
+Fiber2:OFF: Error Count: 0 command: f3
+Fiber3:OFF: Error Count: 0 command: f4
+Fiber4:OFF: Error Count: 0 command: f5
+Fiber5:OFF: Error Count: 0 command: f6
+Fiber6:OFF: Error Count: 0 command: f7
+Fiber7:OFF: Error Count: 0 command: e6
+Fiber8:OFF: Error Count: 0 command: e7
+Fiber9:OFF: Error Count: 0 command: e8
+Fibera:OFF: Error Count: 0 command: e9
+Fiberb:OFF: Error Count: 0 command: ea
+Fiber Test: end.  return errcode=1
+Test with label TestFiberConnector status ...  -> FAIL

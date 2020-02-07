@@ -1,0 +1,246 @@
+Firmware Tests ME+_ProductionTest output:
+Test with label CheckFirmwareTestStatus ... start
+Loopback Firmware Test Status: ON
+RPC Loop Hz Test Status: OFF
+Fiber Firmware Test Status: ON
+Fiber0:ON: Error Count: 0 command: f1
+Fiber1:ON: Error Count: 0 command: f2
+Fiber2:ON: Error Count: 0 command: f3
+Fiber3:ON: Error Count: 0 command: f4
+Fiber4:ON: Error Count: 0 command: f5
+Fiber5:ON: Error Count: 0 command: f6
+Fiber6:ON: Error Count: 0 command: f7
+Fiber7:ON: Error Count: 0 command: e6
+Fiber8:ON: Error Count: 0 command: e7
+Fiber9:ON: Error Count: 0 command: e8
+Fibera:ON: Error Count: 0 command: e9
+Fiberb:ON: Error Count: 0 command: ea
+Test with label CheckFirmwareTestStatus status ...  -> PASS
+Test with label CheckFirmwareTestStatus ... start
+Loopback Firmware Test Status: ON
+RPC Loop Hz Test Status: OFF
+Fiber Firmware Test Status: ON
+Fiber0:ON: Error Count: 0 command: f1
+Fiber1:ON: Error Count: 0 command: f2
+Fiber2:ON: Error Count: 0 command: f3
+Fiber3:ON: Error Count: 0 command: f4
+Fiber4:ON: Error Count: 0 command: f5
+Fiber5:ON: Error Count: 0 command: f6
+Fiber6:ON: Error Count: 0 command: f7
+Fiber7:ON: Error Count: 0 command: e6
+Fiber8:ON: Error Count: 0 command: e7
+Fiber9:ON: Error Count: 0 command: e8
+Fibera:ON: Error Count: 0 command: e9
+Fiberb:ON: Error Count: 0 command: ea
+Test with label CheckFirmwareTestStatus status ...  -> PASS
+Test with label CheckFirmwareTestStatus ... start
+Loopback Firmware Test Status: ON
+RPC Loop Hz Test Status: OFF
+Fiber Firmware Test Status: ON
+Fiber0:ON: Error Count: 0 command: f1
+Fiber1:ON: Error Count: 0 command: f2
+Fiber2:ON: Error Count: 0 command: f3
+Fiber3:ON: Error Count: 0 command: f4
+Fiber4:ON: Error Count: 0 command: f5
+Fiber5:ON: Error Count: 0 command: f6
+Fiber6:ON: Error Count: 0 command: f7
+Fiber7:ON: Error Count: 0 command: e6
+Fiber8:ON: Error Count: 0 command: e7
+Fiber9:ON: Error Count: 0 command: e8
+Fibera:ON: Error Count: 0 command: e9
+Fiberb:ON: Error Count: 0 command: ea
+Test with label CheckFirmwareTestStatus status ...  -> PASS
+Test with label TestDMBLoopback ... start
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 7a6 != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : 1 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 717 != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : 1 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 6e7 != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : 1 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 35a != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : 1 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 300 != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : 1 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : dd != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : 1 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 786 != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : 1 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 7df != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : 1 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 221 != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : 1 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 502 != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : 1 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 69a != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : 1 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 185 != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : 1 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 174 != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : 1 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : bf != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : 1 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 365 != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : 1 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 4e2 != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : 1 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 27d != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : 1 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 2ab != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : 1 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 6d0 != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : 1 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 736 != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : 1 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 778 != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : 1 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 30a != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : 1 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 7ae != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : 1 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 377 != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : 1 != 0
+DMBLoopback Test With Fiber OFF -> FAIL
+Test with label TestDMBLoopback status ...  -> FAIL
+Test with label TestRPCLoopback ... start
+RPCLoopback Test With Fiber OFF -> PASS
+RPCLoopback Test With Fiber ON -> PASS
+CompareValues:  CheckStatusLoopback RATSlow error count -> FAIL! : 752 != 0
+CompareValues:  CheckStatusLoopback RATSlow counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATSlowLOOP1_STAT -> FAIL! : 80 != 0
+CompareValues:  CheckStatusLoopback RATSlow error count -> FAIL! : 4ff != 0
+CompareValues:  CheckStatusLoopback RATSlow counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATSlowLOOP1_STAT -> FAIL! : 80 != 0
+CompareValues:  CheckStatusLoopback RATSlow error count -> FAIL! : 71a != 0
+CompareValues:  CheckStatusLoopback RATSlow counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATSlowLOOP1_STAT -> FAIL! : 80 != 0
+CompareValues:  CheckStatusLoopback RATSlow error count -> FAIL! : b9 != 0
+CompareValues:  CheckStatusLoopback RATSlow counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATSlowLOOP1_STAT -> FAIL! : 80 != 0
+CompareValues:  CheckStatusLoopback RATSlow error count -> FAIL! : 5c3 != 0
+CompareValues:  CheckStatusLoopback RATSlow counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATSlowLOOP1_STAT -> FAIL! : 80 != 0
+CompareValues:  CheckStatusLoopback RATSlow error count -> FAIL! : 273 != 0
+CompareValues:  CheckStatusLoopback RATSlow counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATSlowLOOP1_STAT -> FAIL! : 80 != 0
+CompareValues:  CheckStatusLoopback RATSlow counter overflow -> FAIL! : 1 != 0
+CompareValues:  CheckStatusLoopback RATSlow counter overflow -> FAIL! : 1 != 0
+CompareValues:  CheckStatusLoopback RATSlow error count -> FAIL! : 4d2 != 0
+CompareValues:  CheckStatusLoopback RATSlow counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATSlowLOOP1_STAT -> FAIL! : 80 != 0
+CompareValues:  CheckStatusLoopback RATSlow counter overflow -> FAIL! : 1 != 0
+CompareValues:  CheckStatusLoopback RATSlow counter overflow -> FAIL! : 1 != 0
+CompareValues:  CheckStatusLoopback RATSlow error count -> FAIL! : 449 != 0
+CompareValues:  CheckStatusLoopback RATSlow counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATSlowLOOP1_STAT -> FAIL! : 80 != 0
+CompareValues:  CheckStatusLoopback RATSlow error count -> FAIL! : 527 != 0
+CompareValues:  CheckStatusLoopback RATSlow counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATSlowLOOP1_STAT -> FAIL! : 80 != 0
+CompareValues:  CheckStatusLoopback RATSlow counter overflow -> FAIL! : 1 != 0
+CompareValues:  CheckStatusLoopback RATSlow error count -> FAIL! : 199 != 0
+CompareValues:  CheckStatusLoopback RATSlow counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATSlowLOOP1_STAT -> FAIL! : 80 != 0
+CompareValues:  CheckStatusLoopback RATSlow error count -> FAIL! : 4b1 != 0
+CompareValues:  CheckStatusLoopback RATSlow counter overflow -> FAIL! : 1 != 0
+CompareValues:   RATSlowLOOP1_STAT -> FAIL! : 80 != 0
+RPCLoopbackSlow Test With Fiber OFF -> FAIL
+RPCLoopbackSlow Test With Fiber ON -> PASS
+Test with label TestRPCLoopback status ...  -> FAIL
+Test with label TestFiberConnector ... start
+Fiber Test: Enabled,  status code:  fff
+All Links Active: True
+Checking errors on each fiber 
+Fiber0:ON: Error Count: 0 command: f1
+Fiber1:ON: Error Count: 0 command: f2
+Fiber2:ON: Error Count: 0 command: f3
+Fiber3:ON: Error Count: 0 command: f4
+Fiber4:ON: Error Count: 0 command: f5
+Fiber5:ON: Error Count: 0 command: f6
+Fiber6:ON: Error Count: 0 command: f7
+Fiber7:ON: Error Count: 0 command: e6
+Fiber8:ON: Error Count: 0 command: e7
+Fiber9:ON: Error Count: 0 command: e8
+Fibera:ON: Error Count: 0 command: e9
+Fiberb:ON: Error Count: 0 command: ea
+Checking errors on each fiber -- > pass: no error on all fibers 
+Unable to generate error on single fiber!
+Successful generation of error on single fiber!
+Successful generation of errors on all fibers!
+Fiber0:ON: Error Count: 0 command: f1
+Fiber1:ON: Error Count: 0 command: f2
+Fiber2:ON: Error Count: 0 command: f3
+Fiber3:ON: Error Count: 0 command: f4
+Fiber4:ON: Error Count: 0 command: f5
+Fiber5:ON: Error Count: 0 command: f6
+Fiber6:ON: Error Count: 0 command: f7
+Fiber7:ON: Error Count: 0 command: e6
+Fiber8:ON: Error Count: 0 command: e7
+Fiber9:ON: Error Count: 0 command: e8
+Fibera:ON: Error Count: 0 command: e9
+Fiberb:ON: Error Count: 0 command: ea
+Test with label TestFiberConnector status ...  -> PASS
+Test with label TestDMBLoopback ... start
+DMBLoopback Test With Fiber OFF -> PASS
+Test with label TestDMBLoopback status ...  -> PASS
+Test with label TestRPCLoopback ... start
+RPCLoopback Test With Fiber OFF -> PASS
+RPCLoopback Test With Fiber ON -> PASS
+RPCLoopbackSlow Test With Fiber OFF -> PASS
+RPCLoopbackSlow Test With Fiber ON -> PASS
+Test with label TestRPCLoopback status ...  -> PASS
+Test with label TestFiberConnector ... start
+Fiber Test: Enabled,  status code:  fff
+All Links Active: True
+Checking errors on each fiber 
+Fiber0:ON: Error Count: 0 command: f1
+Fiber1:ON: Error Count: 0 command: f2
+Fiber2:ON: Error Count: 0 command: f3
+Fiber3:ON: Error Count: 0 command: f4
+Fiber4:ON: Error Count: 0 command: f5
+Fiber5:ON: Error Count: 0 command: f6
+Fiber6:ON: Error Count: 0 command: f7
+Fiber7:ON: Error Count: 0 command: e6
+Fiber8:ON: Error Count: 0 command: e7
+Fiber9:ON: Error Count: 0 command: e8
+Fibera:ON: Error Count: 0 command: e9
+Fiberb:ON: Error Count: 0 command: ea
+Checking errors on each fiber -- > pass: no error on all fibers 
+Unable to generate error on single fiber!
+Successful generation of error on single fiber!
+Successful generation of errors on all fibers!
+Fiber0:ON: Error Count: 0 command: f1
+Fiber1:ON: Error Count: 0 command: f2
+Fiber2:ON: Error Count: 0 command: f3
+Fiber3:ON: Error Count: 0 command: f4
+Fiber4:ON: Error Count: 0 command: f5
+Fiber5:ON: Error Count: 0 command: f6
+Fiber6:ON: Error Count: 0 command: f7
+Fiber7:ON: Error Count: 0 command: e6
+Fiber8:ON: Error Count: 0 command: e7
+Fiber9:ON: Error Count: 0 command: e8
+Fibera:ON: Error Count: 0 command: e9
+Fiberb:ON: Error Count: 0 command: ea
+Test with label TestFiberConnector status ...  -> PASS

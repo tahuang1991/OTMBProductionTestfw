@@ -1,0 +1,160 @@
+TMB-CCB Backplane Tests ME+_ProductionTest output:
+Test with label TMBHardReset ... start
+CompareValues:  TMBHardReset Command Code -> FAIL! : 1 != ce
+CompareValues:  TMBHardReset Command Code -> FAIL! : 0 != ce
+CompareValues:  TMBHardReset Command Code -> FAIL! : 1 != ce
+CompareValues:  TMBHardReset Command Code -> FAIL! : 0 != ce
+CompareValues:  TMBHardReset Command Code -> FAIL! : 1 != ce
+Test with label TMBHardReset status ...  -> FAIL
+Test with label PulseCounters ... start
+CompareValues:  PulseCounters flag -> FAIL! : 0 != 1
+CompareValues:  PulseCounters counter -> FAIL! : 0 != 64
+CompareValues:  PulseCounters flag -> FAIL! : 0 != 2
+CompareValues:  PulseCounters counter -> FAIL! : 0 != 64
+CompareValues:  PulseCounters flag -> FAIL! : 0 != 4
+CompareValues:  PulseCounters counter -> FAIL! : 0 != 64
+CompareValues:  PulseCounters flag -> FAIL! : 0 != 8
+CompareValues:  PulseCounters counter -> FAIL! : 0 != 64
+CompareValues:  PulseCounters flag -> FAIL! : 0 != 10
+CompareValues:  PulseCounters counter -> FAIL! : 0 != 64
+CompareValues:  PulseCounters flag -> FAIL! : 0 != 20
+CompareValues:  PulseCounters counter -> FAIL! : 0 != 64
+CompareValues:  PulseCounters flag -> FAIL! : 0 != 40
+CompareValues:  PulseCounters counter -> FAIL! : 0 != 64
+CompareValues:  PulseCounters flag -> FAIL! : 0 != 80
+CompareValues:  PulseCounters counter -> FAIL! : 0 != 64
+CompareValues:  PulseCounters flag -> FAIL! : 0 != 100
+CompareValues tolerance:  PulseCounters counter -> FAIL! PulseCounters counter : expected = 22, returned = 0 outside of tolerance 2.2
+CompareValues:  PulseCounters flag -> FAIL! : 0 != 200
+CompareValues tolerance:  PulseCounters counter -> FAIL! PulseCounters counter : expected = 22, returned = 0 outside of tolerance 2.2
+CompareValues:  PulseCounters flag -> FAIL! : 0 != 400
+CompareValues tolerance:  PulseCounters counter -> FAIL! PulseCounters counter : expected = 15, returned = 0 outside of tolerance 1.5
+CompareValues:  PulseCounters flag -> FAIL! : 0 != 800
+Test with label PulseCounters status ...  -> FAIL
+Test with label CommandBus ... start
+CompareValues:  CommandBus -> FAIL! : 0 != 5
+CompareValues:  CommandBus -> FAIL! : 1 != 5
+CompareValues:  CommandBus -> FAIL! : 0 != 5
+CompareValues:  CommandBus -> FAIL! : 1 != 5
+CompareValues:  CommandBus -> FAIL! : 0 != 5
+CompareValues:  CommandBus -> FAIL! : 1 != 5
+CompareValues:  CommandBus -> FAIL! : 0 != 5
+CompareValues:  CommandBus -> FAIL! : 1 != 5
+CompareValues:  CommandBus -> FAIL! : 0 != 5
+CompareValues:  CommandBus -> FAIL! : 1 != 5
+CompareValues:  CommandBus -> FAIL! : 0 != 5
+CompareValues:  CommandBus -> FAIL! : 1 != 5
+CompareValues:  CommandBus -> FAIL! : 0 != 5
+CompareValues:  CommandBus -> FAIL! : 1 != 5
+CompareValues:  CommandBus -> FAIL! : 0 != 5
+CompareValues:  CommandBus -> FAIL! : 1 != 5
+CompareValues:  CommandBus -> FAIL! : 0 != 5
+CompareValues:  CommandBus -> FAIL! : 1 != 5
+CompareValues:  CommandBus -> FAIL! : 0 != 5
+CompareValues:  CommandBus -> FAIL! : 1 != 5
+CompareValues:  CommandBus -> FAIL! : 0 != 5
+CompareValues:  CommandBus -> FAIL! : 1 != 5
+CompareValues:  CommandBus -> FAIL! : 0 != 5
+CompareValues:  CommandBus -> FAIL! : 1 != 5
+CompareValues:  CommandBus -> FAIL! : 0 != 5
+CompareValues:  CommandBus -> FAIL! : 1 != 5
+CompareValues:  CommandBus -> FAIL! : 0 != 5
+CompareValues:  CommandBus -> FAIL! : 1 != 5
+CompareValues:  CommandBus -> FAIL! : 0 != 5
+CompareValues:  CommandBus -> FAIL! : 1 != 5
+CompareValues:  CommandBus -> FAIL! : 0 != 5
+CompareValues:  CommandBus -> FAIL! : 1 != 5
+CompareValues:  CommandBus -> FAIL! : 0 != 5
+CompareValues:  CommandBus -> FAIL! : 1 != 5
+CompareValues:  CommandBus -> FAIL! : 0 != 5
+CompareValues:  CommandBus -> FAIL! : 1 != 5
+CompareValues:  CommandBus -> FAIL! : 0 != 5
+CompareValues:  CommandBus -> FAIL! : 1 != 5
+CompareValues:  CommandBus -> FAIL! : 0 != 5
+CompareValues:  CommandBus -> FAIL! : 1 != 5
+CompareValues:  CommandBus -> FAIL! : 0 != 5
+CompareValues:  CommandBus -> FAIL! : 1 != 5
+CompareValues:  CommandBus -> FAIL! : 0 != 5
+CompareValues:  CommandBus -> FAIL! : 1 != 5
+CompareValues:  CommandBus -> FAIL! : 0 != 5
+CompareValues:  CommandBus -> FAIL! : 1 != 5
+CompareValues:  CommandBus -> FAIL! : 0 != 5
+CompareValues:  CommandBus -> FAIL! : 1 != 5
+CompareValues:  CommandBus -> FAIL! : 0 != 5
+CompareValues:  CommandBus -> FAIL! : 1 != 5
+CompareValues:  CommandBus -> FAIL! : 0 != 5
+CompareValues:  CommandBus -> FAIL! : 1 != 5
+CompareValues:  CommandBus -> FAIL! : 0 != 5
+CompareValues:  CommandBus -> FAIL! : 1 != 5
+CompareValues:  CommandBus -> FAIL! : 0 != 5
+CompareValues:  CommandBus -> FAIL! : 1 != 5
+CompareValues:  CommandBus -> FAIL! : 0 != 5
+CompareValues:  CommandBus -> FAIL! : 1 != 5
+CompareValues:  CommandBus -> FAIL! : 0 != 5
+CompareValues:  CommandBus -> FAIL! : 1 != 5
+CompareValues:  CommandBus -> FAIL! : 0 != 5
+CompareValues:  CommandBus -> FAIL! : 1 != 5
+CompareValues:  CommandBus -> FAIL! : 0 != 5
+CompareValues:  CommandBus -> FAIL! : 1 != 5
+CompareValues:  CommandBus -> FAIL! : 0 != 5
+CompareValues:  CommandBus -> FAIL! : 1 != 5
+CompareValues:  CommandBus -> FAIL! : 0 != 5
+CompareValues:  CommandBus -> FAIL! : 1 != 5
+CompareValues:  CommandBus -> FAIL! : 0 != 5
+CompareValues:  CommandBus -> FAIL! : 1 != 5
+CompareValues:  CommandBus -> FAIL! : 0 != 5
+CompareValues:  CommandBus -> FAIL! : 1 != 5
+CompareValues:  CommandBus -> FAIL! : 0 != 5
+CompareValues:  CommandBus -> FAIL! : 1 != 5
+CompareValues:  CommandBus -> FAIL! : 0 != 5
+CompareValues:  CommandBus -> FAIL! : 1 != 5
+CompareValues:  CommandBus -> FAIL! : 0 != 5
+CompareValues:  CommandBus -> FAIL! : 1 != 5
+CompareValues:  CommandBus -> FAIL! : 0 != 5
+CompareValues:  CommandBus -> FAIL! : 1 != 5
+CompareValues:  CommandBus -> FAIL! : 0 != 5
+CompareValues:  CommandBus -> FAIL! : 1 != 5
+CompareValues:  CommandBus -> FAIL! : 0 != 5
+Test with label CommandBus status ...  -> FAIL
+Test with label CCBReserved ... start
+Test with label CCBReserved status ...  -> PASS
+Test with label TMBReservedOut ... start
+Test with label TMBReservedOut status ...  -> PASS
+Test with label DMBReservedOut ... start
+Test with label DMBReservedOut status ...  -> PASS
+Test with label DataBus ... start
+Test with label DataBus status ...  -> PASS
+Test with label CCBClock40 ... start
+Test with label CCBClock40 status ...  -> PASS
+Test with label DMBReservedInLoopback ... start
+Test with label DMBReservedInLoopback status ...  -> PASS
+Test with label L1Reset ... start
+Test with label L1Reset status ...  -> PASS
+------------------------------
+Status of All tests ...  -> FAIL
+Test with label TMBHardReset ... start
+Test with label TMBHardReset status ...  -> PASS
+Test with label CommandBus ... start
+Test with label CommandBus status ...  -> PASS
+Test with label PulseCounters ... start
+CompareValues:  PulseCounters flag -> FAIL! : 0 != 2
+CompareValues:  PulseCounters counter -> FAIL! : 0 != 64
+Test with label PulseCounters status ...  -> FAIL
+Test with label PulseCounters ... start
+CompareValues:  PulseCounters flag -> FAIL! : 0 != 2
+CompareValues:  PulseCounters counter -> FAIL! : 0 != 64
+Test with label PulseCounters status ...  -> FAIL
+Test with label PulseCounters ... start
+CompareValues:  PulseCounters init -> FAIL! : 2 != 0
+Test with label PulseCounters status ...  -> PASS
+Test with label TestLEDFrontPanel ... start
+CompareValues:  LEDFrontPanel LED_Errors -> FAIL! : 0 != 1
+Test with label TestLEDFrontPanel status ...  -> FAIL
+Test with label TestLEDFrontPanel ... start
+CompareValues:  LEDFrontPanel LED_Errors -> FAIL! : 0 != 1ff
+Test with label TestLEDFrontPanel status ...  -> FAIL
+Test with label TestLEDFrontPanel ... start
+Test with label TestLEDFrontPanel status ...  -> PASS
+Test with label TestLEDFrontPanel ... start
+CompareValues:  LEDFrontPanel LED_Errors -> FAIL! : 0 != 1
+Test with label TestLEDFrontPanel status ...  -> FAIL

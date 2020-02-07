@@ -1,0 +1,347 @@
+Firmware Tests ME+_ProductionTest output:
+Test with label TestFiberConnector ... start
+Fiber Test: Enabled
+All Links Active: False
+Fiber Status: 0
+Fiber Invalid Status: 0
+Fiber0:OFF: Error Count: 0 command: f1
+Fiber1:OFF: Error Count: 0 command: f2
+Fiber2:OFF: Error Count: 0 command: f3
+Fiber3:OFF: Error Count: 0 command: f4
+Fiber4:OFF: Error Count: 0 command: f5
+Fiber5:OFF: Error Count: 0 command: f6
+Fiber6:OFF: Error Count: 0 command: f7
+Fiber7:OFF: Error Count: 0 command: e6
+Fiber8:OFF: Error Count: 0 command: e7
+Fiber9:OFF: Error Count: 0 command: e8
+Fibera:OFF: Error Count: 1 command: e9
+Fiberb:OFF: Error Count: 0 command: ea
+Fiber Test: end.  return errcode=1
+Test with label TestFiberConnector status ...  -> FAIL
+Test with label TestDMBLoopback ... start
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 353 != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP1_STAT -> FAIL! : fe0 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : fff != 0
+CompareValues:   DMBLOOP3_STAT -> FAIL! : 7 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 470 != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP1_STAT -> FAIL! : fe0 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : fff != 0
+CompareValues:   DMBLOOP3_STAT -> FAIL! : 7 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 6c1 != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP1_STAT -> FAIL! : fe0 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : fff != 0
+CompareValues:   DMBLOOP3_STAT -> FAIL! : 7 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 631 != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP1_STAT -> FAIL! : fe0 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : fff != 0
+CompareValues:   DMBLOOP3_STAT -> FAIL! : 7 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 6be != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP1_STAT -> FAIL! : fe0 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : fff != 0
+CompareValues:   DMBLOOP3_STAT -> FAIL! : 7 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 5ac != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP1_STAT -> FAIL! : fe0 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : fff != 0
+CompareValues:   DMBLOOP3_STAT -> FAIL! : 7 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 7da != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP1_STAT -> FAIL! : fe0 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : fff != 0
+CompareValues:   DMBLOOP3_STAT -> FAIL! : 7 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 1a0 != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP1_STAT -> FAIL! : fe0 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : fff != 0
+CompareValues:   DMBLOOP3_STAT -> FAIL! : 7 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 1c3 != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP1_STAT -> FAIL! : fe0 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : fff != 0
+CompareValues:   DMBLOOP3_STAT -> FAIL! : 7 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 1ea != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP1_STAT -> FAIL! : fe0 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : fff != 0
+CompareValues:   DMBLOOP3_STAT -> FAIL! : 7 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 1f0 != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP1_STAT -> FAIL! : fe0 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : fff != 0
+CompareValues:   DMBLOOP3_STAT -> FAIL! : 7 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 70c != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP1_STAT -> FAIL! : fe0 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : fff != 0
+CompareValues:   DMBLOOP3_STAT -> FAIL! : 7 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 156 != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP1_STAT -> FAIL! : fe0 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : fff != 0
+CompareValues:   DMBLOOP3_STAT -> FAIL! : 7 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 7e9 != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP1_STAT -> FAIL! : fe0 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : fff != 0
+CompareValues:   DMBLOOP3_STAT -> FAIL! : 7 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 22e != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP1_STAT -> FAIL! : fe0 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : fff != 0
+CompareValues:   DMBLOOP3_STAT -> FAIL! : 7 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 3b5 != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP1_STAT -> FAIL! : fe0 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : fff != 0
+CompareValues:   DMBLOOP3_STAT -> FAIL! : 7 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 33f != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP1_STAT -> FAIL! : fe0 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : fff != 0
+CompareValues:   DMBLOOP3_STAT -> FAIL! : 7 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 5b1 != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP1_STAT -> FAIL! : fe0 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : fff != 0
+CompareValues:   DMBLOOP3_STAT -> FAIL! : 7 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 746 != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP1_STAT -> FAIL! : fe0 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : fff != 0
+CompareValues:   DMBLOOP3_STAT -> FAIL! : 7 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 7b6 != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP1_STAT -> FAIL! : fe0 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : fff != 0
+CompareValues:   DMBLOOP3_STAT -> FAIL! : 7 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 1b9 != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP1_STAT -> FAIL! : fe0 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : fff != 0
+CompareValues:   DMBLOOP3_STAT -> FAIL! : 7 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 525 != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP1_STAT -> FAIL! : fe0 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : fff != 0
+CompareValues:   DMBLOOP3_STAT -> FAIL! : 7 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 78c != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP1_STAT -> FAIL! : fe0 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : fff != 0
+CompareValues:   DMBLOOP3_STAT -> FAIL! : 7 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 7ad != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP1_STAT -> FAIL! : fe0 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : fff != 0
+CompareValues:   DMBLOOP3_STAT -> FAIL! : 7 != 0
+DMBLoopback Test With Fiber OFF -> FAIL
+Test with label TestDMBLoopback status ...  -> FAIL
+Test with label TestRPCLoopback ... start
+RPCLoopback Test With Fiber OFF -> PASS
+RPCLoopback Test With Fiber ON -> PASS
+RPCLoopbackSlow Test With Fiber OFF -> PASS
+RPCLoopbackSlow Test With Fiber ON -> PASS
+Test with label TestRPCLoopback status ...  -> PASS
+Test with label TestFiberConnector ... start
+Fiber Test: Enabled,  status code:  fff
+All Links Active: True
+Checking errors on each fiber 
+Fiber0:ON: Error Count: 0 command: f1
+Fiber1:ON: Error Count: 0 command: f2
+Fiber2:ON: Error Count: 0 command: f3
+Fiber3:ON: Error Count: 0 command: f4
+Fiber4:ON: Error Count: 0 command: f5
+Fiber5:ON: Error Count: 0 command: f6
+Fiber6:ON: Error Count: 0 command: f7
+Fiber7:ON: Error Count: 0 command: e6
+Fiber8:ON: Error Count: 0 command: e7
+Fiber9:ON: Error Count: 0 command: e8
+Fibera:ON: Error Count: 0 command: e9
+Fiberb:ON: Error Count: 0 command: ea
+Checking errors on each fiber -- > pass: no error on all fibers 
+Unable to generate error on single fiber!
+Successful generation of error on single fiber!
+Successful generation of errors on all fibers!
+Fiber0:ON: Error Count: 0 command: f1
+Fiber1:ON: Error Count: 0 command: f2
+Fiber2:ON: Error Count: 0 command: f3
+Fiber3:ON: Error Count: 0 command: f4
+Fiber4:ON: Error Count: 0 command: f5
+Fiber5:ON: Error Count: 0 command: f6
+Fiber6:ON: Error Count: 0 command: f7
+Fiber7:ON: Error Count: 0 command: e6
+Fiber8:ON: Error Count: 0 command: e7
+Fiber9:ON: Error Count: 0 command: e8
+Fibera:ON: Error Count: 0 command: e9
+Fiberb:ON: Error Count: 0 command: ea
+Test with label TestFiberConnector status ...  -> PASS
+Test with label TestDMBLoopback ... start
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 495 != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP1_STAT -> FAIL! : fe0 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : fff != 0
+CompareValues:   DMBLOOP3_STAT -> FAIL! : 7 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 4a6 != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP1_STAT -> FAIL! : fe0 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : fff != 0
+CompareValues:   DMBLOOP3_STAT -> FAIL! : 7 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : e0 != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP1_STAT -> FAIL! : fe0 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : fff != 0
+CompareValues:   DMBLOOP3_STAT -> FAIL! : 7 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 4f4 != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP1_STAT -> FAIL! : fe0 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : fff != 0
+CompareValues:   DMBLOOP3_STAT -> FAIL! : 7 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 67 != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP1_STAT -> FAIL! : fe0 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : fff != 0
+CompareValues:   DMBLOOP3_STAT -> FAIL! : 7 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 2f1 != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP1_STAT -> FAIL! : fe0 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : fff != 0
+CompareValues:   DMBLOOP3_STAT -> FAIL! : 7 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 4da != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP1_STAT -> FAIL! : fe0 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : fff != 0
+CompareValues:   DMBLOOP3_STAT -> FAIL! : 7 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 366 != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP1_STAT -> FAIL! : fe0 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : fff != 0
+CompareValues:   DMBLOOP3_STAT -> FAIL! : 7 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 31c != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP1_STAT -> FAIL! : fe0 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : fff != 0
+CompareValues:   DMBLOOP3_STAT -> FAIL! : 7 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 47c != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP1_STAT -> FAIL! : fe0 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : fff != 0
+CompareValues:   DMBLOOP3_STAT -> FAIL! : 7 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 29d != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP1_STAT -> FAIL! : fe0 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : fff != 0
+CompareValues:   DMBLOOP3_STAT -> FAIL! : 7 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 7ad != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP1_STAT -> FAIL! : fe0 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : fff != 0
+CompareValues:   DMBLOOP3_STAT -> FAIL! : 7 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 25d != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP1_STAT -> FAIL! : fe0 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : fff != 0
+CompareValues:   DMBLOOP3_STAT -> FAIL! : 7 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 7ef != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP1_STAT -> FAIL! : fe0 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : fff != 0
+CompareValues:   DMBLOOP3_STAT -> FAIL! : 7 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : fe != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP1_STAT -> FAIL! : fe0 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : fff != 0
+CompareValues:   DMBLOOP3_STAT -> FAIL! : 7 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 76 != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP1_STAT -> FAIL! : fe0 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : fff != 0
+CompareValues:   DMBLOOP3_STAT -> FAIL! : 7 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 680 != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP1_STAT -> FAIL! : fe0 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : fff != 0
+CompareValues:   DMBLOOP3_STAT -> FAIL! : 7 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 2ae != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP1_STAT -> FAIL! : fe0 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : fff != 0
+CompareValues:   DMBLOOP3_STAT -> FAIL! : 7 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 47f != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP1_STAT -> FAIL! : fe0 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : fff != 0
+CompareValues:   DMBLOOP3_STAT -> FAIL! : 7 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 22b != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP1_STAT -> FAIL! : fe0 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : fff != 0
+CompareValues:   DMBLOOP3_STAT -> FAIL! : 7 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 40b != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP1_STAT -> FAIL! : fe0 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : fff != 0
+CompareValues:   DMBLOOP3_STAT -> FAIL! : 7 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 7f7 != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP1_STAT -> FAIL! : fe0 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : fff != 0
+CompareValues:   DMBLOOP3_STAT -> FAIL! : 7 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 7cf != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP1_STAT -> FAIL! : fe0 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : fff != 0
+CompareValues:   DMBLOOP3_STAT -> FAIL! : 7 != 0
+CompareValues:  CheckStatusLoopback DMB error count -> FAIL! : 29f != 0
+CompareValues:  CheckStatusLoopback DMB counter overflow -> FAIL! : 1 != 0
+CompareValues:   DMBLOOP1_STAT -> FAIL! : fe0 != 0
+CompareValues:   DMBLOOP2_STAT -> FAIL! : fff != 0
+CompareValues:   DMBLOOP3_STAT -> FAIL! : 7 != 0
+DMBLoopback Test With Fiber OFF -> FAIL
+Test with label TestDMBLoopback status ...  -> FAIL
+Test with label TestDMBLoopback ... start
+DMBLoopback Test With Fiber OFF -> PASS
+Test with label TestDMBLoopback status ...  -> PASS
+Test with label TestRPCLoopback ... start
+RPCLoopback Test With Fiber OFF -> PASS
+RPCLoopback Test With Fiber ON -> PASS
+RPCLoopbackSlow Test With Fiber OFF -> PASS
+RPCLoopbackSlow Test With Fiber ON -> PASS
+Test with label TestRPCLoopback status ...  -> PASS
+Test with label TestFiberConnector ... start
+Fiber Test: Enabled,  status code:  fff
+All Links Active: True
+Checking errors on each fiber 
+Fiber0:ON: Error Count: 0 command: f1
+Fiber1:ON: Error Count: 0 command: f2
+Fiber2:ON: Error Count: 0 command: f3
+Fiber3:ON: Error Count: 0 command: f4
+Fiber4:ON: Error Count: 0 command: f5
+Fiber5:ON: Error Count: 0 command: f6
+Fiber6:ON: Error Count: 0 command: f7
+Fiber7:ON: Error Count: 0 command: e6
+Fiber8:ON: Error Count: 0 command: e7
+Fiber9:ON: Error Count: 0 command: e8
+Fibera:ON: Error Count: 0 command: e9
+Fiberb:ON: Error Count: 0 command: ea
+Checking errors on each fiber -- > pass: no error on all fibers 
+Unable to generate error on single fiber!
+Successful generation of error on single fiber!
+Successful generation of errors on all fibers!
+Fiber0:ON: Error Count: 0 command: f1
+Fiber1:ON: Error Count: 0 command: f2
+Fiber2:ON: Error Count: 0 command: f3
+Fiber3:ON: Error Count: 0 command: f4
+Fiber4:ON: Error Count: 0 command: f5
+Fiber5:ON: Error Count: 0 command: f6
+Fiber6:ON: Error Count: 0 command: f7
+Fiber7:ON: Error Count: 0 command: e6
+Fiber8:ON: Error Count: 0 command: e7
+Fiber9:ON: Error Count: 0 command: e8
+Fibera:ON: Error Count: 0 command: e9
+Fiberb:ON: Error Count: 0 command: ea
+Test with label TestFiberConnector status ...  -> PASS
